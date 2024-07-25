@@ -1,12 +1,20 @@
 
 import './App.css';
-import Navbar from './Components/Navbar';
+import { Home } from './Components/Home';
+import Login from './Components/Login';
 
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Register from './Components/Register';
 
 function App() {
   return (
     <>
-    <Navbar/>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<Home/>}/>
+      <Route path='/login' element={<Login/>}/>
+      <Route path='/register' element={<Register/>}/>
+      </Routes></BrowserRouter>
     </>
   );
 }
