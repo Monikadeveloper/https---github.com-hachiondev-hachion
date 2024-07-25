@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+.navbar{
+    background-image: url('C:\Users\Dell\Desktop\Hachion\my-app\src\Assets\intbg.png');
+   /* background-color: black; */
+  }
+  .navbar-logo{
+    height: 8vh;
+    width: 12vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 5%;
+  }
+.nav-link{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.navbar-nav{
+    display:flex;
+    justify-content:space-evenly;
+}
+.d-flex{
+    width:45vw;
+    height:6vh;
+    margin:1vh;
+}
+.button{
+    margin: 2vh;
+}
+.nav-item{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nav-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3vh;
+   
+}
