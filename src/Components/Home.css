@@ -229,14 +229,14 @@ padding-bottom: 5vh;
     font-style: Open-Sans;
 }
 .login-left{
-    width: 50vw;
+    width: 40vw;
     height: 100vh;
  
 }
 .login-right{
-   width: 50vw;
+   width: 60vw;
  height: 100vh;
-   background-image: url('D:\Hachion\src\Assets\login.jpg');
+   background-image: url('D:\Hachion\src\Assets\image 7.png');
     background-repeat: no-repeat;
 background-size: 100%;
     color: white;
@@ -245,7 +245,8 @@ background-size: 100%;
 .welcome-back{
     margin-top: 3vh;
     font-weight:700;
-    margin-bottom: 2vh;
+    margin-bottom: 1vh;
+    font-weight: 36px;
 }
 .login-top{
     display: flex;
@@ -255,31 +256,49 @@ background-size: 100%;
     padding-top: 10vh;
    
 }
+
+.form-floating img{
+    position:absolute;
+    bottom:8px;
+    right:10px;
+    width:30px;
+    height:30px;
+   
+}
 .login-mid{
- padding-left: 8vh;
- padding-right: 8vh;
+ padding-left: 6vh;
+ padding-right: 6vh;
 }
 .icon-holder{
     display: flex;
     justify-content: space-evenly;
-    font-size: 3.8rem;
+    font-size: 2.5rem;
     cursor: pointer;
+    gap:7vh;
 }
 .icon-holder img{
   
-    width: 4vw;
+    width: 2.4vw;
+}
+.login-continue{
+    font-size: 24px;
 }
 .forgot-password{
     display: flex;
     justify-content: flex-end;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
     color:#00AEEF;
     cursor: pointer;
 }
 .login-right-header{
     font-size: 2.2rem;
+    font-weight: bold;
 }
 .login-right-content{
-    font-size: 1.5rem;
+   font-size: 24px;
+   font-weight: 500;
     margin-top: 3vh;
 }
 .login-option{
@@ -291,13 +310,18 @@ background-size: 100%;
 .go-to-register{
     padding: 1vh;
     font-size: 1.2rem;
-    font-weight: bold;
+    font-weight: 400;
 }
 .form-check{
     display: inline-flex;
-    gap: 10px;
+    gap: 20px;
+}
+.form-control{
+    height:50px;
+    width: 520px;
 }
 .btn{
+    width:520px;
     height:50px;
     font-weight: bold;
 }
@@ -317,20 +341,24 @@ background-size: 100%;
 display: flex;
 flex-direction: row;
 object-fit:fill;
+cursor: pointer;
+
 }
 .icon-text img{
     height: 70px;
     width: 70px;
-    margin-right: -5px;
+    margin-right:-8px;
+   
 }
 .icon-text-holder{
+    margin-left: -5px;
     height: 50px;
     width: 300px;
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
     color: black;
-    margin-top: 1vh;
+    margin-top: 1.5vh;
     font-weight: bold;
     font-size: 20px;
     display: flex;
@@ -341,7 +369,7 @@ object-fit:fill;
         height: 50px;
         width: 300px;
        
-        margin-top: 1vh;
+        margin-top: 1.25vh;
         font-weight: bold;
         font-size: 20px;
         display: flex;
@@ -354,7 +382,7 @@ object-fit:fill;
         height: 50px;
         width: 300px;
        
-        margin-top: 1vh;
+        margin-top: 1.25vh;
         font-weight: bold;
         font-size: 20px;
         display: flex;
@@ -367,7 +395,7 @@ object-fit:fill;
         height: 50px;
         width: 300px;
        
-        margin-top: 1vh;
+        margin-top: 1.25vh;
         font-weight: bold;
         font-size: 20px;
         display: flex;
@@ -379,7 +407,7 @@ object-fit:fill;
     .icon-text-holder-email{
         height: 50px;
         width: 300px;
-        margin-top: 1vh;
+        margin-top: 1.25vh;
         font-weight: bold;
         font-size: 20px;
         display: flex;
@@ -388,9 +416,6 @@ object-fit:fill;
         background-color: #EA4335;
         color: white;
     }
-
-
-
 
 .icon-places{
     display: flex;

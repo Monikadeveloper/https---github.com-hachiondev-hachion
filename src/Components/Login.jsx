@@ -8,7 +8,10 @@ import apple from '../Assets/Apple.png';
 import {Link} from 'react-router-dom';
 import LoginSide from './LoginSide';
 import captcha from '../Assets/captcha.png';
-
+import google from '../Assets/google_symbol.svg.png'
+import facebook from '../Assets/facebook_symbol.svg.png'
+import lock from '../Assets/Component 1.png'
+import line from '../Assets/Vector 1.png'
 
  const Login = () => {
   return (
@@ -18,20 +21,22 @@ import captcha from '../Assets/captcha.png';
   <div className='login-top'>
   <img src={logo} alt='logo' className='login-logo'/>
   <h3 className='welcome-back'>Welcome  back!</h3>
-  <h4>Login to continue learning</h4>
-  </div>
+  <h4 className='login-continue'>Login to continue learning</h4>
+ 
   <div className='login-mid'>
   <label className='login-label'>Email ID</label>
   <div className="form-floating mb-3">
     
-  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com"/>
-  <label for="floatingInput">Email address</label>
+  <input type="email" className="form-control" id="floatingInput" placeholder="abc@gmail.com"/>
+
+  <label for="floatingInput">abc@gmail.com</label>
 </div>
 <label className='login-label'>Password</label>
 <div className="form-floating mb-3">
-  
-  <input type="password" class="form-control" id="floatingPassword" placeholder="Password"/>
-  <label for="floatingPassword">Password</label>
+  <input type="password" className="form-control" id="floatingPassword" placeholder="Enter your password" />
+  <img src={lock} alt='lock'/>
+  <label for="floatingPassword">Enter your password</label>
+
 </div>
 <p className='forgot-password'>Forgot Password?</p>
 <div class="form-check">
@@ -45,11 +50,12 @@ import captcha from '../Assets/captcha.png';
   
   <button class="btn btn-primary" type="button">Login</button>
 </div>
-
+</div>
+<img src={line} alt='effect'/>
 <p className='login-option'>Or login with</p>
 <div className='icon-holder'>
-  <FcGoogle/>
-  <FaFacebook style={{color:'#316FF6'}}/>
+ <img src={google} alt='google'/>
+ <img src={facebook} alt='facebook'/>
  <img src={linkedin} alt='linkedin'/>
 <img src={apple} alt='apple'/>
 </div>
