@@ -53,7 +53,7 @@ import captcha from '../Assets/captcha.png';
  <img src={linkedin} alt='linkedin'/>
 <img src={apple} alt='apple'/>
 </div>
-<p className='go-to-register'>Don't have an account? <Link to='#' > Register </Link></p>
+<p className='go-to-register'>Don't have an account? <Link to='/register' className='link-to' > Register </Link></p>
 </div>
 </div>
 <LoginSide/>

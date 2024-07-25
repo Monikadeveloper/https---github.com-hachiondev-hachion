@@ -302,13 +302,108 @@ background-size: 100%;
     font-weight: bold;
 }
 .register-head{
+    padding-top: 3vh;
+    padding-bottom: 2vh;
     font-size: 36px;
 }
 .icon-places{
+    padding: 5vh;
     display: flex;
     justify-content: space-evenly;
 }
 .icon-text{
     height: 70px;
     width: 325px;
+display: flex;
+flex-direction: row;
+object-fit:fill;
+}
+.icon-text img{
+    height: 70px;
+    width: 70px;
+    margin-right: -5px;
+}
+.icon-text-holder{
+    height: 50px;
+    width: 300px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    color: black;
+    margin-top: 1vh;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .icon-text-holder-facebook{
+        height: 50px;
+        width: 300px;
+       
+        margin-top: 1vh;
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3B5998;
+        color: white;
+    }
+    .icon-text-holder-linkedin{
+        height: 50px;
+        width: 300px;
+       
+        margin-top: 1vh;
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1275B1;
+        color: white;
+    }
+    .icon-text-holder-apple{
+        height: 50px;
+        width: 300px;
+       
+        margin-top: 1vh;
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        color: white;
+    }
+    .icon-text-holder-email{
+        height: 50px;
+        width: 300px;
+        margin-top: 1vh;
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EA4335;
+        color: white;
+    }
+
+
+
+
+.icon-places{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.login-link{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 20px;
+}
+.link-to{
+    color:#00AEEF;
+    text-decoration-line: none;
 }
