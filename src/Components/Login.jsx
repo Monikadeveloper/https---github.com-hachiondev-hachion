@@ -1,8 +1,6 @@
 import React from 'react'
 import './Home.css'
 import logo from '../Assets/logo.png'
-import { FcGoogle } from "react-icons/fc";
-import { FaFacebook } from "react-icons/fa6";
 import linkedin from '../Assets/linkedin.png';
 import apple from '../Assets/Apple.png';
 import {Link} from 'react-router-dom';
@@ -11,9 +9,23 @@ import captcha from '../Assets/captcha.png';
 import google from '../Assets/google_symbol.svg.png'
 import facebook from '../Assets/facebook_symbol.svg.png'
 import lock from '../Assets/Component 1.png'
-import line from '../Assets/Vector 1.png'
+import {useFormik} from 'formik';
+import {LoginSchema} from './Schemas'
+
+const initialValues={
+  email:"",
+  password:""
+}
 
  const Login = () => {
+   const {values,errors,handleBlur,touched,handleChange,handleSubmit}= useFormik({
+    initialValues:initialValues,
+    validationSchema:LoginSchema,
+    onSubmit:(values)=>{
+   console.log(values);
+    }
+   })
+
   return (
   <>
 <div className='login'>
@@ -24,17 +36,23 @@ import line from '../Assets/Vector 1.png'
   <h4 className='login-continue'>Login to continue learning</h4>
  
   <div className='login-mid'>
-  <label className='login-label'>Email ID</label>
+    <form onSubmit={handleSubmit}>
+  <label className='login-label'>Email ID<span className='star'>*</span></label>
   <div className="form-floating mb-3">
     
-  <input type="email" className="form-control" id="floatingInput" placeholder="abc@gmail.com"/>
-
+  <input type="email" className="form-control" id="floatingInput" placeholder="abc@gmail.com" 
+  name='email' value={values.email} onChange={handleChange} onBlur={handleBlur}/>
+{errors.email && touched.email ? (<p className='form-error'>{errors.email}</p>):null}
   <label for="floatingInput">abc@gmail.com</label>
 </div>
-<label className='login-label'>Password</label>
+<label className='login-label'>Password<span className='star'>*</span></label>
 <div className="form-floating mb-3">
-  <input type="password" className="form-control" id="floatingPassword" placeholder="Enter your password" />
-  <img src={lock} alt='lock'/>
+  <input type="password" className="form-control" id="floatingPassword" placeholder="Enter your password"
+   name='password' value={values.password} onChange={handleChange} onBlur={handleBlur} />
+    <img src={lock} alt='lock'/>
+   {errors.password && touched.password ? (<p className='form-error'>{errors.password}</p>):null}
+   
+ 
   <label for="floatingPassword">Enter your password</label>
 
 </div>
@@ -48,18 +66,24 @@ import line from '../Assets/Vector 1.png'
 </div>
 <div class="d-grid gap-2">
   
-  <button class="btn btn-primary" type="button">Login</button>
+  <button class="btn btn-primary" type="submit">Login</button>
+ </div>
+
+</form>
 </div>
-</div>
-<img src={line} alt='effect'/>
+
+<div className='login-with'>
+<hr width='25%' size='2' style={{marginTop:'3.2vh'}}></hr>
 <p className='login-option'>Or login with</p>
+<hr width='25%' size='2'style={{marginTop:'3.2vh'}}></hr>
+</div>
 <div className='icon-holder'>
  <img src={google} alt='google'/>
  <img src={facebook} alt='facebook'/>
  <img src={linkedin} alt='linkedin'/>
 <img src={apple} alt='apple'/>
 </div>
-<p className='go-to-register'>Don't have an account? <Link to='/register' className='link-to' > Register </Link></p>
+<p className='go-to-register'>Don't have an account? <Link to='/register' className='link-to-register' > Register </Link></p>
 </div>
 </div>
 <LoginSide/>

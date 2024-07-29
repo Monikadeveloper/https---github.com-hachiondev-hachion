@@ -32,13 +32,15 @@ const Register = () => {
    <div className='icon-text-holder-linkedin'>Linkedin</div>
     </div>
     <div className='icon-text'>
-  <img src={apple} alt='apple'/>
+  <img src={apple} alt='login-with-apple'/>
    <div className='icon-text-holder-apple'>Apple</div>
     </div>
-    <div className='icon-text'>
-  <img src={email} alt='email'/>
-   <div className='icon-text-holder-email'>Login with Email</div>
-    </div>
+    <Link to='/registerhere' className='register-link-to'>
+   <div className='icon-text'>
+  <img src={email} alt='login-with-email'/> 
+   <div className='icon-text-holder-email'>Login with Email</div> 
+    </div></Link>
+   
   </div>
   </div>
   <p className='login-link'>Do you have an account with Hachion? <Link to='/login' className='link-to'>Click here to Login </Link></p>

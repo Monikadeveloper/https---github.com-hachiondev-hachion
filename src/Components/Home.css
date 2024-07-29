@@ -229,18 +229,29 @@ padding-bottom: 5vh;
     font-style: Open-Sans;
 }
 .login-left{
-    width: 40vw;
+    width: 50vw;
     height: 100vh;
  
 }
+.login-with{
+    width: 40vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
 .login-right{
-   width: 60vw;
- height: 100vh;
-   background-image: url('D:\Hachion\src\Assets\image 7.png');
+   width: 50vw;
+   height: 100vh;
+
+   /* background-image: url('D:\Hachion\src\Assets\Group 39473.png');
     background-repeat: no-repeat;
 background-size: 100%;
     color: white;
-    padding:3vh;
+    padding:3vh; */
+}
+.login-right-img{
+    width:50vw;
+    height:100vh;
 }
 .welcome-back{
     margin-top: 3vh;
@@ -253,22 +264,21 @@ background-size: 100%;
     justify-content: center;
     align-items:center;
     flex-direction: column;
-    padding-top: 10vh;
+    padding-top: 7vh;
    
 }
 
 .form-floating img{
     position:absolute;
-    bottom:8px;
-    right:10px;
+    bottom: 22px;
+    right:18px;
     width:30px;
     height:30px;
    
 }
-.login-mid{
- padding-left: 6vh;
- padding-right: 6vh;
-}
+.login-mid-name{
+  padding: 6vh;
+   }
 .icon-holder{
     display: flex;
     justify-content: space-evenly;
@@ -282,6 +292,7 @@ background-size: 100%;
 }
 .login-continue{
     font-size: 24px;
+    margin-bottom: 2vh;
 }
 .forgot-password{
     display: flex;
@@ -404,6 +415,9 @@ cursor: pointer;
         background-color: #000000;
         color: white;
     }
+    .star{
+        color:red;
+    }
     .icon-text-holder-email{
         height: 50px;
         width: 300px;
@@ -415,6 +429,7 @@ cursor: pointer;
         align-items: center;
         background-color: #EA4335;
         color: white;
+       
     }
 
 .icon-places{
@@ -426,9 +441,115 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
+}
+.link-to-register{
+    color:#00AEEF;
+    text-decoration-line: none;
+    font-weight: bold;
 }
 .link-to{
     color:#00AEEF;
     text-decoration-line: none;
+    font-weight: bold;
+    font-size: 16px;
 }
+.form-error{
+    color:red;
+    font-size:12px;
+    font-weight:bold;
+}
+.register-learning{
+    font-size: 36px;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+.steps-head{
+    font-weight: 20px;
+    font-weight: 500;
+    padding-right: 3vh;
+}
+.step-one{
+    height: 30px;
+    width: 30px;
+      border-radius: 50%;
+    background-color: #00AEEF;
+
+
+}
+.step-two{
+    height: 30px;
+    width: 30px;
+      border-radius: 50%;
+    background-color: #D9D9D9;
+}
+.register-link-to{
+    text-decoration-line: none;
+}
+.steps-head-two{
+    font-size: 16px;
+    color: black;
+    font-weight:bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5px;
+}
+.steps-head-one{
+    font-size: 16px;
+    color: white;
+    font-weight:bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5px;
+}
+.steps{
+    height: 30px;
+    width:276px;
+    display: flex;
+    flex-direction: row;
+    padding:3vh;
+    
+    
+}
+.enter-otp{
+   display:flex;
+   justify-content: flex-start;
+   padding-top: 1vh;
+   font-weight:bold;
+}
+.otp-verify{
+    padding: 2vh;
+}
+.otp-number{
+    height:50px;
+width: 50px;
+border:1px solid #6a6a6a;
+border-radius:5%;
+box-shadow: darkgrey;
+}
+.otp{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.register-btn{
+    width: 520px;
+    height: 50px;
+    background-color: #00AEEF;
+    color: white;
+    font-weight: bold;
+    font-size: 20;
+    margin:1vh;
+}
+.login-with-hachion{
+    font-size: 14px;
+}
+.login-label-password{
+    display: flex;
+    justify-content: flex-start;
+}
+
