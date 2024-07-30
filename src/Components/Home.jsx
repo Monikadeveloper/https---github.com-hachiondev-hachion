@@ -1,18 +1,15 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Banner from './Banner'
-import Learning  from './Learning'
-import Training  from './Training'
-import Career from './Career'
+import Topbar from './Topbar';
+import NavbarTop from './NavbarTop';
+import Banner from './Banner';
 
 export const Home = () => {
   return (
     <>
-    <Navbar/>
-  <Banner/>
-  <Learning/>
-  <Training/>
-  <Career/>
+<Topbar/>
+<NavbarTop/>
+<Banner/>
+
     </>
   )
 }

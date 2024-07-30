@@ -2,59 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:  'Open Sans', sans-serif;
   
-}
-.navbar{
-    background-image: url('C:\Users\Dell\Desktop\Hachion\my-app\src\Assets\intbg.png');
-
-   /* background-color: black; */
-  }
-  .navbar-logo{
-    height: 8vh;
-    width: 12vw;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    border-radius: 5%;
-  }
-.nav-link{
-    color: white;
-    font-size: 1.8rem;
-    font-weight: 500;
-}
-.navbar-nav{
-    display:flex;
-    justify-content:space-evenly;
-   
-}
-.d-flex{
-    width:40vw;
-    height:6vh;
-    margin:1vh;
-}
-.button{
-    margin: 2vh;
-}
-.nav-item{
-    display: flex;
-    justify-content: space-evenly;
-}
-.nav-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-   
-   
-}
-.carousel-item{
-    height:60vh;
-   
-    
-}
-.d-block{
-    height: 100%;
-    object-fit: cover;
-    
 }
 .learning{
     height: 80vh;
@@ -224,9 +173,11 @@ padding-bottom: 5vh;
 .login{
     display: flex;
     flex-direction: row;
-    /* margin: 2vh; */
-    border: 1px solid black;
     font-style: Open-Sans;
+}
+.login-label{
+    font-size: 16px;
+    font-weight: 600;
 }
 .login-left{
     width: 50vw;
@@ -243,11 +194,12 @@ padding-bottom: 5vh;
    width: 50vw;
    height: 100vh;
 
-   /* background-image: url('D:\Hachion\src\Assets\Group 39473.png');
+   background-image: url('D:\Hachion\src\Assets\sider.png');
     background-repeat: no-repeat;
 background-size: 100%;
     color: white;
-    padding:3vh; */
+   padding-top: 5vh;
+    padding-left: 5vh;
 }
 .login-right-img{
     width:50vw;
@@ -264,7 +216,7 @@ background-size: 100%;
     justify-content: center;
     align-items:center;
     flex-direction: column;
-    padding-top: 7vh;
+    padding-top: 8vh;
    
 }
 
@@ -277,7 +229,7 @@ background-size: 100%;
    
 }
 .login-mid-name{
-  padding: 6vh;
+  padding-top: 6vh;
    }
 .icon-holder{
     display: flex;
@@ -303,19 +255,31 @@ background-size: 100%;
     color:#00AEEF;
     cursor: pointer;
 }
+
 .login-right-header{
-    font-size: 2.2rem;
-    font-weight: bold;
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom:1.2vh;
+}
+.login-right-span{
+    font-weight:bold;
 }
 .login-right-content{
+    padding-bottom: 1.2vh;
    font-size: 24px;
-   font-weight: 500;
-    margin-top: 3vh;
+   font-weight: 600;
+ 
+}
+.icon-text-img-icon-apple
+{
+    border: 1px solid white;
 }
 .login-option{
     display: flex;
     justify-content: center;
-    font-size: 1.8rem;
+    font-size: 16px;
+    font-weight: 300;
+    color: rgba(0,0,0,1);
     padding: 1vh;
 }
 .go-to-register{
@@ -335,6 +299,7 @@ background-size: 100%;
     width:520px;
     height:50px;
     font-weight: bold;
+    border-radius: 5%;
 }
 .register-head{
     padding-top: 3vh;
@@ -359,12 +324,15 @@ cursor: pointer;
     height: 70px;
     width: 70px;
     margin-right:-8px;
+    z-index: 1;
+
    
 }
 .icon-text-holder{
     margin-left: -5px;
     height: 50px;
     width: 300px;
+    z-index: 0;
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
@@ -379,7 +347,7 @@ cursor: pointer;
     .icon-text-holder-facebook{
         height: 50px;
         width: 300px;
-       
+       z-index: 0;
         margin-top: 1.25vh;
         font-weight: bold;
         font-size: 20px;
@@ -392,7 +360,7 @@ cursor: pointer;
     .icon-text-holder-linkedin{
         height: 50px;
         width: 300px;
-       
+       z-index: 0;
         margin-top: 1.25vh;
         font-weight: bold;
         font-size: 20px;
@@ -405,7 +373,7 @@ cursor: pointer;
     .icon-text-holder-apple{
         height: 50px;
         width: 300px;
-       
+       z-index: 0;
         margin-top: 1.25vh;
         font-weight: bold;
         font-size: 20px;
@@ -421,6 +389,7 @@ cursor: pointer;
     .icon-text-holder-email{
         height: 50px;
         width: 300px;
+        z-index: 0;
         margin-top: 1.25vh;
         font-weight: bold;
         font-size: 20px;
@@ -525,7 +494,7 @@ cursor: pointer;
 .otp-number{
     height:50px;
 width: 50px;
-border:1px solid #6a6a6a;
+border:1px solid #D3D3D3;
 border-radius:5%;
 box-shadow: darkgrey;
 }
@@ -544,6 +513,11 @@ box-shadow: darkgrey;
     font-weight: bold;
     font-size: 20;
     margin:1vh;
+    border:0px;
+    border-radius: 5%;
+}
+.floatingInputLabel{
+    color:#D3D3D3;
 }
 .login-with-hachion{
     font-size: 14px;
@@ -552,4 +526,157 @@ box-shadow: darkgrey;
     display: flex;
     justify-content: flex-start;
 }
+.topbar{
+    height: 60px;
+    background-color: rgba(0, 174, 239, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.topbar-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 700px;
+    padding-left: 2vh;
+  
+}
+.query{
+    height: 24px;
+    width: 171px;
+display: flex;
+justify-content: center;
+}
+.query-content{
+    font-size: 20px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
 
+}
+.whatsapp{
+    height: 30px;
+    width: 250px;
+    cursor: pointer;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+.whatsapp-number{
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+  
+}
+.training-mail{
+    height: 30px;
+    width: 257px;
+    cursor: pointer;
+    display:flex;
+    flex-direction: row;
+   justify-content: center;
+    
+    color: white;
+}
+.training-email{
+    font-weight: 700;
+    font-size: 20px;
+   
+}
+.login-div{
+    display:flex;
+    justify-content: center;
+    flex-direction: row;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 1.5vh;
+    padding-right: 4vh;
+}
+.navbar{
+    height:120px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.search-input{
+    height:60px;
+    width:509px;
+    border-radius: 10px;
+     margin-left:130px;
+    border: 1px solid rgba(186, 186, 186, 1);
+    border-radius: 0px 0px 0px 12px;
+
+}
+.btn-search{
+    width:100px;
+    height:60px;
+    background-color: rgba(0, 174, 239, 1);
+    color: white;
+    border-radius: 0px 10px 10px 0px ;
+    border-color: white;
+    
+}
+.search-input placeholder{
+    padding: 1vh;
+}
+.nav-item{
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.navbar-nav{
+    width: 700px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.carousel-item{
+    height:440px;
+}
+.career-skills{
+    font-weight: 700;
+    font-size: 40px;
+    color:rgba(0, 0, 0, 1);
+}
+.discount{
+    font-weight:700;
+    font-size:48px;
+    color:#EA4335;
+}
+
+.course-discount{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+.coupon-btn{
+    width:205px;
+    height: 45px;
+    background-color: #000000;
+    color: white;
+    border-radius: 30px;
+    padding: 10px, 20px, 10px, 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.banner-head{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(255,255,255,1);
+}
+.banner-content{
+    font-size: 32px;
+    font-weight: 600;
+    color: rgba(255,255,255,1);
+}
+.live-session{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(255,255,255,1);
+    
+}
+.live-session-span{
+    font-size: 32px;
+    font-weight: 600;
+}

@@ -14,6 +14,10 @@ const initialValues={
 }
  const RegisterNext = () => {
   const navigate=useNavigate();
+
+  const handleClick=()=>{
+      navigate('/loginsuccess')
+  }
   
   const {values,errors,handleBlur,touched,handleChange,handleSubmit}= useFormik({
     initialValues:initialValues,
@@ -23,10 +27,7 @@ const initialValues={
     }
    })
 
-const handleClick=()=>{
-navigate('/login');
 
-}
   return (
   <>
 <div className='login'>
@@ -64,7 +65,7 @@ navigate('/login');
    <img src={lock} alt='lock'/>
   {errors.password && touched.password ? (<p className='form-error'>{errors.password}</p>):null}
   
-<label for="floatingPassword">Enter your password</label>
+<label for="floatingPassword" className='floatingInputLabel'>Enter your password</label>
 
 </div>
 <label className='login-label'>Confirm Password<span className='star'>*</span></label>
@@ -75,7 +76,7 @@ navigate('/login');
 {errors.confirm_password && touched.confirm_password ? (<p className='form-error'>{errors.confirm_password}</p>):null}
 
    
-  <label for="floatingPassword">Please confirm password</label>
+  <label for="floatingPassword" className='floatingInputLabel'>Please confirm password</label>
   </div>
 </div>
 <button className='register-btn' onclick={handleClick}>Register</button>

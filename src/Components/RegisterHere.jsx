@@ -53,7 +53,7 @@ const handleClick=()=>{
   <input type="string" className="form-control" id="floatingName" placeholder="Enter your full name"
    name='name' value={values.name} onChange={handleChange} onBlur={handleBlur}/>
 {errors.name && touched.name ? (<p className='form-error'>{errors.name}</p>):null}
-  <label for="floatingName">Enter your name</label>
+  <label for="floatingName" className='floatingInputLabel'>Enter your name</label>
 
 </div>
 <label className='login-label'>Email ID<span className='star'>*</span></label>
@@ -61,7 +61,7 @@ const handleClick=()=>{
   <input type="email" className="form-control" id="floatingEmail" placeholder="Enter your email id"
    name='email' value={values.email} onChange={handleChange} onBlur={handleBlur}/>
 {errors.email && touched.email ? (<p className='form-error'>{errors.email}</p>):null}
-  <label for="floatingEmail">abc@gmail.com</label>
+  <label for="floatingEmail" className='floatingInputLabel'>abc@gmail.com</label>
   </div>
 
 <button className='register-btn' onClick={handleClick}>Verify</button>

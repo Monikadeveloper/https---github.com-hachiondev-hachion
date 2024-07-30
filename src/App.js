@@ -7,6 +7,7 @@ import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Register from './Components/Register';
 import RegisterNext from './Components/RegisterNext';
 import RegisterHere from './Components/RegisterHere';
+import LoginSuccess from './Components/LoginSuccess';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path='/register' element={<Register/>}/>
       <Route path='/registerverification' element={<RegisterNext/>}/>
       <Route path='/registerhere' element={<RegisterHere/>}/>
+      <Route path='/loginsuccess' element={<LoginSuccess/>}/>
       </Routes></BrowserRouter>
     </>
   );

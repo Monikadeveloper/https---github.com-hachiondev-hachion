@@ -43,7 +43,7 @@ const initialValues={
   <input type="email" className="form-control" id="floatingInput" placeholder="abc@gmail.com" 
   name='email' value={values.email} onChange={handleChange} onBlur={handleBlur}/>
 {errors.email && touched.email ? (<p className='form-error'>{errors.email}</p>):null}
-  <label for="floatingInput">abc@gmail.com</label>
+  <label for="floatingInput" className='floatingInputLabel'>abc@gmail.com</label>
 </div>
 <label className='login-label'>Password<span className='star'>*</span></label>
 <div className="form-floating mb-3">
@@ -53,12 +53,12 @@ const initialValues={
    {errors.password && touched.password ? (<p className='form-error'>{errors.password}</p>):null}
    
  
-  <label for="floatingPassword">Enter your password</label>
+  <label for="floatingPassword" className='floatingInputLabel'>Enter your password</label>
 
 </div>
 <p className='forgot-password'>Forgot Password?</p>
 <div class="form-check">
-  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+  <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
   <label class="form-check-label" for="flexCheckDefault">
     I'm not a robot
   </label>
@@ -66,7 +66,7 @@ const initialValues={
 </div>
 <div class="d-grid gap-2">
   
-  <button class="btn btn-primary" type="submit">Login</button>
+  <button class="register-btn" type="submit">Login</button>
  </div>
 
 </form>
