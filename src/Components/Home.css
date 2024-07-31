@@ -180,26 +180,26 @@ padding-bottom: 5vh;
     font-weight: 600;
 }
 .login-left{
-    width: 50vw;
+    width: 42vw;
     height: 100vh;
  
 }
 .login-with{
-    width: 40vw;
+    width: 42vw;
     display: flex;
     justify-content: center;
     flex-direction: row;
 }
 .login-right{
-   width: 50vw;
+   width: 58vw;
    height: 100vh;
 
    background-image: url('D:\Hachion\src\Assets\sider.png');
     background-repeat: no-repeat;
+    object-fit: cover;
 background-size: 100%;
     color: white;
-   padding-top: 5vh;
-    padding-left: 5vh;
+   padding:5vh;
 }
 .login-right-img{
     width:50vw;
@@ -216,7 +216,7 @@ background-size: 100%;
     justify-content: center;
     align-items:center;
     flex-direction: column;
-    padding-top: 8vh;
+    padding-top: 109px;
    
 }
 
@@ -245,6 +245,8 @@ background-size: 100%;
 .login-continue{
     font-size: 24px;
     margin-bottom: 2vh;
+    font-weight:400;
+    color:rgba(0, 0,0,1);
 }
 .forgot-password{
     display: flex;
@@ -270,17 +272,14 @@ background-size: 100%;
    font-weight: 600;
  
 }
-.icon-text-img-icon-apple
-{
-    border: 1px solid white;
-}
+
 .login-option{
     display: flex;
     justify-content: center;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 400;
     color: rgba(0,0,0,1);
-    padding: 1vh;
+   padding: 1.5vh;
 }
 .go-to-register{
     padding: 1vh;
@@ -294,12 +293,14 @@ background-size: 100%;
 .form-control{
     height:50px;
     width: 520px;
+    border-radius: 5px;
+   
 }
 .btn{
     width:520px;
     height:50px;
     font-weight: bold;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 .register-head{
     padding-top: 3vh;
@@ -307,7 +308,7 @@ background-size: 100%;
     font-size: 36px;
 }
 .icon-places{
-    padding: 5vh;
+    padding: 3vh;
     display: flex;
     justify-content: space-evenly;
 }
@@ -333,6 +334,7 @@ cursor: pointer;
     height: 50px;
     width: 300px;
     z-index: 0;
+    border-radius:5px;
     border-top: 1px solid black;
     border-right: 1px solid black;
     border-bottom: 1px solid black;
@@ -348,6 +350,7 @@ cursor: pointer;
         height: 50px;
         width: 300px;
        z-index: 0;
+       border-radius:5px;
         margin-top: 1.25vh;
         font-weight: bold;
         font-size: 20px;
@@ -361,6 +364,7 @@ cursor: pointer;
         height: 50px;
         width: 300px;
        z-index: 0;
+       border-radius:5px;
         margin-top: 1.25vh;
         font-weight: bold;
         font-size: 20px;
@@ -374,6 +378,7 @@ cursor: pointer;
         height: 50px;
         width: 300px;
        z-index: 0;
+       border-radius:5px;
         margin-top: 1.25vh;
         font-weight: bold;
         font-size: 20px;
@@ -390,6 +395,7 @@ cursor: pointer;
         height: 50px;
         width: 300px;
         z-index: 0;
+        border-radius: 5px;
         margin-top: 1.25vh;
         font-weight: bold;
         font-size: 20px;
@@ -514,7 +520,7 @@ box-shadow: darkgrey;
     font-size: 20;
     margin:1vh;
     border:0px;
-    border-radius: 5%;
+    border-radius: 5px;
 }
 .floatingInputLabel{
     color:#D3D3D3;
@@ -607,7 +613,7 @@ justify-content: center;
      margin-left:130px;
     border: 1px solid rgba(186, 186, 186, 1);
     border-radius: 0px 0px 0px 12px;
-
+    padding-left: 2vh;
 }
 .btn-search{
     width:100px;
@@ -618,9 +624,7 @@ justify-content: center;
     border-color: white;
     
 }
-.search-input placeholder{
-    padding: 1vh;
-}
+
 .nav-item{
     font-size: 20px;
     font-weight: 600;
@@ -638,6 +642,8 @@ justify-content: center;
     font-weight: 700;
     font-size: 40px;
     color:rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
 }
 .discount{
     font-weight:700;
@@ -664,8 +670,13 @@ justify-content: center;
     font-size: 40px;
     font-weight: 700;
     color: rgba(255,255,255,1);
+    margin-bottom: 3vh;
 }
 .banner-content{
+   display: flex;
+ align-items: center;
+   flex-direction: column;
+   margin-right: 42vh;
     font-size: 32px;
     font-weight: 600;
     color: rgba(255,255,255,1);
@@ -680,3 +691,103 @@ justify-content: center;
     font-size: 32px;
     font-weight: 600;
 }
+.banner-second{
+    font-size:32px;
+    font-weight: 600;
+}
+.banner-content-second{
+    display: flex;
+    align-items:center;
+      flex-direction: column;
+      margin-right: 53vh;
+      margin-bottom: 4vh;
+      margin-left: -18vh;
+  }
+.register-now-btn{
+    height:45px;
+    width:169px;
+    border-radius: 30px;
+    padding:10px 20px 10px 20px;
+    background-color: rgba(236, 201, 99, 1);
+    color: #000000;
+    border: none;
+    margin-top: 2vh;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* .carousel-indicators button{
+  background-color: transparent;
+  border: 0;
+  border-radius: 100%;
+  box-shadow: 0 0 0 .2rem rgba(255, 255, 255, 1);
+  height: 22px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 22px;
+}
+.carousel-indicators button:hover{
+  background-color: #fff;
+  border: 0;
+  border-radius: 100%;
+  box-shadow: 0 0 0 .2rem rgba(255, 255, 255, 1);
+  height: 22px;
+  margin-left: 15px;
+  margin-right: 15px;
+  width: 22px;
+} */
+/* .carousel-indicators button{
+    border-radius:50%;
+    width:15px;
+    height:15px;
+    background-color:#aaa;} */
+    
+.association{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.association-head{
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    background:linear-gradient(180deg, #00AEEF 0%, #006489 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+@keyframes slide{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+.logos-slide img{
+    height:70px;
+    width: 150px;
+    margin: 0 40px;
+}
+.logos-slide{
+    display: inline-block;
+ 
+    animation: 50s slide infinite linear;
+}
+
+.logos{
+    overflow:hidden;
+    padding: 60px 0;
+    background-color: white;
+    white-space: nowrap;
+}
+.logos:hover .logos-slide{
+    animation-play-state: paused;
+}
+
+
+
+	
+    
+
+
+    

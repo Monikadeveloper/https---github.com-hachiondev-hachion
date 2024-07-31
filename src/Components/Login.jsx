@@ -73,9 +73,9 @@ const initialValues={
 </div>
 
 <div className='login-with'>
-<hr width='25%' size='2' style={{marginTop:'3.2vh'}}></hr>
-<p className='login-option'>Or login with</p>
-<hr width='25%' size='2'style={{marginTop:'3.2vh'}}></hr>
+<hr width='30%' size='2' style={{marginTop:'3vh'}}></hr>
+<p className='login-option'>Or Login with</p>
+<hr width='30%' size='2'style={{marginTop:'3vh'}}></hr>
 </div>
 <div className='icon-holder'>
  <img src={google} alt='google'/>
