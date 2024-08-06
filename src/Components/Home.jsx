@@ -3,6 +3,11 @@ import Topbar from './Topbar';
 import NavbarTop from './NavbarTop';
 import Banner from './Banner';
 import Association from './Association';
+import TrainingEvents from './TrainingEvents';
+import Trending from './Trending';
+import Career from './Career';
+import Learners from './Learners';
+import Footer from './Footer';
 
 export const Home = () => {
   return (
@@ -11,6 +16,11 @@ export const Home = () => {
 <NavbarTop/>
 <Banner/>
 <Association/>
+<TrainingEvents/>
+<Trending/>
+<Career/>
+<Learners/>
+<Footer/>
     </>
   )
 }

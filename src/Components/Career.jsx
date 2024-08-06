@@ -1,33 +1,47 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './Home.css';
-import career from '../Assets/international-job-placement-consultancy-500x500.jpg';
-import InterviewPreparation from './InterviewPreparation';
-import ProfileBuilding from './ProfileBuilding';
-import JobAssistance from './JobAssistance';
+import img1 from '../Assets/image 72.png';
+import img2 from '../Assets/image 69.png';
+import img3 from '../Assets/image 68.png';
+import img4 from '../Assets/image 70.png';
 
 const Career = () => {
-   const [profile,setProfile]=useState(false);
-   const [interview,setInterview]=useState(false);
+  
     
   return (
    <>
-   <div className='career'>
-    <h1 className='career-header'>Career  Guidance  In  Hachion</h1>
-    <div className='career-display'>
-   <img src={career} alt='career-image' className='career-img'/>
-   <div className='career-profile'>
-   <div className='profile-header'>
-   <h4 className='profile-header-list' onClick={()=>setProfile(true)} >Profile Building</h4>
-   <h4 className='profile-header-list'onClick={()=>setInterview(true)}>Interview Preparation</h4>
-   <h4 className='profile-header-list' onClick={()=>setInterview(false)}>Job Assistance</h4>
-   </div>
-{profile?
-<ProfileBuilding/>:(interview? <InterviewPreparation/>:<JobAssistance/>)
+   <div className='training-events'>
+    <div className='training-events-head'>
+<h1 className='association-head'>Hachion enhances career advancement</h1></div>
+<div className='career-div'>
+<div className='online-training-div'>
+   <img src={img1} alt='image1'/>
+   <h3 className='Live-online'>Live online Training</h3>
+   <p className='training-content'>Get Live interactive training from the convenience of your office or home.</p>
 
-}
+</div>
+<div className='online-training-div'>
+   <img src={img2} alt='image1'/>
+   <h3 className='Live-online'>Flexible Timings</h3>
+   <p className='training-content'>Our training programs provides learners flexibility to schedule on their own schedules.</p>
+
+</div>
+<div className='online-training-div'>
+   <img src={img3} alt='image1'/>
+   <h3 className='Live-online'>Certification Guidance</h3>
+   <p className='training-content'>Technical team will help you to get certified in desired technologies.</p>
+
+</div>
+<div className='online-training-div'>
+   <img src={img4} alt='image1'/>
+   <h3 className='Live-online'>Mentoring Support</h3>
+   <p className='training-content'>We strongly supports mentoring mode for busy professionals to meet their training needs.</p>
+
+</div>
    </div>
-   </div>
-   </div>
+</div>
+
+   
    </>
   )
 }
