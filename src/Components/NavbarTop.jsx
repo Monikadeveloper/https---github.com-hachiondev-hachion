@@ -12,10 +12,10 @@ const NavbarTop = () => {
     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <form className="d-flex" role="search">
+    <div className="search-div" role="search">
         <input className="search-input"  type="search" placeholder ="Enter Courses, Category or Keywords" aria-label="Search"/>
         <button className="btn-search" type="submit"><IoSearch style={{fontSize:'2rem'}}/></button>
-      </form>
+      </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">

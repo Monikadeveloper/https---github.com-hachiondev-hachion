@@ -8,6 +8,8 @@ import Register from './Components/Register';
 import RegisterNext from './Components/RegisterNext';
 import RegisterHere from './Components/RegisterHere';
 import LoginSuccess from './Components/LoginSuccess';
+import ForgotPassword from './Components/ForgotPassword';
+import Course from './Components/Course';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Route path='/registerverification' element={<RegisterNext/>}/>
       <Route path='/registerhere' element={<RegisterHere/>}/>
       <Route path='/loginsuccess' element={<LoginSuccess/>}/>
+      <Route path='/forgotpassword' element={<ForgotPassword/>}/>
+      <Route path='/course' element={<Course/>}/>
       </Routes></BrowserRouter>
     </>
   );

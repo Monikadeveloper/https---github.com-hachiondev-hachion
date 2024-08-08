@@ -1,8 +1,8 @@
 import React from 'react'
 import './Home.css';
 import { FaCircle } from "react-icons/fa";
-import imageUrl from '../Assets/Rectangle 893.png';
-import cardimage1 from '../Assets/Data Science.png';
+import imageUrl from '../Assets/card-image.png';
+
 
  const TrainingCard = (props) => {
   return (
@@ -11,9 +11,10 @@ import cardimage1 from '../Assets/Data Science.png';
  <div className='card-header-div'>
  
  <img src={imageUrl} alt="Card" className="card-image" />
- <div className='card-header'><FaCircle style={{color:'rgba(16, 201, 0, 1)',marginRight:'1vh',height:'15px',width:'15px'}}/>Live demo</div>
-  <div className='card-img-div'>
- </div> 
+ <div className='card-header'>
+  <FaCircle style={{color:'rgba(16, 201, 0, 1)',marginRight:'1vh',height:'15px',width:'15px'}}/>Live Demo</div>
+  {/* <div className='card-img-div'>
+ </div>  */}
   <img src={props.image} alt='card-img' className='card-icon'/>
  </div>
  <div className='course-details'>

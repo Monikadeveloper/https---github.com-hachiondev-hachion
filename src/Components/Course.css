@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sidebar {
+    width: 360px;
+    height: 80vh;
+    background-color: white;
+    color: black;
+    left: 20px;
+    overflow-y: auto;
+    border:1 px solid rgba(0, 174, 239, 1);
+    margin: 0px;
+    margin-left: 20px;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu-item {
+    width: 100%;
+    padding: 15px 20px;
+    text-align: left;
+    background: none;
+    border: none;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidebar-heading{
+    background-color: rgba(0, 174, 239, 1);
+    color:rgba(255, 255, 255, 1);
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    padding: 1vh;
+
+  }
+  
+  .menu-item:hover {
+    background-color: rgba(0, 174, 239, 1);
+    color:rgba(255, 255, 255, 1);
+  }
+  
+  .submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .submenu-item {
+    padding: 10px 20px;
+    background-color: white;
+    color:black;
+  }
+  
+  .submenu-item:hover {
+    background-color: rgba(0, 174, 239, 1);
+    color:rgba(255, 255, 255, 1);
+  }
+  .course-banner{
+height:390px;
+background-image: url('../Assets/course_banner.png');
+background-repeat: no-repeat;
+background-size: contain;
+  }
+  .sidebar-top{
+    display:flex;
+    flex-direction: row;
+    margin: 0px;
+  }
+  .course-top{
+    display: flex;
+    flex-direction: column;
+  }
+

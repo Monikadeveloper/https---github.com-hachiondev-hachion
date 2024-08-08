@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useNavigate} from 'react'
 import './Home.css'
 import logo from '../Assets/logo.png'
 import linkedin from '../Assets/linkedin.png';
@@ -25,6 +25,10 @@ const initialValues={
    console.log(values);
     }
    })
+  //  const navigate=useNavigate();
+  //  const handleLogin=()=>{
+  // navigate('/');
+  //  }
 
   return (
   <>
@@ -56,7 +60,8 @@ const initialValues={
   <label for="floatingPassword" className='floatingInputLabel'>Enter your password</label>
 
 </div>
-<p className='forgot-password'>Forgot Password?</p>
+<Link to='/forgotpassword' style={{textDecoration:'none'}}>
+<p className='forgot-password'>Forgot Password?</p></Link>
 <div class="form-check">
   <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
   <label class="form-check-label" for="flexCheckDefault">
@@ -66,7 +71,7 @@ const initialValues={
 </div>
 <div class="d-grid gap-2">
   
-  <button class="register-btn" type="submit">Login</button>
+  <button className="register-btn" type="submit" >Login</button>
  </div>
 
 </form>

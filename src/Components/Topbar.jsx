@@ -3,6 +3,7 @@ import { PiLineVerticalThin } from "react-icons/pi";
 import { IoMailSharp } from "react-icons/io5";
 import { FaWhatsapp } from "react-icons/fa";
 import './Home.css';
+import {Link} from 'react-router-dom';
 
 const Topbar = () => {
   return (
@@ -23,9 +24,10 @@ const Topbar = () => {
     </div>
     </div>
     <div className='login-div'>
-        <p className='login-div-content'>Login</p>
+        <Link to='/login' className='login-link-home'>
+        <p className='login-div-content'>Login</p></Link>
         <PiLineVerticalThin style={{color:'white',fontSize:'2rem'}}/>
-        <p className='login-div-content'>Register</p>
+       <Link to='/register' className='login-link-home'> <p className='login-div-content'>Register</p></Link>
     </div>
 
 </div>
