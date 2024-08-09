@@ -2,28 +2,30 @@ import React from 'react'
 import { RxCalendar } from "react-icons/rx";
 import { BiTimeFive } from "react-icons/bi";
 import { MdOutlineStar } from "react-icons/md";
+import './Course.css';
+import cardicon from '../Assets/image 85.png';
 
 const SidebarCard = () => {
   return (
     <>
-    <div className="card" >
-     <div className='card-header-div'>
-     <h4 className='side-'>Certified Students:0</h4>
+    <div className="sidebar-card" >
+     <div className='sidebar-card-header-div'>
+     <h4 className='sidebar-card-heading'>Certified Students:0</h4>
   
-     <img src={props.image} alt='card-img' className='card-icon'/>  
+     <img src={cardicon} alt='card-img' className='sidebar-card-icon'/>  
         </div>
      
-     <div className='course-details'>
-     <h5 className='course-name'>{props.heading}</h5>
-    <div className='course-time'>
-        <h6 className='course-month' ><RxCalendar/>   {props.month}</h6>
-        <h6 className='course-month'><BiTimeFive/>   {props.time} </h6>
+     <div className='sidebar-course-details'>
+     <h5 className='sidebar-course-name'>AWS Developer</h5>
+    <div className='sidebar-course-time'>
+        <h6 className='sidebar-course-month' ><RxCalendar/>   3 months</h6>
+        <h6 className='sidebar-course-month'><BiTimeFive/>   80 hours </h6>
     
     </div>
-    <h6 className='course-review'>Rating: < MdOutlineStar className='star-icon'/> 
+    <h6 className='sidebar-course-review'>Rating: 5.0 < MdOutlineStar className='star-icon'/> 
     < MdOutlineStar className='star-icon'/>< MdOutlineStar className='star-icon'/>
-    < MdOutlineStar className='star-icon'/>< MdOutlineStar className='star-icon'/> 100(5.0) </h6>
-    <button className='enroll-btn'>View Details</button>
+    < MdOutlineStar className='star-icon'/>< MdOutlineStar className='star-icon'/> 100 </h6>
+    <button className='sidebar-enroll-btn'>View Details</button>
      </div>
     </div>
     </>

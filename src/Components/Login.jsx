@@ -1,4 +1,4 @@
-import React, {useNavigate} from 'react'
+import React from 'react'
 import './Home.css'
 import logo from '../Assets/logo.png'
 import linkedin from '../Assets/linkedin.png';
@@ -11,6 +11,7 @@ import facebook from '../Assets/facebook_symbol.svg.png'
 import lock from '../Assets/Component 1.png'
 import {useFormik} from 'formik';
 import {LoginSchema} from './Schemas'
+import { useNavigate } from 'react-router-dom';
 
 const initialValues={
   email:"",
@@ -18,12 +19,20 @@ const initialValues={
 }
 
  const Login = () => {
+  // const [showPassword, setShowPassword] = useState(false);
+
+  // const handleTogglePassword = () => {
+  //   setShowPassword(prevState => !prevState);
+  // };
+
+const navigate=useNavigate();
    const {values,errors,handleBlur,touched,handleChange,handleSubmit}= useFormik({
     initialValues:initialValues,
     validationSchema:LoginSchema,
     onSubmit:(values)=>{
-   console.log(values);
-    }
+   navigate('/login');
+ console.log(values);
+   }
    })
   //  const navigate=useNavigate();
   //  const handleLogin=()=>{
@@ -47,13 +56,26 @@ const initialValues={
   <input type="email" className="form-control" id="floatingInput" placeholder="abc@gmail.com" 
   name='email' value={values.email} onChange={handleChange} onBlur={handleBlur}/>
 {errors.email && touched.email ? (<p className='form-error'>{errors.email}</p>):null}
-  <label for="floatingInput" className='floatingInputLabel'>abc@gmail.com</label>
+   <label for="floatingEmail" className='floatingInputLabel'>abc@gmail.com</label>
 </div>
 <label className='login-label'>Password<span className='star'>*</span></label>
 <div className="form-floating mb-3">
   <input type="password" className="form-control" id="floatingPassword" placeholder="Enter your password"
    name='password' value={values.password} onChange={handleChange} onBlur={handleBlur} />
+    <label for="floatingPassword" className='floatingInputLabel'>Enter your password</label>
     <img src={lock} alt='lock'/>
+    {/* <FontAwesomeIcon
+        icon={showPassword ? faUnlock : faLock}
+        onClick={handleTogglePassword}
+        style={{
+          position: 'absolute',
+          right: '10px',
+          top: '50%',
+          transform: 'translateY(-50%)',
+          cursor: 'pointer',
+          fontSize: '20px'
+        }}
+      /> */}
    {errors.password && touched.password ? (<p className='form-error'>{errors.password}</p>):null}
    
  
@@ -64,10 +86,10 @@ const initialValues={
 <p className='forgot-password'>Forgot Password?</p></Link>
 <div class="form-check">
   <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-  <label class="form-check-label" for="flexCheckDefault">
+  <label className="form-check-label" for="flexCheckDefault">
     I'm not a robot
   </label>
-  <img src={captcha} alt='captcha'/>
+  <img src={captcha} alt='captcha' style={{marginLeft:'4vh',cursor:'pointer'}}/>
 </div>
 <div class="d-grid gap-2">
   

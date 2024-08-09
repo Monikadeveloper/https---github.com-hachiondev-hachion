@@ -2,6 +2,8 @@ import React from 'react'
 import logo from '../Assets/logo.png'
 import './Home.css';
 import { IoSearch } from "react-icons/io5";
+import {Link} from 'react-router-dom';
+
 const NavbarTop = () => {
   return (
    <>
@@ -19,13 +21,14 @@ const NavbarTop = () => {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+           <Link to='/' className='nav-item-link'>Home</Link>
+        </li>
+       
+        <li class="nav-item">
+           <Link to='/course' className='nav-item-link'>Courses</Link>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Courses</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" aria-disabled="true">Hire from Us</a>
+           <Link to='#' className='nav-item-link'>Hire from us</Link>
         </li>
       </ul>
       

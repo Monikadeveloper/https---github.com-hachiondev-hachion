@@ -123,20 +123,31 @@ background-size: 100%;
     font-weight: 400;
 }
 .form-check{
-    display: inline-flex;
-    gap: 20px;
+    display:flex;
+    gap: 80px;
+    flex-direction:column;
 }
+#flexCheckDefault{
+    margin-top:2vh;
+}
+
 .form-control{
     height:50px;
     width: 520px;
-    border-radius: 5px;
-   
+    border-radius: 5px; 
 }
 .btn{
     width:520px;
     height:50px;
     font-weight: bold;
     border-radius: 5px;
+}
+.btn-close{
+    height: 25px;
+    width:25px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    color: blue;
 }
 .register-head{
     padding-top: 3vh;
@@ -157,13 +168,12 @@ object-fit:fill;
 cursor: pointer;
 
 }
+
 .icon-text img{
     height: 70px;
     width: 70px;
     margin-right:-8px;
-    z-index: 1;
-
-   
+    z-index: 1;   
 }
 .icon-text-holder{
     margin-left: -5px;
@@ -182,6 +192,14 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     }
+    .icon-text:hover .icon-text-holder{
+        font-size: 22px;
+        background-color: #D3D3D3;
+    }
+    .icon-text:hover .icon-text img{
+        height:80px;
+        width:80px;
+    }
     .icon-text-holder-facebook{
         height: 50px;
         width: 300px;
@@ -195,6 +213,10 @@ cursor: pointer;
         align-items: center;
         background-color: #3B5998;
         color: white;
+    }
+    .icon-text:hover .icon-text-holder-facebook{
+        font-size: 22px;
+        background-color: #1275B1;
     }
     .icon-text-holder-linkedin{
         height: 50px;
@@ -210,6 +232,10 @@ cursor: pointer;
         background-color: #1275B1;
         color: white;
     }
+    .icon-text:hover .icon-text-holder-linkedin{
+        font-size: 22px;
+        background-color: #4e88be;
+    }
     .icon-text-holder-apple{
         height: 50px;
         width: 300px;
@@ -223,6 +249,10 @@ cursor: pointer;
         align-items: center;
         background-color: #000000;
         color: white;
+    }
+    .icon-text:hover .icon-text-holder-apple{
+        font-size: 22px;
+        background-color: #454545;
     }
     .star{
         color:red;
@@ -241,6 +271,10 @@ cursor: pointer;
         background-color: #EA4335;
         color: white;
        
+    }
+    .icon-text:hover .icon-text-holder-email{
+        font-size: 22px;
+        background-color: #FF7F7F;
     }
 
 .icon-places{
@@ -428,6 +462,14 @@ justify-content: center;
     font-size: 20px;
    
 }
+.close-btn{
+    font-size: 2.5rem;
+    color: rgba(0, 174, 239, 1);
+    text-align: end;
+    border: none;
+    background-color: white;
+
+}
 .modal-body{
     display: flex;
     align-items: center;
@@ -437,7 +479,7 @@ justify-content: center;
 .success-gif{
     width: 80px;
     height: 80px;
-    margin-top: 20px;
+   
 }
 .btn-login{
     width:137px;
@@ -449,13 +491,20 @@ justify-content: center;
     font-weight: 700;
     font-size:20px;
     border:none;
-    /* margin-right: 50px; */
-  
+    margin-left: 185px;
+    margin-bottom: 20px;
+
 }
+.modal-footer{
+    display: flex;
+    justify-items: center;
+}
+
+
 .modal fade{
     width: 430px;
     height:294px ;
-    border-radius: 20px;
+    border-radius: 20px 20px 20px 20px;
 }
 .modal-para{
     font-size:20px;
@@ -471,7 +520,7 @@ justify-content: center;
     font-size: 20px;
     font-weight: 700;
   
-    padding-right: 4vh;
+    /* padding-right: 1vh; */
     text-decoration: none;
     color:white;
 }
@@ -486,7 +535,7 @@ justify-content: center;
     padding-right: 4vh;
 }
 .navbar{
-    height:120px;
+    height:100px;
     background-color: rgba(255, 255, 255, 1);
 }
 .search-div{
@@ -500,12 +549,13 @@ justify-content: center;
 .search-input{
 flex:1;
 padding-left: 20px;
-border: none;
+/* border: none; */
+/* border: 1px solid rgba(186, 186, 186, 1); */
 
 }
 .btn-search{
     width:100px;
-    height:60px;
+    height:58px;
     background-color: rgba(0, 174, 239, 1);
     color: white;
     border-radius: 0px 10px 10px 0px ;
@@ -514,15 +564,19 @@ border: none;
     
 }
 
-.nav-item{
+.nav-item-link{
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+    text-decoration: none;
+color:black;
 }
 .navbar-nav{
     width: 700px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    margin-left: 7vh;
+  
 }
 .carousel-item{
     height:440px;
@@ -690,12 +744,13 @@ border: none;
 .card-header-div{
 position:relative;
 display:inline-block; 
+
 }
 .card-image{
     display: block;
     width: 100%;
     height: 165px;
-    object-fit: cover;
+    /* object-fit: cover; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 50px;
@@ -730,15 +785,18 @@ display:inline-block;
  z-index: 1;
  transition: all 0.3s ease;
 }
-.card-header{
+.card-header-content{
     font-weight: 600;
     font-size: 20px;
+    font-style:italic;
     position: absolute;
     left: 45%;
+    border-radius:10px;
     top:10px;
     transform: translate(-50%,-50%);
-    color: white;
-    /* padding:5px 5px; */
+    background-color: white;
+    color: rgba(16, 201, 0, 1);
+    padding:5px 5px;
     text-align: center;
     z-index: 1;
 
@@ -781,7 +839,7 @@ transition: all 0.3s ease
 }
 .card:hover .card-img-div{
     width:140px;
-    height: 140px;
+    height: 150px;
     filter: blur(10px);
 }
 .card:hover .card-image{
@@ -987,7 +1045,7 @@ color: white;
     .learner-card-item{
         display: flex;
         flex-direction: row;
-        margin-left: 25vh;
+        margin-left: 10vh;
         margin-top: 30px;
         gap:5vh;
     }
