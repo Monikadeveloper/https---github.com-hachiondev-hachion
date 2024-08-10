@@ -29,18 +29,17 @@
 .login-right{
    width: 58vw;
    height: 100vh;
-
    background-image: url('../Assets/sider.png');
     background-repeat: no-repeat;
-    object-fit: cover;
-background-size: 100%;
+background-position: center;
+background-size:cover;
     color: white;
    padding:5vh;
 }
-.login-right-img{
+/* .login-right-img{
     width:50vw;
     height:100vh;
-}
+} */
 .welcome-back{
     margin-top: 3vh;
     font-weight:700;
@@ -169,7 +168,7 @@ cursor: pointer;
 
 }
 
-.icon-text img{
+.icon-text-img{
     height: 70px;
     width: 70px;
     margin-right:-8px;
@@ -196,9 +195,9 @@ cursor: pointer;
         font-size: 22px;
         background-color: #D3D3D3;
     }
-    .icon-text:hover .icon-text img{
-        height:80px;
-        width:80px;
+    .icon-text:hover .icon-text-img{
+        height:75px;
+        width:75px;
     }
     .icon-text-holder-facebook{
         height: 50px;
@@ -575,7 +574,7 @@ color:black;
     width: 700px;
     display: flex;
     justify-content: space-between;
-    margin-left: 7vh;
+    margin-left: 5vh;
   
 }
 .carousel-item{
@@ -657,6 +656,16 @@ color:black;
     margin-top: 2vh;
     font-size: 20px;
     font-weight: 600;
+}
+.carousel-indicators button{
+    height: 12px important;
+    width: 12px important;
+    border-radius: 50% important;
+    border: 1px solid black important;
+    background-color: gray important;
+}
+.carousel-indicators .active{
+    background-color: #000000 important;
 }
     
 .association{
@@ -785,20 +794,18 @@ display:inline-block;
  z-index: 1;
  transition: all 0.3s ease;
 }
-.card-header-content{
+.card-header{
     font-weight: 600;
     font-size: 20px;
     font-style:italic;
     position: absolute;
-    left: 45%;
+    left: 47%;
     border-radius:10px;
     top:10px;
     transform: translate(-50%,-50%);
-    background-color: white;
-    color: rgba(16, 201, 0, 1);
     padding:5px 5px;
     text-align: center;
-    z-index: 1;
+    
 
 }
 .course-name{
@@ -875,12 +882,22 @@ color: white;
         flex-direction: row;
         justify-content: space-evenly;
         margin: 2vh;
-      
+        
+        
     }
     .course-names{
         font-weight:400;
         font-size: 20px;
-
+        color: grey;
+        text-decoration: none;
+        border-bottom: 2px solid white;
+        transition: color 0.3s, border-color 0.3s;
+       
+    }
+    .course-names:hover{
+        color:black;
+        border-bottom: 2px solid rgba(0, 174, 239, 1);
+        transition: color 0.3s, border-color 0.3s;
     }
     .course-name,.course-date{
         margin: 5px 0;
@@ -1045,7 +1062,7 @@ color: white;
     .learner-card-item{
         display: flex;
         flex-direction: row;
-        margin-left: 10vh;
+        margin-left: 20vh;
         margin-top: 30px;
         gap:5vh;
     }

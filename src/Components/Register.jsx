@@ -20,24 +20,24 @@ const Register = () => {
   <h4>Tap on any option to create an account</h4>
   <div className='icon-places'>
     <div className='icon-text'>
-  <img src={google} alt='google'/>
+  <img src={google} alt='google' className='icon-text-img'/>
    <div className='icon-text-holder'>Google</div>
     </div>
-    <div className='icon-text'>
-  <img src={facebook} alt='facebook'/>
+    <div className='icon-text' >
+  <img src={facebook} alt='facebook' className='icon-text-img'/>
    <div className='icon-text-holder-facebook'>Facebook</div>
     </div>
     <div className='icon-text'>
-  <img src={linkedin} alt='linkedin'/>
+  <img src={linkedin} alt='linkedin' className='icon-text-img'/>
    <div className='icon-text-holder-linkedin'>Linkedin</div>
     </div>
     <div className='icon-text'>
-  <img src={apple} alt='login-with-apple' className='icon-text-img-icon-apple'/>
+  <img src={apple} alt='login-with-apple' className='icon-text-img'/>
    <div className='icon-text-holder-apple'>Apple</div>
     </div>
     <Link to='/registerhere' className='register-link-to'>
    <div className='icon-text'>
-  <img src={email} alt='login-with-email'/> 
+  <img src={email} alt='login-with-email' className='icon-text-img'/> 
    <div className='icon-text-holder-email'>Login with Email</div> 
     </div></Link>
    
