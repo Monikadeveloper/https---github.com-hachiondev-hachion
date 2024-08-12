@@ -26,18 +26,22 @@ const Course = () => {
     <SidebarCard/>
     <SidebarCard/>
     <SidebarCard/>
-    </div>
-    <div className='sidebar-right-all'>
-    <SidebarCard/>
-    <SidebarCard/>
     <SidebarCard/>
     </div>
     <div className='sidebar-right-all'>
     <SidebarCard/>
     <SidebarCard/>
     <SidebarCard/>
+    <SidebarCard/>
     </div>
     <div className='sidebar-right-all'>
+    <SidebarCard/>
+    <SidebarCard/>
+    <SidebarCard/>
+    <SidebarCard/>
+    </div>
+    <div className='sidebar-right-all'>
+    <SidebarCard/>
     <SidebarCard/>
     <SidebarCard/>
     <SidebarCard/>

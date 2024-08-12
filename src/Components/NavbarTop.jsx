@@ -21,7 +21,7 @@ const NavbarTop = () => {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-           <Link to='/' className='nav-item-link'>Home</Link>
+           <Link to='/' className='nav-item-link'>Corporate Training</Link>
         </li>
        
         <li class="nav-item">
