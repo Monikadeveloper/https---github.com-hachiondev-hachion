@@ -24,7 +24,7 @@ const SidebarCard = () => {
     </div>
     <h6 className='sidebar-course-review'>Rating: 5.0 < MdOutlineStar className='star-icon'/> 
     < MdOutlineStar className='star-icon'/>< MdOutlineStar className='star-icon'/>
-    < MdOutlineStar className='star-icon'/>< MdOutlineStar className='star-icon'/> 100 </h6>
+    < MdOutlineStar className='star-icon'/>< MdOutlineStar className='star-icon'/> (100) </h6>
     <button className='sidebar-enroll-btn'>View Details</button>
      </div>
     </div>
