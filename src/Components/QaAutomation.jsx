@@ -5,6 +5,8 @@ import './Course.css';
 import Footer from './Footer';
 import QaTop from './QaTop';
 import KeyHighlights from './KeyHighlights';
+import UpcomingHeader from './UpcomingHeader';
+import UpcomingBatch from './UpcomingBatch';
 
 const QaAutomation = () => {
   return (
@@ -16,7 +18,9 @@ const QaAutomation = () => {
         <h3 className='course-banner-content'>QA Automation</h3>
     </div>
    <QaTop/>
-   <KeyHighlights/>                                                                                                                                                   
+   <KeyHighlights/> 
+   <UpcomingHeader/> 
+   <UpcomingBatch/>                                                                                                                                                 
     <Footer/>
     </div>
     </>)

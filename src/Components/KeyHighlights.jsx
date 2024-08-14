@@ -14,27 +14,27 @@ const KeyHighlights = () => {
    <p className='amount'>Key Highlights</p>
    <div className='key-highlights-header'>
     <div className='key-highlights-content'>
-        <LiaChalkboardTeacherSolid className='key-icons' style={{height:'60px',width:'60px',color:'linear-gradient( #00AEEF,#006489)'}}/>
+        <LiaChalkboardTeacherSolid className='key-icons'/>
         <p className='key-highlights-para'>30 Hours of Live online Training</p>
     </div>
     <div className='key-highlights-content'>
-        <BiVideoPlus className='key-icons' style={{height:'60px',width:'60px',color:'linear-gradient( #00AEEF,#006489)'}}/>
+        <BiVideoPlus className='key-icons'/>
         <p className='key-highlights-para'>30 Hours of recorded videos</p>
     </div>
     <div className='key-highlights-content'>
-        <IoRocketOutline className='key-icons' style={{height:'60px',width:'60px',color:'linear-gradient( #00AEEF,#006489)'}}/>
+        <IoRocketOutline  className='key-icons'/>
         <p className='key-highlights-para'>Live Projects & Exercises</p>
     </div>
     <div className='key-highlights-content'>
-        <VscBriefcase className='key-icons' style={{height:'60px',width:'60px',background:'linear-gradient( #00AEEF,#006489)',WebkitBackgroundClip:'text'}}/>
+        <VscBriefcase  className='key-icons'/>
         <p className='key-highlights-para'>Job Assistance </p>
     </div>
     <div className='key-highlights-content'>
-        <IoDocumentTextOutline className='key-icons' style={{height:'60px',width:'60px',color:'linear-gradient( #00AEEF,#006489)'}}/>
+        <IoDocumentTextOutline className='key-icons'/>
         <p className='key-highlights-para'>Resume & Interview Assistance</p>
     </div>
     <div className='key-highlights-content'>
-        <GrCertificate className='key-icons' style={{height:'60px',width:'60px',color:'linear-gradient( #00AEEF,#006489)'}}/>
+        <GrCertificate className='key-icons'/>
         <p className='key-highlights-para'>Certification</p>
     </div>
 

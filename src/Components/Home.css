@@ -444,6 +444,7 @@ justify-content: center;
     font-weight: 700;
     font-size: 20px;
     color: white;
+    margin-right: 1vh;
   
 }
 .training-mail{
@@ -453,7 +454,7 @@ justify-content: center;
     display:flex;
     flex-direction: row;
    justify-content: center;
-    
+    margin-left: -15px;
     color: white;
 }
 .training-email{
@@ -543,13 +544,15 @@ justify-content: center;
     border-radius: 10px;
      margin-left:130px;
     border: 1px solid rgba(186, 186, 186, 1);
+    /* padding: 0px 0px 0px 12px; */
+    box-shadow: 5px 5px 5px #BABABA;
     display: flex;
 }
 .search-input{
 flex:1;
 padding-left: 20px;
 /* border: none; */
-/* border: 1px solid rgba(186, 186, 186, 1); */
+border: 1px solid rgba(186, 186, 186, 1);
 
 }
 .btn-search{
@@ -565,16 +568,16 @@ padding-left: 20px;
 
 .nav-item-link{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
     cursor: pointer;
     text-decoration: none;
 color:black;
 }
 .navbar-nav{
-    width: 700px;
+    width: 600px;
     display: flex;
-    justify-content: space-between;
-    margin-left: 5vh;
+    gap:10vh;
+    margin-left:18vh;
   
 }
 /* .carousel-item{
@@ -583,7 +586,8 @@ color:black;
 .carousel-indicators [data-bs-target] {
    -webkit-background-clip: padding-box;
     background-color: #000000;
-    border: 0;
+    /* border: 0; */
+    border-radius: 50%;
     border-bottom: 10px solid #0000;
     border-top: 10px solid #0000;
     box-sizing: initial;
@@ -597,7 +601,7 @@ color:black;
     text-indent: -999px;
     transition: opacity .6s ease;
     width: 12px;
-    border-radius: 50%;
+    
 }
 .career-skills{
     font-weight: 700;
@@ -711,17 +715,17 @@ color:black;
 }
 .logos-slide img{
     height:70px;
-    margin: 0 40px;
+    margin: 0 30px;
 }
 .logos-slide{
     display: inline-block;
  
-    animation: 50s slide infinite linear;
+    animation: 40s slide infinite linear;
 }
 
 .logos{
     overflow:hidden;
-    padding: 60px 0;
+    padding: 50px 0;
     background-color: white;
     white-space: nowrap;
 }
@@ -746,7 +750,7 @@ color:black;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5vh;
+    padding-top: 2vh;
    
 }
 .view-btn{
@@ -754,7 +758,7 @@ color:black;
     align-items: flex-end;
     justify-content: flex-end;
     margin-top: -2vh;
-    margin-right: 2vh;
+    margin-right: 25vh;
 }
 .card{
     width:300px;
@@ -764,7 +768,7 @@ color:black;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-items: space-between;
     background-color: #fff;
     margin: 16px;
     transition: all 0.3s ease;
@@ -893,8 +897,8 @@ color: white;
 .training-card-holder{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin:2vh;
+    justify-items: space-around;
+   margin-left: 18vh;
 }
     .courses-list{
         display: flex;
@@ -961,7 +965,7 @@ color: white;
 .career-div{
     display:flex;
     flex-direction:row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     padding:2vh;
 }
 .Live-online{

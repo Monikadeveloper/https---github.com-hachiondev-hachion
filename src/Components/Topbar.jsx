@@ -1,7 +1,7 @@
 import React from 'react'
 import { PiLineVerticalThin } from "react-icons/pi";
-import { IoMailSharp } from "react-icons/io5";
-import { FaWhatsapp } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import whatsapp from '../Assets/logos_whatsapp-icon.png';
 import './Home.css';
 import {Link} from 'react-router-dom';
 
@@ -14,12 +14,12 @@ const Topbar = () => {
     <p className='query-content'>Have any query ?</p>
     </div>
     <div className='whatsapp'>
-        <FaWhatsapp style={{backgroundColor:'#25D366',fontSize:'1.6rem'}}/>
+        <img src={whatsapp} alt='whatsapp-icon' style={{height:'30px',width:'30px'}}/>
         <p className='whatsapp-number'> +91 9490323388</p>
         <PiLineVerticalThin style={{color:'white',fontSize:'2rem'}}/>
     </div>
     <div className='training-mail'>
-     <IoMailSharp style={{Color:'white',fontSize:'2rem',marginRight:'1vh'}}/>
+     <IoIosMail style={{Color:'white',fontSize:'2rem',marginRight:'1vh'}}/>
      <p className='training-email'>trainings@hachion.co</p>
     </div>
     </div>
