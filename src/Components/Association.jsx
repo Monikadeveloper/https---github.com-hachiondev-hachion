@@ -22,33 +22,33 @@ const Association = () => {
     <div className="logos">
 	<div className="logos-slide">
 	
-			<img src={img1} height="85" width="auto" alt="image1" />
-			<img src={img2} height="85" width="auto" alt="image2" />
-			<img src={img3} height="85" width="auto" alt="image3" />
-			<img src={img4} height="85" width="auto" alt="image4" />
-			<img src={img5} height="85" width="auto" alt="image5" />
-			<img src={img6} height="85" width="auto" alt="image6" />
-			<img src={img7} height="85" width="auto" alt="image7" />
-			<img src={img8} height="85" width="auto" alt="image8" />
-			<img src={img9} height="85" width="auto" alt="image9" />
-			<img src={img10} height="85" width="auto" alt="image10" />
-			<img src={img11} height="85" width="auto" alt="image11" />
-			<img src={img12} height="85" width="auto" alt="image12" />
+			<img src={img1} height="50" width="auto" alt="image1" />
+			<img src={img2} height="50" width="auto" alt="image2" />
+			<img src={img3} height="50" width="auto" alt="image3" />
+			<img src={img4} height="50" width="auto" alt="image4" />
+			<img src={img5} height="50" width="auto" alt="image5" />
+			<img src={img6} height="50" width="auto" alt="image6" />
+			<img src={img7} height="50" width="auto" alt="image7" />
+			<img src={img8} height="50" width="auto" alt="image8" />
+			<img src={img9} height="50" width="auto" alt="image9" />
+			<img src={img10} height="50" width="auto" alt="image10" />
+			<img src={img11} height="50" width="auto" alt="image11" />
+			<img src={img12} height="50" width="auto" alt="image12" />
 	</div>
     <div className="logos-slide">
 	
-			<img src={img1} height="85" width="auto" alt="image1" />
-			<img src={img2} height="85" width="auto" alt="image2" />
-			<img src={img3} height="85" width="auto" alt="image3" />
-			<img src={img4} height="85" width="auto" alt="image4" />
-			<img src={img5} height="85" width="auto" alt="image5" />
-			<img src={img6} height="85" width="auto" alt="image6" />
-			<img src={img7} height="85" width="auto" alt="image7" />
-			<img src={img8} height="85" width="auto" alt="image8" />
-			<img src={img9} height="85" width="auto" alt="image9" />
-			<img src={img10} height="85" width="auto" alt="image10" />
-			<img src={img11} height="85" width="auto" alt="image11" />
-			<img src={img12} height="85" width="auto" alt="image12" />
+			<img src={img1} height="50" width="auto" alt="image1" />
+			<img src={img2} height="50" width="auto" alt="image2" />
+			<img src={img3} height="50" width="auto" alt="image3" />
+			<img src={img4} height="50" width="auto" alt="image4" />
+			<img src={img5} height="50" width="auto" alt="image5" />
+			<img src={img6} height="50" width="auto" alt="image6" />
+			<img src={img7} height="50" width="auto" alt="image7" />
+			<img src={img8} height="50" width="auto" alt="image8" />
+			<img src={img9} height="50" width="auto" alt="image9" />
+			<img src={img10} height="50" width="auto" alt="image10" />
+			<img src={img11} height="50" width="auto" alt="image11" />
+			<img src={img12} height="50" width="auto" alt="image12" />
 	</div>
     
 </div>

@@ -29,7 +29,7 @@ const Trending = () => {
   <h2 className='course-names'>QA testing</h2>
   <h2 className='course-names'>Service now</h2>
   <h2 className='course-names'>BPM</h2>
-  <h2 className='course-names'>< RiMenuUnfold3Line style={{fontSize:'1.8rem'}}/></h2>
+  <h2 className='course-names'>< RiMenuUnfold3Line style={{fontSize:'1.5rem'}}/></h2>
 </div>
 <div className='training-card-holder'>
   

@@ -1,5 +1,5 @@
 import React from 'react'
-import facebook from '../Assets/facebook_symbol.svg.png';
+import facebook from '../Assets/facebook.png';
 import twitter from '../Assets/twitter.png';
 import youtube from '../Assets/youtube.png';
 import linkedin from '../Assets/linkedin.png';
