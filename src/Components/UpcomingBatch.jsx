@@ -1,6 +1,7 @@
 import React from 'react';
 import './Course.css';
 import { FaCircle } from "react-icons/fa";
+import {FcCalendar} from 'react-icons/fc';
 
 const UpcomingBatch = () => {
   return (
@@ -48,7 +49,9 @@ const UpcomingBatch = () => {
         <p className='free'>Free</p>
         <button className='enroll-now'>Enroll Now </button>
     </div>
+    
    </div>
+   <p className='schedule'><FcCalendar/>Schedule your way?<span className='schedule-span'> Request Batch </span></p>
    </div>
    
    </>

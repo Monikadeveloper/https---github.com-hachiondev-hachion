@@ -24,6 +24,7 @@ const initialValues={
     validationSchema:LoginSchema,
     onSubmit:(values)=>{
    console.log(values);
+   navigate('/loginsuccess')
     }
    })
 

@@ -492,3 +492,141 @@ font-style: italic;
     -webkit-text-fill-color: transparent;
   
   }
+  .corporate{
+    height:100px;
+    background: linear-gradient(to right,#006489,#00AEEF,#006489);
+  
+  }
+  .corporate-para{
+    color:white;
+    font-size:32px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .know-more{
+    height:50px;
+    width:196px;
+    border-radius:10px;
+    padding:13px 30px 13px 30px;
+    gap:10px;
+    background-color: #FFFFFF;
+    box-shadow: 5px 5px 5px #D3D3D3;
+    color:black;
+    font-size: 24px;
+    font-weight: 700;
+  border:none;
+  }
+  .corporate-content{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+  padding: 2.3vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  }
+  .corporate-para-span{
+    color:black;
+    font-size: 36px;
+    font-weight: 700;
+  }
+  .schedule{
+    text-align:center;
+  }
+  .schedule-span{
+    font-size: 30px;
+    font-weight: 600;
+    background: linear-gradient( #00AEEF,#006489);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
+  .qa-course{
+    height:1605px;
+    background-color: white;
+    margin: 5vh;
+    padding:7vh;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #d3d3d3;
+   
+  }
+  .qa-heading{
+    font-size: 36px;
+    font-weight: 700;
+    background: linear-gradient( #00AEEF,#006489);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  padding-bottom: 3vh;
+  }
+  .qa-subheading{
+    font-size: 20px;
+    font-weight:600;
+    padding-bottom: 2vh;
+    color:#006489;
+  }
+  .qa-sub-content{
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .curriculum{
+    height: 484px;
+    background-color: #FFFFFF;
+    margin: 5vh;
+    box-shadow: 5px 5px 5px #d3d3d3;
+    border-radius: 10px;
+    padding:1.5vh;
+  
+  }
+  .btn-curriculum{
+    width:272px;
+    height: 50px;
+    border-radius: 10px;
+    padding:5px 10px 5px 10px;
+    box-shadow: 5px 5px 10px #d3d3d3;
+    background-color: #FFFFFF;
+    color: #006489;
+    font-size: 20px;
+    font-weight: 600;
+    border:none;
+  }
+  .curriculum-head{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    /* padding: 1.5vh; */
+  }
+  .curriculum-content{
+    height:60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px 15px 30px;
+    background-color: #EEEEEE;
+    font-size: 20px;
+    font-weight: 600;
+    color: #006489;
+  }
+  .curriculum-topic{
+    display:flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .view-more-btn{
+    height: 37px;
+    width: 146px;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    background-color: #00AEEF;
+    border:none;
+    box-shadow: 5px 5px 5px #D3D3D3;
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+ 
+  }
+  .view-div{
+    display:flex;
+    justify-content:center;
+    margin-top: 10px;
+  }
+ 

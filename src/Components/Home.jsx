@@ -8,6 +8,7 @@ import Trending from './Trending';
 import Career from './Career';
 import Learners from './Learners';
 import Footer from './Footer';
+import Corporate from './Corporate';
 
 export const Home = () => {
   return (
@@ -18,6 +19,7 @@ export const Home = () => {
 <Association/>
 <TrainingEvents/>
 <Trending/>
+<Corporate/>
 <Career/>
 <Learners/>
 <Footer/>

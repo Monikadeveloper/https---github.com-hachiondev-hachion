@@ -373,6 +373,7 @@ border:1px solid #D3D3D3;
 border-radius:5%;
 box-shadow: darkgrey;
 }
+
 .otp{
     width: 350px;
     height: 50px;
@@ -542,7 +543,7 @@ justify-content: center;
     height:60px;
     width:509px;
     border-radius: 10px;
-     margin-left:130px;
+     margin-left:50vh;
     border: 1px solid rgba(186, 186, 186, 1);
     /* padding: 0px 0px 0px 12px; */
     box-shadow: 5px 5px 5px #BABABA;
@@ -577,22 +578,27 @@ color:black;
 
 
 .navbar-nav{
-    width: 600px;
+    width: 450px;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
    /* justify-content: space-evenly; */
    margin-left: 5vh;
    gap:5vh;
-   /* flex-grow:1; */
+   flex-grow:1;
   
 }
 /* .carousel-item{
     height:440px;
 } */
 .carousel-indicators [data-bs-target] {
-   -webkit-background-clip: padding-box;
+    width:7px;
+    height:7px;
+    border-radius: 50%;
     background-color: #000000;
-    /* border: 0; */
+    margin: 2px;
+   /* -webkit-background-clip: padding-box;
+    background-color: #000000;
+    border: 0;
     border-radius: 50%;
     border-bottom: 10px solid #0000;
     border-top: 10px solid #0000;
@@ -606,8 +612,11 @@ color:black;
     padding: 0;
     text-indent: -999px;
     transition: opacity .6s ease;
-    width: 12px;
+    width: 12px; */
     
+}
+.carousel-indicators .active{
+    background-color: #fff;
 }
 .career-skills{
     font-weight: 700;
@@ -752,6 +761,10 @@ color:black;
   
 
 }
+.training-events{
+    margin-bottom:3vh;
+    margin-top: 2vh;
+}
 .training-events-head{
     display: flex;
     align-items: center;
@@ -764,7 +777,10 @@ color:black;
     align-items: flex-end;
     justify-content: flex-end;
     margin-top: -2vh;
-    margin-right: 27vh;
+    margin-right: 28vh;
+}
+.view-btn:hover{
+    font-size:18px;
 }
 .card{
     width:300px;

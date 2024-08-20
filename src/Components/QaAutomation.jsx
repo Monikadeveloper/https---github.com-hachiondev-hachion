@@ -7,6 +7,9 @@ import QaTop from './QaTop';
 import KeyHighlights from './KeyHighlights';
 import UpcomingHeader from './UpcomingHeader';
 import UpcomingBatch from './UpcomingBatch';
+import Corporate from './Corporate';
+import Qacourse from './Qacourse';
+import Curriculum from './Curriculum';
 
 const QaAutomation = () => {
   return (
@@ -20,7 +23,10 @@ const QaAutomation = () => {
    <QaTop/>
    <KeyHighlights/> 
    <UpcomingHeader/> 
-   <UpcomingBatch/>                                                                                                                                                 
+   <UpcomingBatch/>
+   <Corporate/>  
+   <Qacourse/> 
+   <Curriculum/>                                                                                                                                              
     <Footer/>
     </div>
     </>)
