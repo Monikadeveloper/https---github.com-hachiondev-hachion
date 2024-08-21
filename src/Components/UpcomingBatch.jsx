@@ -2,18 +2,14 @@ import React from 'react';
 import './Course.css';
 import { FaCircle } from "react-icons/fa";
 import {FcCalendar} from 'react-icons/fc';
+import BatchType from './BatchType';
 
 const UpcomingBatch = () => {
   return (
    <>
    <div className='upcoming-batch'>
    <p className='upcoming-batch-heading'>Upcoming Batches for QA Automation Course</p>
-   <div className='batch-type'>
- <p className='batch-type-content'>Live online training</p>
- <p className='batch-type-content'>Mentoring mode</p>
- <p className='batch-type-content'>Self-placed Learning</p>
- <p className='batch-type-content'>Corporate Training</p>
-   </div>
+ <BatchType/>
    <div className='batch-schedule'>
     <div className='left'>
         <div className='partition'>

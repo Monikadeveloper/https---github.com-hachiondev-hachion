@@ -10,6 +10,8 @@ import UpcomingBatch from './UpcomingBatch';
 import Corporate from './Corporate';
 import Qacourse from './Qacourse';
 import Curriculum from './Curriculum';
+import ModeOfTraining from './ModeOfTraining';
+import CareerSupport from './CareerSupport';
 
 const QaAutomation = () => {
   return (
@@ -26,7 +28,9 @@ const QaAutomation = () => {
    <UpcomingBatch/>
    <Corporate/>  
    <Qacourse/> 
-   <Curriculum/>                                                                                                                                              
+   <Curriculum/> 
+   <ModeOfTraining/>  
+   <CareerSupport/>                                                                                                                                           
     <Footer/>
     </div>
     </>)
