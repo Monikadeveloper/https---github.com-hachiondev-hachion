@@ -492,42 +492,66 @@ font-style: italic;
     -webkit-text-fill-color: transparent;
   
   }
-  .corporate{
-    height:100px;
-    background: linear-gradient(to right,#006489,#00AEEF,#006489);
-  
+  .corporate {
+    height: 150px; /* Adjust height to accommodate the quotes */
+    background: linear-gradient(to right, #006489, #00AEEF, #006489);
+    position: relative;
+    padding: 20px;
+    display:flex;
+    justify-content:space-evenly;
   }
-  .corporate-para{
-    color:white;
-    font-size:32px;
-    font-weight: 700;
+  
+  .corporate-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
     text-align: center;
   }
-  .know-more{
-    height:50px;
-    width:196px;
-    border-radius:10px;
-    padding:13px 30px 13px 30px;
-    gap:10px;
-    background-color: #FFFFFF;
-    box-shadow: 5px 5px 5px #D3D3D3;
-    color:black;
+  
+  .corporate-para {
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1; /* Ensure text stays on top */
+  }
+  
+  .know-more {
+    height: 50px;
+    width: 196px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 5px 5px 5px black;
+    color: black;
     font-size: 24px;
     font-weight: 700;
-  border:none;
+    border: none;
+    margin-top: 20px; /* Add some space between text and button */
   }
-  .corporate-content{
-    display:flex;
-    flex-direction:row;
-    justify-content: space-between;
-  padding: 2.3vh;
-  padding-left: 5vh;
-  padding-right: 5vh;
-  }
-  .corporate-para-span{
-    color:black;
+  
+  .corporate-para-span {
+    color: black;
     font-size: 36px;
     font-weight: 700;
+  }
+  
+  /* Position the quotes */
+  .quote-left {
+    position: absolute;
+    top: 0px; /* Position above text */
+    left: -20px; /* Adjust left spacing */
+    font-size: 40px; /* Adjust size as needed */
+    color: white;
+  }
+  
+  .quote-right {
+    position: absolute;
+    top: 0px; 
+    right: -20px; 
+    font-size: 40px; 
+    color: white;
   }
   .schedule{
     text-align:center;

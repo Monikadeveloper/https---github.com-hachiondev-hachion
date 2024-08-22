@@ -25,9 +25,9 @@ const Topbar = () => {
     </div>
     <div className='login-div'>
         <Link to='/login' className='login-link-home'>
-        <p className='login-div-content'>Login</p></Link>
+        <button className='login-div-content'>Login</button></Link>
         <PiLineVerticalThin style={{color:'white',fontSize:'2rem'}}/>
-       <Link to='/register' className='login-link-home'> <p className='login-div-content'>Register</p></Link>
+       <Link to='/register' className='login-link-home'> <button className='login-div-content'>Register</button></Link>
     </div>
 
 </div>

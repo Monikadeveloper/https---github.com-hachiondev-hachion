@@ -15,6 +15,7 @@ const Learners = () => {
         
         <ImQuotesLeft style={{ height: '113.97px', zIndex: '1', width: '148.59px', color: 'rgba(0, 174, 239, 1)', marginBottom: '-8vh' }} />
         <div className='learner-cover'>
+        <Carousel indicators={false} prevIcon={<span className="custom-prev-icon" />} nextIcon={<span className="custom-next-icon" />}>
         <Carousel>
           <Carousel.Item>
             <div className='learner-card-item'>
@@ -82,6 +83,7 @@ const Learners = () => {
               />
               </div>
           </Carousel.Item>
+        </Carousel>
         </Carousel>
         </div>
         <ImQuotesRight style={{ height: '113.97px', zIndex: '1', width: '148.59px', color: 'rgba(0, 174, 239, 1)', marginTop: '-8vh', marginLeft: '90vw' }} />

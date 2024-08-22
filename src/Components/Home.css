@@ -531,6 +531,7 @@ justify-content: center;
 .login-div{
     display:flex;
     justify-content: center;
+    align-items: center;
     flex-direction: row;
     color: white;
     font-size: 20px;
@@ -571,6 +572,7 @@ border: 1px solid rgba(186, 186, 186, 1);
     
 }
 
+
 .nav-item-link{
     font-size: 18px;
     font-weight: 400;
@@ -582,46 +584,28 @@ color:black;
 
 
 .navbar-nav{
-    width: 450px;
+    /* width: 450px; */
     display: flex;
     /* justify-content: space-around; */
-   /* justify-content: space-evenly; */
-   margin-left: 5vh;
-   gap:5vh;
+   justify-content: space-evenly;
+   margin-left: 3vh;
+  
    flex-grow:1;
   
 }
-/* .carousel-item{
-    height:440px;
-} */
-.carousel-indicators [data-bs-target] {
-    width:7px;
-    height:7px;
-    border-radius: 50%;
-    background-color: #000000;
-    margin: 2px;
-   /* -webkit-background-clip: padding-box;
-    background-color: #000000;
-    border: 0;
-    border-radius: 50%;
-    border-bottom: 10px solid #0000;
-    border-top: 10px solid #0000;
-    box-sizing: initial;
-    cursor: pointer;
-    flex: 0 1 auto;
+#autoScrollingBanner .carousel-indicators button {
+    width: 12px;
     height: 12px;
-    margin-left: 3px;
-    margin-right: 3px;
-    opacity: .5;
-    padding: 0;
-    text-indent: -999px;
-    transition: opacity .6s ease;
-    width: 12px; */
-    
-}
-.carousel-indicators .active{
-    background-color: #fff;
-}
+    border-radius: 50%;
+    background-color: black 50% opacity; 
+    border: 2px solid #000; 
+    opacity: 1;
+  }
+  
+  #autoScrollingBanner .carousel-indicators .active {
+    background-color: #000; /* Active indicator color */
+    border-color: #000; /* Optional: active indicator border color */
+  }
 .career-skills{
     font-weight: 700;
     font-size: 40px;
@@ -699,16 +683,7 @@ color:black;
     font-size: 20px;
     font-weight: 600;
 }
-/* .carousel-indicators button{
-    height: 12px important;
-    width: 12px important;
-    border-radius: 50% important;
-    border: 1px solid black important;
-    background-color: gray important;
-}
-.carousel-indicators .active{
-    background-color: #000000 important;
-} */
+
     
 .association{
     height: 15vh;
@@ -750,6 +725,71 @@ color:black;
 }
 .logos:hover .logos-slide{
     animation-play-state: paused;
+}
+.login-div-content{
+    position: relative;
+    display: inline-block;
+    height:40px;
+    /* margin-bottom: 4vh; */
+    padding: 5px;
+    border-radius: 10px;
+    background-color:#00AEEF;
+    color: white;
+    border:none;
+    transition: background-color 0.3s ease;
+}
+.login-div-content:hover{
+    /* border: 1px solid #000000; */
+    background-color: #fff;
+    color: black;
+    font-weight: 600;
+}
+.login-div-content:hover::after{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    /* border: 2px solid #000000; */
+    background-color: #fff;
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+.nav-item{
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    border-radius: 10px;
+    border:none;
+    background-color: white;
+    /* border: 1px solid transparent; */
+    transition: background-color 0.3s ease;
+    
+}
+.nav-item:hover{
+    border: 3px solid #00AEEF;
+    background-color: #87CEEB;
+    color: #00AEEF;
+    border-radius: 10px; 
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 500;
+}
+.nav-item:hover::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 20px;
+    bottom: 10px;
+    border: 2px solid #00AEEF;
+    background-color: #87CEEB;
+    color: #00AEEF;
+    z-index: -1;
+    transition: background-color 0.3s ease,color 0.3s ease;
 }
 
 .view-all{
@@ -1102,6 +1142,7 @@ color: white;
         margin-right: 7vh;
         margin-top: 0vh;
     }
+   
     .footer{
         background-color:black;
         color:white;
