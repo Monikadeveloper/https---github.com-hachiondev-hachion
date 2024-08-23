@@ -5,16 +5,18 @@
     font-family:  'Open Sans', sans-serif;
 }
 .sidebar {
-    width: 340px;
+    width: 420px;
     background-color: white;
     color: black;
     left: 0;
+    right:5px;
   overflow-y: auto;
   height:1450px;
     border:1 px solid rgba(0, 174, 239, 1);
     margin: 0px;
-    margin-left: 25px;
+    margin-left: 8vw;
     border-radius:10px;
+    border-top-right-radius: 10px;
   }
   .course-banner-content{
   
@@ -125,18 +127,7 @@ align-content: center;
     background-color: #EEEEEE;
   }
 
-  .sidebar-card{    width:300px;
-    height:340px;
-    border-radius: 20px;
-    overflow:hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #fff;
-    /* margin: 16px; */
-   
-}
+
 .sidebar-card-header-div{
 position:relative;
 display:inline-block; 
@@ -211,15 +202,29 @@ padding: 10px;
 
     display: flex;
     flex-direction: column;
-    margin-left:30px;
+    margin-left:10px;
    
 }
-.sidebar-right-all{
-    display:flex;
- flex-direction: row;
- justify-content: space-evenly;
-margin: 10px;
-gap: 10px;
+.sidebar-right-all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Adjust the gap between cards */
+  margin: 10px auto; /* Center the cards horizontally */
+  max-width: 1000px; /* Set a max-width to limit the row length */
+  
+}
+
+.sidebar-card {
+  width: 320px;
+  height: 340px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
 }
 .qa-automation{
   height:503px;
@@ -523,7 +528,7 @@ font-style: italic;
     width: 196px;
     border-radius: 10px;
     background-color: #ffffff;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 5px #D3D3D3;
     color: black;
     font-size: 24px;
     font-weight: 700;
@@ -727,3 +732,46 @@ font-style: italic;
   gap:2vh;
 
  }
+ .sticky-bar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #000; /* Black color */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap:15px;
+}
+
+.contact-item {
+  margin-right: 20px; /* Spacing between phone number and email */
+  font-size: 16px;
+}
+
+.contact-button {
+  background-color: #fff; /* Bright blue button */
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: black;
+  color:white;
+  font-weight: bold; /* Darker blue on hover */
+}
+

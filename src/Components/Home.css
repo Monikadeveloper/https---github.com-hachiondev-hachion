@@ -579,6 +579,7 @@ border: 1px solid rgba(186, 186, 186, 1);
     cursor: pointer;
     text-decoration: none;
 color:black;
+
 }
 
 
@@ -762,7 +763,7 @@ color:black;
     height: 40px;
     border-radius: 10px;
     border:none;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 1);
     /* border: 1px solid transparent; */
     transition: background-color 0.3s ease;
     
@@ -830,14 +831,8 @@ color:black;
 .card{
     width:300px;
     height:330px;
-    border-radius:20px;
     border-top:none;
     border-right:none;
-    /* border: none; */
-    /* border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px; */
     overflow:hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
@@ -1142,7 +1137,29 @@ color: white;
         margin-right: 7vh;
         margin-top: 0vh;
     }
-   
+    .custom-prev-icon
+   {
+      font-size: 30px;
+      background-color:#d3d3d3;
+      color: black; /* Match the theme color */
+      cursor: pointer;
+      z-index: 1;
+      border-radius: 50%;
+    }
+    .custom-next-icon {
+        font-size: 30px;
+        background-color:#fff;
+        color: black; /* Match the theme color */
+        cursor: pointer;
+        z-index: 1;
+        border-radius: 50%;
+        margin-right: 5vh;
+      }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 50px; /* Adjust the width as needed */
+    }
     .footer{
         background-color:black;
         color:white;

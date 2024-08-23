@@ -3,7 +3,7 @@ import './Course.css';
 import {IoIosArrowForward} from 'react-icons/io';
 
 
-const Sidebar = () => {
+const Sidebar = ({onSelectCategory}) => {
     const [dropdownOpen, setDropdownOpen] = useState({});
   
     const toggleDropdown = (index) => {
@@ -104,29 +104,39 @@ const Sidebar = () => {
       },
     ];
   
-    return (
+    return (<>
       <div className="sidebar">
       <h3 className='sidebar-heading'>Categories</h3>
-        <ul className="menu">
-          {menuItems.map((item, index) => (
-            <li key={index}>
-              <button onClick={() => toggleDropdown(index)} className="menu-item">
-                {item.title} <IoIosArrowForward/>
-              </button>
-              {dropdownOpen[index] && (
-                <ul className="submenu">
-                  {item.submenu.map((subitem, subIndex) => (
-                    <li key={subIndex} className="submenu-item">
-                      {subitem}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
-        </ul>
-      </div>
-    );
+      <ul className="menu">
+        {menuItems.map((item, index) => (
+          <li key={index}>
+            <button 
+              onClick={() => {
+                onSelectCategory(item.title); // Pass selected category to parent
+                toggleDropdown(index);
+              }} 
+              className="menu-item"
+            >
+              {item.title} <IoIosArrowForward/>
+            </button>
+            {dropdownOpen[index] && item.submenu.length > 0 && (
+              <ul className="submenu">
+                {item.submenu.map((subitem, subIndex) => (
+                  <li 
+                    key={subIndex} 
+                    className="submenu-item"
+                    onClick={() => onSelectCategory(subitem)} // Pass selected subcategory to parent
+                  >
+                    {subitem}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+    </> );
   };
   
   export default Sidebar;

@@ -4,6 +4,7 @@ import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import { Carousel } from 'react-bootstrap';
 import LearnerCard from './LearnerCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Custom Icons
 
 const Learners = () => {
   return (
@@ -15,11 +16,14 @@ const Learners = () => {
         
         <ImQuotesLeft style={{ height: '113.97px', zIndex: '1', width: '148.59px', color: 'rgba(0, 174, 239, 1)', marginBottom: '-8vh' }} />
         <div className='learner-cover'>
-        <Carousel indicators={false} prevIcon={<span className="custom-prev-icon" />} nextIcon={<span className="custom-next-icon" />}>
-        <Carousel>
+        <Carousel 
+          indicators={false} 
+          prevIcon={<FaArrowLeft className="custom-prev-icon" />} 
+          nextIcon={<FaArrowRight className="custom-next-icon" />} 
+          interval={null} // Stops auto-scrolling
+        >
           <Carousel.Item>
             <div className='learner-card-item'>
-           
               <LearnerCard
                 name='Dhananjay'
                 profile='Android app developer'
@@ -35,6 +39,22 @@ const Learners = () => {
            </div>
           </Carousel.Item>
           <Carousel.Item>
+            <div className='learner-card-item'>
+              <LearnerCard
+                name='John Doe'
+                profile='Web Developer'
+                location='UK'
+                content='Excellent learning experience, great instructors, and fantastic career support.'
+              />
+              <LearnerCard
+                name='Jane Smith'
+                profile='Data Scientist'
+                location='Australia'
+                content='The training was comprehensive and the placement support was exceptional.'
+              />
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
           <div className='learner-card-item'>
               <LearnerCard
                 name='John Doe'
@@ -48,42 +68,8 @@ const Learners = () => {
                 location='Australia'
                 content='The training was comprehensive and the placement support was exceptional.'
               />
-          </div>
+            </div>
           </Carousel.Item>
-       
-          <Carousel.Item>
-            <div className='learner-card-item'>
-              <LearnerCard
-                name='John Mathew'
-                profile='Python Developer'
-                location='UK'
-                content='Excellent learning experience, great instructors, and fantastic career support.'
-              />
-              <LearnerCard
-                name='Jane Maverick'
-                profile='Data Scientist'
-                location='Melbourne'
-                content='The training was comprehensive and the placement support was exceptional.'
-              />
-              </div>
-          </Carousel.Item>
-          <Carousel.Item>
-            <div className='learner-card-item'>
-              <LearnerCard
-                name='John Smith'
-                profile='Swift Developer'
-                location='UK'
-                content='Excellent learning experience, great instructors, and fantastic career support.'
-              />
-              <LearnerCard
-                name='Justin'
-                profile='Angular developer'
-                location='Switzerland'
-                content='The training was comprehensive and the placement support was exceptional.'
-              />
-              </div>
-          </Carousel.Item>
-        </Carousel>
         </Carousel>
         </div>
         <ImQuotesRight style={{ height: '113.97px', zIndex: '1', width: '148.59px', color: 'rgba(0, 174, 239, 1)', marginTop: '-8vh', marginLeft: '90vw' }} />

@@ -9,6 +9,7 @@ import Career from './Career';
 import Learners from './Learners';
 import Footer from './Footer';
 import Corporate from './Corporate';
+import StickyBar from './StickyBar';
 
 export const Home = () => {
   return (
@@ -22,7 +23,9 @@ export const Home = () => {
 <Corporate/>
 <Career/>
 <Learners/>
+
 <Footer/>
+<StickyBar/>
     </>
   )
 }
