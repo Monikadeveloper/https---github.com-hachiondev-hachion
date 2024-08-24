@@ -15,17 +15,17 @@ return(<>
    <div className='career-support-content'>
     <img src={icon} alt='icon-image'/>
     <div>
-    <p>Career Oriented Sessions :</p>
-    <p> Over 10+ live interactive sessions with an industry expert to gain knowledge and experience on how to build skills that are expected by hiring managers. These will be guided sessions that will help you stay on track with your upskilling.</p>
+    <p className='career-support-content-header'>Career Oriented Sessions :</p>
+    <p className='career-support-content-para'> Over 10+ live interactive sessions with an industry expert to gain knowledge and experience on how to build skills that are expected by hiring managers. These will be guided sessions that will help you stay on track with your upskilling.</p>
    </div>
    </div>
-   {/* <div className='career-support-content'>
+   <div className='career-support-content'>
     <img src={icon2} alt='icon-image'/>
     <div>
-    <p>Resume & Linkedin Profile Building :</p>
-    <p>Get assistance in creating a world-class resume & Linkedin Profile from our career services team and learn how to grab the attention of the hiring manager at the profile shortlisting stage.</p>
+    <p className='career-support-content-header'>Resume & Linkedin Profile Building :</p>
+    <p className='career-support-content-para'>Get assistance in creating a world-class resume & Linkedin Profile from our career services team and learn how to grab the attention of the hiring manager at the profile shortlisting stage.</p>
    </div>
-   </div> */}
+   </div>
 </div>
 </>)
 }

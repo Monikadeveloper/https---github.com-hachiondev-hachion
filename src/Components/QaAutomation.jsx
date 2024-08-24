@@ -9,9 +9,13 @@ import UpcomingHeader from './UpcomingHeader';
 import UpcomingBatch from './UpcomingBatch';
 import Corporate from './Corporate';
 import Qacourse from './Qacourse';
-import Curriculum from './Curriculum';
+// import Curriculum from './Curriculum';
 import ModeOfTraining from './ModeOfTraining';
 import CareerSupport from './CareerSupport';
+import Learners from './Learners';
+import StickyBar from './StickyBar';
+import CurriculumMain from './CurriculumMain';
+import QaAutomationFaq from './QaAutomationFaq';
 
 const QaAutomation = () => {
   return (
@@ -28,10 +32,13 @@ const QaAutomation = () => {
    <UpcomingBatch/>
    <Corporate/>  
    <Qacourse/> 
-   <Curriculum/> 
+   <CurriculumMain/> 
    <ModeOfTraining/>  
-   <CareerSupport/>                                                                                                                                           
+   <CareerSupport/> 
+   <Learners/> 
+   <QaAutomationFaq/>                                                                                                                                         
     <Footer/>
+    <StickyBar/>
     </div>
     </>)
 }

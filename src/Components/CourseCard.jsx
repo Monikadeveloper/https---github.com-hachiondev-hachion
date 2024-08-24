@@ -4,22 +4,21 @@ import { BiTimeFive } from "react-icons/bi";
 import { MdOutlineStar } from "react-icons/md";
 import cardbackground from '../Assets/course2.png';
 
-const CourseCard = (props) => {
+const CourseCard = ({heading,month,time,image,onClick}) => {
   return (
 <>
-<div className="card" >
+<div className="card"  onClick={onClick} style={{ cursor: 'pointer' }} >
  <div className='card-header-div'>
  <img src={cardbackground} alt="Card" className="card-image" />
- {/* <div className='card-img-div'>
- </div>  */}
- <img src={props.image} alt='card-img' className='card-icon'/>  
+
+ <img src={image} alt='card-img' className='card-icon'/>  
     </div>
  
  <div className='course-details'>
- <h5 className='course-name'>{props.heading}</h5>
+ <h5 className='course-name'>{heading}</h5>
 <div className='course-time'>
-    <h6 className='course-month' ><RxCalendar/>   {props.month}</h6>
-    <h6 className='course-month'><BiTimeFive/>   {props.time} </h6>
+    <h6 className='course-month' ><RxCalendar/>   {month}</h6>
+    <h6 className='course-month'><BiTimeFive/>   {time} </h6>
 
 </div>
 <h6 className='course-review'>Rating: < MdOutlineStar className='star-icon'/> 

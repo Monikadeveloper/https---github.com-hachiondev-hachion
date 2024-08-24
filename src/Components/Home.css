@@ -841,6 +841,7 @@ color:black;
     background-color: #fff;
     margin: 14px;
     transition: all 0.3s ease;
+    cursor:pointer;
 }
 .card-header-div{
 position:relative;

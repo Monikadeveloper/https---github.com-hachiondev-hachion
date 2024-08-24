@@ -9,10 +9,16 @@ import card5 from '../Assets/image 80.png';
 import card6 from '../Assets/image 107.png';
 import card7 from '../Assets/image 110.png';
 import card8 from '../Assets/image 95.png';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Trending = () => {
+  const navigate = useNavigate();
+  const handleCardClick = (path) => {
+    navigate(path);
+  };
+
   return (
   <>
  < div className='training-events'>
@@ -40,7 +46,8 @@ const Trending = () => {
 </div>
 <div className='training-card-holder'>
   
-<CourseCard heading='QA Automation' month=' 3 months' time='80 hours' image={card5}/>
+<CourseCard heading='QA Automation' month=' 3 months' time='80 hours' image={card5} 
+onClick={() => handleCardClick('/qaautomation')}/>
 <CourseCard heading='Angular JS Training' month=' 3 months' time='80 hours' image={card6}/>
 <CourseCard heading='Javascript course' month=' 3 months' time='80 hours' image={card7}/>
 <CourseCard heading='QA Manual Testing' month=' 3 months' time='80 hours' image={card8}/>

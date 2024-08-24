@@ -707,7 +707,7 @@ font-style: italic;
  }
  .career-support{
   height:408px;
-  margin:5vh;
+  margin-left:5vh;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #d3d3d3;
   background-color:white;
@@ -731,6 +731,18 @@ font-style: italic;
   padding-top: 2vh;
   gap:2vh;
 
+ }
+ .career-support-content img{
+  height:40px;
+  width: 40px;
+ }
+ .career-support-content-header{
+  font-size: 20px;
+  font-weight: 400;
+ }
+ .career-support-content-para{
+  font-size: 16px;
+  font-weight: 600;
  }
  .sticky-bar {
   position: fixed;
@@ -761,7 +773,8 @@ font-style: italic;
   background-color: #fff; /* Bright blue button */
   color: black;
   border: none;
-  padding: 10px 20px;
+  margin:10px;
+  padding: 5px 10px;
   border-radius: 5px;
   font-size: 16px;
   font-weight: 500;

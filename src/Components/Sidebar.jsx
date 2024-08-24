@@ -119,7 +119,7 @@ const Sidebar = ({onSelectCategory}) => {
             >
               {item.title} <IoIosArrowForward/>
             </button>
-            {dropdownOpen[index] && item.submenu.length > 0 && (
+            {/* {dropdownOpen[index] && item.submenu.length > 0 && (
               <ul className="submenu">
                 {item.submenu.map((subitem, subIndex) => (
                   <li 
@@ -131,7 +131,7 @@ const Sidebar = ({onSelectCategory}) => {
                   </li>
                 ))}
               </ul>
-            )}
+            )} */}
           </li>
         ))}
       </ul>
