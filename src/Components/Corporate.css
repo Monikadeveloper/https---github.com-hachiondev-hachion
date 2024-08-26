@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Open Sans', sans-serif;
+    
+}
+.corporate-training{
+    background-color: #EEEEEE;
+}
+.corporate-banner{
+    width: 100%; 
+    height: 600px; /* Or any height */
+    background-image: url('../Assets/Group 39809.png');
+    background-size: cover;
+    background-position: center;
+
+}
+.corporate-banner-heading{
+    font-size: 38px;
+    font-weight: 700;
+    padding-top: 7vh;
+    padding-left: 166px;
+    color: #fff;
+}
+.corporate-banner-content{
+    font-size: 46px;
+    font-weight: 700;
+    color:#fff;
+    padding-top: 7vh;
+    text-align: center;
+
+}
+.corporate-banner-bottom-content{
+    font-size: 38px;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    color: #fff;
+}
+.contact-us-corporate{
+    margin-top:5vh;
+    height: 74px;
+    width: 274px;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 15px 50px 15px 50px;
+    background-color: #00AEEF;
+    box-shadow: 5px 5px 5px #000000 opacity 30%;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-left: 35vw;
+}
+.hachion-content{
+    height: 400px;
+    background-color: white;
+    margin-left: 8vh;
+    border-radius: 20px;
+    margin-right: 8vh;
+    box-shadow:5px 5px 5px #d3d3d3;
+
+}
+.association{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.association-head{
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2%;
+    background:linear-gradient(180deg, #00AEEF 0%, #006489 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.customize-training{
+   align-items: center;
+   justify-content: center;
+    gap: 40px;
+}
+.customize-training-div{
+    height: 357px;
+    width: 630px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow:5px 5px 5px #d3d3d3;
+ 
+}
+.customize-training-div img{
+    height:270px;
+    width:504px;
+    margin-left: 63px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.customize-training-div-content{
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color:#00AEEF;
+}
+.customize-training{
+    display: flex;
+    flex-direction: row;
+}
+.leading-expert-card{
+    height:300px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #d3d3d3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.leading-expert-card img{
+    height:100px;
+    width: 162.36px;
+}
+.leading-expert-card-content{
+    font-size:24px;
+    font-weight:700;
+    text-align: center;
+    color: #00AEEF;
+}
+.leading-expert-card button{
+    height:37px;
+    width: 150px;
+    border-radius: 10px;
+    padding: 5px 20px 5px 20px;
+    background-color: #00AEEF;
+    box-shadow: 5px 5px 5px #d3d3d3;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.leading-expert{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}

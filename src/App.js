@@ -11,6 +11,7 @@ import LoginSuccess from './Components/LoginSuccess';
 import ForgotPassword from './Components/ForgotPassword';
 import Course from './Components/Course';
 import QaAutomation from './Components/QaAutomation';
+import CorporateTraining from './Components/CorporateTraining';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path='/forgotpassword' element={<ForgotPassword/>}/>
       <Route path='/course' element={<Course/>}/>
       <Route path='/qaautomation' element={<QaAutomation/>}/>
+      <Route path='/corporate' element={<CorporateTraining/>}/>
       </Routes></BrowserRouter>
     </>
   );

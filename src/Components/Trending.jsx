@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react';
 import { RiMenuUnfold3Line } from "react-icons/ri";
 import CourseCard from './CourseCard';
 import card1 from '../Assets/image 96.png';
@@ -11,52 +11,70 @@ import card7 from '../Assets/image 110.png';
 import card8 from '../Assets/image 95.png';
 import { useNavigate } from 'react-router-dom';
 
-
-
 const Trending = () => {
   const navigate = useNavigate();
+  const [activeCategory, setActiveCategory] = useState('All');
+
   const handleCardClick = (path) => {
     navigate(path);
   };
 
+  // Categories and associated cards
+  const categories = [
+    { name: 'All', cards: [{ heading: 'Google Cloud', image: card1 }, { heading: 'AWS Developer', image: card2 }, { heading: 'Load Runner', image: card3 }, { heading: 'Python', image: card4 }, { heading: 'QA Automation', image: card5 }, { heading: 'Angular JS Training', image: card6 }, { heading: 'Javascript course', image: card7 }, { heading: 'QA Manual Testing', image: card8 }] },
+    { name: 'Cloud Computing', cards: [{ heading: 'Google Cloud', image: card1 }, { heading: 'AWS Developer', image: card2 }] },
+    { name: 'Salesforce', cards: [{ heading: 'Salesforce', image: card2 }] },
+    { name: 'Data Science', cards: [{ heading: 'Python', image: card4 }] },
+    { name: 'QA Testing', cards: [{ heading: 'Load Runner', image: card3 }, { heading: 'QA Automation', image: card5 }, { heading: 'QA Manual Testing', image: card8 }] },
+    { name: 'Service Now', cards: [{ heading: 'Service Now', image: card6 }] },
+    { name: 'BPM', cards: [{ heading: 'Javascript course', image: card7 }] },
+  ];
+
+  // Filter cards based on the active category
+  const filteredCards = categories.find(category => category.name === activeCategory)?.cards || [];
+
   return (
-  <>
- < div className='training-events'>
-    <div className='training-events-head'>
-<h1 className='association-head'>Trending courses</h1></div>
-<div className='view-btn'>
-<button className='view-all'>View All</button>
-</div>
-<div className='courses-list'>
-  <h2 className='course-names'>All</h2>
-  <h2 className='course-names'>Cloud Computing</h2>
-  <h2 className='course-names'>Salesforce</h2>
-  <h2 className='course-names'>Data Science</h2>
-  <h2 className='course-names'>QA testing</h2>
-  <h2 className='course-names'>Service now</h2>
-  <h2 className='course-names'>BPM</h2>
-  <h2 className='course-names'>< RiMenuUnfold3Line style={{fontSize:'1.5rem'}}/></h2>
-</div>
-<div className='training-card-holder'>
-  
-<CourseCard heading='Google Cloud' month=' 3 months' time='80 hours' image={card1} />
-<CourseCard heading='AWS Developer' month=' 3 months' time='80 hours' image={card2}/>
-<CourseCard heading='Load Runner' month=' 3 months' time='80 hours' image={card3}/>
-<CourseCard heading='Python' month=' 3 months' time='80 hours' image={card4}/>
-</div>
-<div className='training-card-holder'>
-  
-<CourseCard heading='QA Automation' month=' 3 months' time='80 hours' image={card5} 
-onClick={() => handleCardClick('/qaautomation')}/>
-<CourseCard heading='Angular JS Training' month=' 3 months' time='80 hours' image={card6}/>
-<CourseCard heading='Javascript course' month=' 3 months' time='80 hours' image={card7}/>
-<CourseCard heading='QA Manual Testing' month=' 3 months' time='80 hours' image={card8}/>
-</div>
+    <>
+      <div className='training-events'>
+        <div className='training-events-head'>
+          <h1 className='association-head'>Trending Courses</h1>
+        </div>
+        <div className='view-btn'>
+          <button className='view-all'>View All</button>
+        </div>
+        <div className='courses-list'>
+          {categories.map(category => (
+            <h2
+              key={category.name}
+              className={`course-names ${activeCategory === category.name ? 'active' : ''}`}
+              onClick={() => setActiveCategory(category.name)}
+              style={{ cursor: 'pointer' }}
+            >
+              {category.name === 'BPM' ? (
+                <>
+                  <RiMenuUnfold3Line style={{ fontSize: '1.5rem' }} /> BPM
+                </>
+              ) : (
+                category.name
+              )}
+            </h2>
+          ))}
+        </div>
+        <div className='training-card-holder'>
+          {filteredCards.map((card, index) => (
+            <CourseCard
+              key={index}
+              heading={card.heading}
+              month='3 months'
+              time='80 hours'
+              image={card.image}
+              onClick={() => handleCardClick(`/${card.heading.toLowerCase().replace(/\s+/g, '')}`)}
+            />
+          ))}
+        </div>
+      </div>
+    </>
+  );
+};
 
-</div>
-  
-  </>
-  )
-}
-
-export default Trending
+export default Trending;

@@ -14,9 +14,12 @@ import StickyBar from './StickyBar';
 export const Home = () => {
   return (
     <>
+    <div className='home-top'>
 <Topbar/>
 <NavbarTop/>
 <Banner/>
+</div>
+<div className='home-background'>
 <Association/>
 <TrainingEvents/>
 <Trending/>
@@ -25,6 +28,7 @@ export const Home = () => {
 <Learners/>
 
 <Footer/>
+</div>
 <StickyBar/>
     </>
   )
