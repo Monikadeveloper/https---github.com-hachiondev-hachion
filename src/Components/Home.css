@@ -541,14 +541,12 @@ justify-content: center;
 }
 .navbar {
     height: 100px;
-    /* padding:0px; */
-    margin: 0px;
-    background-color: white !important; /* Force white background */
-    border-bottom: none; /* Remove any potential borders */
+    background-color: white !important; 
+    border-bottom: none; 
 }
 
 .container-fluid {
-    background-color: white; /* Ensure parent container is white as well */
+    background-color: white; 
 }
 
 .search-div {
@@ -719,7 +717,7 @@ justify-content: center;
     margin: -15px 30px;
 }
 .home-top{
-    background-color:white;
+    background-color:#ffffff;
 }
 .logos-slide{
     display: inline-block;

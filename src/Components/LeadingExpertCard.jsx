@@ -11,4 +11,4 @@ const LeadingExpertCard = ({CourseName,image}) => {
   )
 }
 
-export default LeadingExpertCard;26
+export default LeadingExpertCard;
