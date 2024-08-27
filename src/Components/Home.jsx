@@ -14,12 +14,10 @@ import StickyBar from './StickyBar';
 export const Home = () => {
   return (
     <>
-    <div className='home-top'>
+   <div className='home-background'>
 <Topbar/>
 <NavbarTop/>
 <Banner/>
-</div>
-<div className='home-background'>
 <Association/>
 <TrainingEvents/>
 <Trending/>

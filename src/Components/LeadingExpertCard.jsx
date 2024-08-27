@@ -6,7 +6,7 @@ const LeadingExpertCard = ({CourseName,image}) => {
     <div className='leading-expert-card'>
      <img src={image} alt='card-img' className='card-image'/> 
     <p className='leading-expert-card-content'>{CourseName}</p>
-    <button>View Details</button>
+    <button className='view-details-corporate'>View Details</button>
 </div>
   )
 }

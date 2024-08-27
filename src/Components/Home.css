@@ -541,12 +541,7 @@ justify-content: center;
 }
 .navbar {
     height: 100px;
-    background-color: white !important; 
-    border-bottom: none; 
-}
-
-.container-fluid {
-    background-color: white; 
+    background-color: #EEEEEE !important; /* Ensure this applies to the entire navbar */
 }
 
 .search-div {
@@ -556,7 +551,7 @@ justify-content: center;
     margin-left: 50vh;
     box-shadow: 5px 5px 5px #BABABA;
     display: flex;
-    background-color: white; /* Ensure search container background is white */
+    background-color: white;
 }
 
 .search-input {
@@ -564,8 +559,8 @@ justify-content: center;
     padding-left: 20px;
     border-radius: 10px 0px 0px 10px;
     border: 1px solid rgba(186, 186, 186, 1);
-    outline: none;  /* Removes the default outline */
-    background-color: white; /* Ensure input background is white */
+    outline: none;
+    background-color: white;
 }
 
 .btn-search {
@@ -583,7 +578,7 @@ justify-content: center;
     justify-content: space-evenly;
     margin-left: 3vh;
     flex-grow: 1;
-    background-color: white; /* Ensure navbar links area is white */
+    /* Remove background-color from here */
 }
 
 .nav-item-link {
@@ -592,6 +587,14 @@ justify-content: center;
     cursor: pointer;
     text-decoration: none;
     color: black;
+    /* Optional: Add padding for better spacing */
+    padding: 10px 15px;
+}
+
+.nav-item {
+    background: none; /* Ensure buttons don't have any background */
+    border: none;
+    padding: 0;
 }
 
 
@@ -716,9 +719,7 @@ justify-content: center;
     height:50px;
     margin: -15px 30px;
 }
-.home-top{
-    background-color:#ffffff;
-}
+
 .logos-slide{
     display: inline-block;
  
@@ -770,7 +771,7 @@ justify-content: center;
     height: 40px;
     border-radius: 10px;
     border:none;
-    background-color: rgba(255, 255, 255, 1);
+
     /* border: 1px solid transparent; */
     transition: background-color 0.3s ease;
     
@@ -799,9 +800,75 @@ justify-content: center;
     z-index: -1;
     transition: background-color 0.3s ease,color 0.3s ease;
 }
-.container-fluid{
-    background-color: white;
-}
+@media (max-width: 768px) {
+    .container-fluid {
+      flex-direction: column;
+    }
+  
+    .search-div {
+      order: 2; /* Show search below the links on mobile */
+      margin: 10px 0;
+      width: 100%;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+  
+    .nav-item {
+      width: 100%;
+      text-align: center;
+      margin: 5px 0;
+    }
+  
+    .navbar-toggler {
+      margin-left: auto;
+    }
+  }
+  
+  /* Tablet: Center the elements */
+  @media (max-width: 992px) and (min-width: 769px) {
+    .search-div {
+      margin: 10px 0;
+      max-width: 300px;
+    }
+  
+    .navbar-nav {
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .nav-item {
+      margin: 0 10px;
+    }
+  }
+  
+  /* Desktop: Regular layout */
+  @media (min-width: 993px) {
+    .search-div {
+      margin: 0 20px;
+    }
+  
+    .navbar-nav {
+      justify-content: flex-end;
+    }
+  }
+  @media (min-width: 993px) {
+    .container-fluid {
+      justify-content: flex-start; /* Align items to the left initially */
+    }
+  
+    .search-div {
+      margin-left: 23vw; /* Push search bar to the right side */
+    }
+  
+    .navbar-nav {
+      margin-left: 0; /* Remove extra space, keep items close to search bar */
+    }
+  }
+
 .view-all{
     height: 50px;
     width: 140px;
@@ -830,29 +897,29 @@ justify-content: center;
 }
 .view-btn{
     display: flex;
-    /* align-items: flex-end; */
+    align-items: flex-end;
     justify-content: flex-end;
-     margin-right: 26vh; 
-    margin-top:-7vh; 
+     margin-right: 30vh; 
+    margin-top:-8vh; 
    
 }
 .view-btn:hover{
     font-size:18px;
 }
-.card {
+/* .card {
     width: 300px;
     height: 330px;
     border: none !important;
-    overflow: hidden;
+    overflow: hidden !important;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
     justify-items: space-between;
     /* background-color: #EEEEEE; */
-    margin: 14px;
+    /* margin: 14px;
     transition: all 0.3s ease;
     cursor: pointer;
-}
+} */ */
 
 
 .card-header-div{
@@ -984,17 +1051,51 @@ color: white;
 .training-card-holder {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* This will center the cards in the container */
-    gap: 10px; /* This will add spacing between the cards */
-    margin: 0 auto;
+    justify-content: center; /* Center the cards horizontally */
+    gap: 10px; /* Space between the cards */
+    margin: 5px auto;
+    max-width: 1200px; /* Set a max-width to contain the cards within a reasonable size */
 }
+
+.card {
+    width: calc(25% - 10px); /* Adjust width to ensure 4 cards fit in a row with a 10px gap */
+    height: 330px;
+    border: none !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Optional: Adjust card width for smaller screens */
+@media (max-width: 1200px) {
+    .card {
+        width: calc(33.333% - 10px); /* 3 cards per row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 10px); /* 2 cards per row for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 10px); /* 1 card per row for very small screens */
+    }
+}
+
     .courses-list{
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content:center;
         margin-top: 2vh;
-        margin-left: 14vh;
-        margin-right: 16vh;
+        gap: 4vh;
+      
         
         
     }
@@ -1199,9 +1300,10 @@ color: white;
     .footer{
         background-color:black;
         color:white;
-        height:412px;
+        height:472px;
         display: flex;
         margin-top: 10vh;
+        padding-bottom:60px;
         flex-direction: column;
         justify-content: space-evenly;
    
@@ -1251,6 +1353,6 @@ color: white;
         cursor:pointer;
     }
     .footer-link img:hover{
-   height: 35px;
-   width: 35px;
+   height: 32px;
+   width: 32px;
     }

@@ -19,7 +19,7 @@
 .corporate-banner-heading{
     font-size: 38px;
     font-weight: 700;
-    padding-top: 7vh;
+    padding-top: 8vh;
     padding-left: 166px;
     color: #fff;
 }
@@ -27,7 +27,7 @@
     font-size: 46px;
     font-weight: 700;
     color:#fff;
-    padding-top: 7vh;
+    padding-top: 8vh;
     text-align: center;
 
 }
@@ -39,7 +39,7 @@
     color: #fff;
 }
 .contact-us-corporate{
-    margin-top:5vh;
+    margin-top:8vh;
     height: 74px;
     width: 274px;
     border-radius: 10px;
@@ -70,6 +70,7 @@
 .association-head{
     font-size: 30px;
     font-weight: 700;
+    margin: 2vh;
     letter-spacing: 2%;
     background:linear-gradient(180deg, #00AEEF 0%, #006489 100%);
     -webkit-text-fill-color: transparent;
@@ -105,39 +106,171 @@
     display: flex;
     flex-direction: row;
 }
-.leading-expert-card{
-    height:300px;
+.leading-expert-card {
+    height: 300px;
     width: 300px;
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 5px 5px 5px #d3d3d3;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center; /* Center content horizontally */
+  margin: 10px;
 }
-.leading-expert-card img{
-    height:100px;
+
+.leading-expert-card img {
+    height: 100px;
     width: 162.36px;
+    margin-bottom: 10px; /* Add space between image and content */
 }
-.leading-expert-card-content{
-    font-size:24px;
-    font-weight:700;
+
+.leading-expert-card-content {
+    font-size: 24px;
+    font-weight: 700;
     text-align: center;
     color: #00AEEF;
+    margin-bottom: 10px; /* Add space between content and button */
 }
-.leading-expert-card button{
-    height:37px;
-    width: 150px;
+
+.view-details-corporate {
+    height: 45px;
+    width: 180px;
     border-radius: 10px;
-    padding: 5px 20px 5px 20px;
+    padding: 5px 20px;
     background-color: #00AEEF;
     box-shadow: 5px 5px 5px #d3d3d3;
     color: #fff;
     font-size: 20px;
     font-weight: 700;
+    border: none;
 }
-.leading-expert{
+
+.leading-expert {
     display: flex;
-    justify-content: space-evenly;
     flex-direction: row;
+    flex-wrap: wrap;
+   justify-content: center; /* Ensure the cards wrap on smaller screens */
+}
+.view-all-div{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 28vh;
+    margin-top: -9vh;
+}
+
+.view-all-corporate {
+    height: 37px;
+    width: 150px;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: #00AEEF;
+    box-shadow: 5px 5px 5px #d3d3d3;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  
+}
+.corporate-training-features {
+    height: 634px;
+    background-color: #fff;
+    margin-left: 9vh;
+    margin-right: 9vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.customized-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.customized-content {
+    height: 134px;
+    width: 280px;
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 5px 5px 10px #d3d3d3;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.customized-content-heading {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+}
+
+.customized-content img {
+    height: 60px;
+    width: 60px;
+}
+
+.customized-content-para {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.training-img {
+    width: 585px;
+    height: 460px;
+    align-self: center;
+}
+
+.advisor{
+        height: 900px;
+        background-image: url('../Assets/Group\ 39810.png');
+        background-size: 100% 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        padding:4vh;
+
+}
+.advisor-form{
+height:834px;
+margin-left: 8vh;
+margin-right: 8vh;
+border-radius:20px;
+background-color: white;
+}
+.advisor-head{
+    height: 100px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 10px 253px 10px 253px;
+    background: linear-gradient( #006489,#00AEEF,#006489);
+
+    -webkit-text-fill-color: transparent;
+    color:white;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    width: 520px;
+}
+
+.input-label {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 5px; /* Adds space between label and input field */
+}
+
+.input-field {
+    height: 50px;
+    width: 100%; /* Full width of the container */
+    border: 1px solid #6a6a6a;
+    border-radius: 5px;
+    padding-left: 10px; /* Adds padding inside the input field */
+    font-size: 16px; /* Ensures the font size matches the label */
+    outline: none; /* Removes the default outline */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
 }

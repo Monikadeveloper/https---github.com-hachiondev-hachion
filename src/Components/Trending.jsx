@@ -21,13 +21,48 @@ const Trending = () => {
 
   // Categories and associated cards
   const categories = [
-    { name: 'All', cards: [{ heading: 'Google Cloud', image: card1 }, { heading: 'AWS Developer', image: card2 }, { heading: 'Load Runner', image: card3 }, { heading: 'Python', image: card4 }, { heading: 'QA Automation', image: card5 }, { heading: 'Angular JS Training', image: card6 }, { heading: 'Javascript course', image: card7 }, { heading: 'QA Manual Testing', image: card8 }] },
-    { name: 'Cloud Computing', cards: [{ heading: 'Google Cloud', image: card1 }, { heading: 'AWS Developer', image: card2 }] },
-    { name: 'Salesforce', cards: [{ heading: 'Salesforce', image: card2 }] },
-    { name: 'Data Science', cards: [{ heading: 'Python', image: card4 }] },
-    { name: 'QA Testing', cards: [{ heading: 'Load Runner', image: card3 }, { heading: 'QA Automation', image: card5 }, { heading: 'QA Manual Testing', image: card8 }] },
-    { name: 'Service Now', cards: [{ heading: 'Service Now', image: card6 }] },
-    { name: 'BPM', cards: [{ heading: 'Javascript course', image: card7 }] },
+    { name: 'All', cards: [
+        { heading: 'Google Cloud', image: card1 },
+        { heading: 'AWS Developer', image: card2 },
+        { heading: 'Load Runner', image: card3 },
+        { heading: 'Python', image: card4 },
+        { heading: 'QA Automation', image: card5 },
+        { heading: 'Angular JS Training', image: card6 },
+        { heading: 'Javascript course', image: card7 },
+        { heading: 'QA Manual Testing', image: card8 }
+      ]
+    },
+    { name: 'Cloud Computing', cards: [
+        { heading: 'Google Cloud', image: card1 },
+        { heading: 'AWS Developer', image: card2 }
+      ]
+    },
+    { name: 'Salesforce', cards: [
+        { heading: 'Salesforce', image: card2 }
+      ]
+    },
+    { name: 'Data Science', cards: [
+        { heading: 'Python', image: card4 }
+      ]
+    },
+    { name: 'QA Testing', cards: [
+        { heading: 'Load Runner', image: card3 },
+        { heading: 'QA Automation', image: card5 },
+        { heading: 'QA Manual Testing', image: card8 }
+      ]
+    },
+    { name: 'Service Now', cards: [
+        { heading: 'Service Now', image: card6 }
+      ]
+    },
+    { name: 'BPM', cards: [
+        { heading: 'Javascript course', image: card7 }
+      ]
+    },
+    { name: 'List', cards: [
+        { heading: 'Example Course', image: card1 }
+      ]
+    },
   ];
 
   // Filter cards based on the active category
@@ -52,7 +87,11 @@ const Trending = () => {
             >
               {category.name === 'BPM' ? (
                 <>
-                  <RiMenuUnfold3Line style={{ fontSize: '1.5rem' }} /> BPM
+                 BPM
+                </>
+              ) : category.name === 'List' ? (
+                <>
+                  <RiMenuUnfold3Line style={{ fontSize: '1.5rem' }} />
                 </>
               ) : (
                 category.name

@@ -211,11 +211,14 @@ padding: 10px;
   justify-content: center;
   gap: 10px; /* Adjust the gap between cards */
   margin: 10px auto; /* Center the cards horizontally */
-  max-width: 1000px; /* Set a max-width to limit the row length */
+  max-width: 1600px; /* Set a max-width to limit the row length */
   
 }
 
 .sidebar-card {
+  flex: 1 1 calc(33.333% - 40px); /* Three cards per row with some space */
+  box-sizing: border-box;
+  max-width: calc(33.333% - 40px); /* Adjust to match the flex-basis */
   width: 320px;
   height: 340px;
   border-radius: 20px;
@@ -225,6 +228,19 @@ padding: 10px;
   flex-direction: column;
   justify-content: space-between;
   background-color: #fff;
+}
+@media (max-width: 968px) {
+  .sidebar-card {
+    flex: 1 1 calc(50% - 20px); /* Two cards per row for medium screens */
+    max-width: calc(50% - 20px); /* Adjust to match the flex-basis */
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar-card {
+    flex: 1 1 100%; /* One card per row for small screens */
+    max-width: 100%; /* Adjust to match the flex-basis */
+  }
 }
 .qa-automation{
   height:503px;
