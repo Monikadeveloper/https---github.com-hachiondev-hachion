@@ -20,7 +20,7 @@ const Learners = () => {
           indicators={false} 
           prevIcon={<FaArrowLeft className="custom-prev-icon" />} 
           nextIcon={<FaArrowRight className="custom-next-icon" />} 
-          interval={null} // Stops auto-scrolling
+          interval={null} 
         >
           <Carousel.Item>
             <div className='learner-card-item'>

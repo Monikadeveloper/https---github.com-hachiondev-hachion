@@ -151,7 +151,6 @@ height: 150px;
     top:0px;
     transform: translate(-50%,-50%);
     color: white;
-    /* padding:5px 5px; */
     text-align: center;
    
 
@@ -209,16 +208,16 @@ padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px; /* Adjust the gap between cards */
-  margin: 10px auto; /* Center the cards horizontally */
-  max-width: 1600px; /* Set a max-width to limit the row length */
+  gap: 10px; 
+  margin: 10px auto; 
+  max-width: 1600px; 
   
 }
 
 .sidebar-card {
-  flex: 1 1 calc(33.333% - 40px); /* Three cards per row with some space */
+  flex: 1 1 calc(33.333% - 40px); 
   box-sizing: border-box;
-  max-width: calc(33.333% - 40px); /* Adjust to match the flex-basis */
+  max-width: calc(33.333% - 40px); 
   width: 320px;
   height: 340px;
   border-radius: 20px;
@@ -231,15 +230,15 @@ padding: 10px;
 }
 @media (max-width: 968px) {
   .sidebar-card {
-    flex: 1 1 calc(50% - 20px); /* Two cards per row for medium screens */
-    max-width: calc(50% - 20px); /* Adjust to match the flex-basis */
+    flex: 1 1 calc(50% - 20px); 
+    max-width: calc(50% - 20px); 
   }
 }
 
 @media (max-width: 768px) {
   .sidebar-card {
-    flex: 1 1 100%; /* One card per row for small screens */
-    max-width: 100%; /* Adjust to match the flex-basis */
+    flex: 1 1 100%; 
+    max-width: 100%; 
   }
 }
 .qa-automation{
@@ -251,7 +250,6 @@ padding: 10px;
   background-size: 100%;
  margin:30px;
  padding:40px;
- /* padding-top: 40px; */
  display: flex;
  flex-direction: row;
  justify-content: space-between;
@@ -267,7 +265,7 @@ padding: 10px;
 .qa-automation-left img{
   margin-right: -20px;
   height:180px;
-  /* width: 258.33px; */
+
 }
 .fee{
   padding-top: 5vh;
@@ -327,7 +325,7 @@ padding-top: 3vh;
   width:540px;
   height:370px;
   border-radius: 20px;
-  /* border: 10px solid white; */
+ 
 }
 .certified{
   font-weight: 700;
@@ -453,7 +451,7 @@ text-align: center;
 .left{
   flex: 2;
   background-color: white;
-  /* padding: 20px; */
+
 }
 .right{
   flex: 1;
@@ -514,7 +512,7 @@ font-style: italic;
   
   }
   .corporate {
-    height: 150px; /* Adjust height to accommodate the quotes */
+    height: 150px; 
     background: linear-gradient(to right, #006489, #00AEEF, #006489);
     position: relative;
     padding: 20px;
@@ -536,7 +534,7 @@ font-style: italic;
     font-size: 32px;
     font-weight: 700;
     position: relative;
-    z-index: 1; /* Ensure text stays on top */
+    z-index: 1; 
   }
   
   .know-more {
@@ -549,7 +547,7 @@ font-style: italic;
     font-size: 24px;
     font-weight: 700;
     border: none;
-    margin-top: 20px; /* Add some space between text and button */
+    margin-top: 20px; 
   }
   
   .corporate-para-span {
@@ -558,12 +556,12 @@ font-style: italic;
     font-weight: 700;
   }
   
-  /* Position the quotes */
+  
   .quote-left {
     position: absolute;
-    top: 0px; /* Position above text */
-    left: -20px; /* Adjust left spacing */
-    font-size: 40px; /* Adjust size as needed */
+    top: 0px; 
+    left: -20px; 
+    font-size: 40px; 
     color: white;
   }
   
@@ -637,7 +635,7 @@ font-style: italic;
     display:flex;
     flex-direction:row;
     justify-content:space-between;
-    /* padding: 1.5vh; */
+
   }
   .curriculum-content{
     height:60px;
@@ -765,13 +763,13 @@ font-style: italic;
   bottom: 0;
   width: 100%;
   height: 60px;
-  background-color: #000; /* Black color */
+  background-color: #000; 
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
-  z-index: 1000; /* Ensure it stays on top */
+  z-index: 1000;
 }
 
 .contact-info {
@@ -781,12 +779,12 @@ font-style: italic;
 }
 
 .contact-item {
-  margin-right: 20px; /* Spacing between phone number and email */
+  margin-right: 20px; 
   font-size: 16px;
 }
 
 .contact-button {
-  background-color: #fff; /* Bright blue button */
+  background-color: #fff; 
   color: black;
   border: none;
   margin:10px;
@@ -801,6 +799,6 @@ font-style: italic;
 .contact-button:hover {
   background-color: black;
   color:white;
-  font-weight: bold; /* Darker blue on hover */
+  font-weight: bold; 
 }
 

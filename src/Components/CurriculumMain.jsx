@@ -20,11 +20,7 @@ const CurriculumMain = () => {
         topics={topics1}
         buttonText="Download Curriculum"
       />
-      {/* <Curriculum 
-        heading="Frontend Development Curriculum"
-        topics={topics2}
-        buttonText="Download Frontend Curriculum"
-      /> */}
+   
     </div>
     
     </>

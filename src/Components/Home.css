@@ -36,10 +36,7 @@ background-size:cover;
     color: white;
    padding:5vh;
 }
-/* .login-right-img{
-    width:50vw;
-    height:100vh;
-} */
+
 .welcome-back{
     margin-top: 3vh;
     font-weight:700;
@@ -436,7 +433,6 @@ justify-content: center;
 }
 .whatsapp{
     height: 30px;
-    /* width: 250px; */
     cursor: pointer;
     display:flex;
     flex-direction: row;
@@ -524,7 +520,7 @@ justify-content: center;
     font-size: 18px;
     font-weight: 500;
   padding-top: 0.5vh;
-    /* padding-right: 1vh; */
+   
     text-decoration: none;
     color:white;
 }
@@ -541,7 +537,7 @@ justify-content: center;
 }
 .navbar {
     height: 100px;
-    background-color: #EEEEEE !important; /* Ensure this applies to the entire navbar */
+    background-color: #EEEEEE !important; 
 }
 
 .search-div {
@@ -578,7 +574,7 @@ justify-content: center;
     justify-content: space-evenly;
     margin-left: 3vh;
     flex-grow: 1;
-    /* Remove background-color from here */
+    
 }
 
 .nav-item-link {
@@ -587,12 +583,11 @@ justify-content: center;
     cursor: pointer;
     text-decoration: none;
     color: black;
-    /* Optional: Add padding for better spacing */
     padding: 10px 15px;
 }
 
 .nav-item {
-    background: none; /* Ensure buttons don't have any background */
+    background: none; 
     border: none;
     padding: 0;
 }
@@ -608,8 +603,8 @@ justify-content: center;
   }
   
   #autoScrollingBanner .carousel-indicators .active {
-    background-color: #000; /* Active indicator color */
-    border-color: #000; /* Optional: active indicator border color */
+    background-color: #000; 
+    border-color: #000; 
   }
 .career-skills{
     font-weight: 700;
@@ -739,7 +734,6 @@ justify-content: center;
     position: relative;
     display: inline-block;
     height:40px;
-    /* margin-bottom: 4vh; */
     padding: 5px;
     border-radius: 10px;
     background-color:#00AEEF;
@@ -748,7 +742,6 @@ justify-content: center;
     transition: background-color 0.3s ease;
 }
 .login-div-content:hover{
-    /* border: 1px solid #000000; */
     background-color: #fff;
     color: black;
     font-weight: 600;
@@ -760,7 +753,7 @@ justify-content: center;
     left: 5px;
     right: 5px;
     bottom: 5px;
-    /* border: 2px solid #000000; */
+    
     background-color: #fff;
     z-index: -1;
     transition: background-color 0.3s ease;
@@ -771,8 +764,6 @@ justify-content: center;
     height: 40px;
     border-radius: 10px;
     border:none;
-
-    /* border: 1px solid transparent; */
     transition: background-color 0.3s ease;
     
 }
@@ -781,8 +772,7 @@ justify-content: center;
     background-color: #87CEEB;
     color: #00AEEF;
     border-radius: 10px; 
-    /* padding-top: 10px;
-    padding-bottom: 10px; */
+   
     padding-left: 20px;
     padding-right: 20px;
     font-weight: 500;
@@ -806,7 +796,7 @@ justify-content: center;
     }
   
     .search-div {
-      order: 2; /* Show search below the links on mobile */
+      order: 2;
       margin: 10px 0;
       width: 100%;
     }
@@ -828,7 +818,7 @@ justify-content: center;
     }
   }
   
-  /* Tablet: Center the elements */
+ 
   @media (max-width: 992px) and (min-width: 769px) {
     .search-div {
       margin: 10px 0;
@@ -845,7 +835,7 @@ justify-content: center;
     }
   }
   
-  /* Desktop: Regular layout */
+ 
   @media (min-width: 993px) {
     .search-div {
       margin: 0 20px;
@@ -857,15 +847,15 @@ justify-content: center;
   }
   @media (min-width: 993px) {
     .container-fluid {
-      justify-content: flex-start; /* Align items to the left initially */
+      justify-content: flex-start; 
     }
   
     .search-div {
-      margin-left: 23vw; /* Push search bar to the right side */
+      margin-left: 23vw; 
     }
   
     .navbar-nav {
-      margin-left: 0; /* Remove extra space, keep items close to search bar */
+      margin-left: 0; 
     }
   }
 
@@ -906,20 +896,7 @@ justify-content: center;
 .view-btn:hover{
     font-size:18px;
 }
-/* .card {
-    width: 300px;
-    height: 330px;
-    border: none !important;
-    overflow: hidden !important;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    justify-items: space-between;
-    /* background-color: #EEEEEE; */
-    /* margin: 14px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-} */ */
+
 
 
 .card-header-div{
@@ -934,10 +911,7 @@ display:inline-block;
     height: 165px;
     object-fit: cover;
     border-radius: 20px 20px 50px 50px;
-    /* border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px; */
+   
     transition: all 0.3s ease;
     z-index: 0;
 
@@ -985,7 +959,7 @@ display:inline-block;
 .course-name {
     font-size: 18px;
     font-weight: 600;
-    color: black; /* Ensure this color contrasts well with the background */
+    color: black; 
     margin: 10px 0;
     text-align: center;
   }
@@ -1051,14 +1025,14 @@ color: white;
 .training-card-holder {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Center the cards horizontally */
-    gap: 10px; /* Space between the cards */
+    justify-content: center; 
+    gap: 10px; 
     margin: 5px auto;
-    max-width: 1200px; /* Set a max-width to contain the cards within a reasonable size */
+    max-width: 1200px; 
 }
 
 .card {
-    width: calc(25% - 10px); /* Adjust width to ensure 4 cards fit in a row with a 10px gap */
+    width: calc(25% - 10px); 
     height: 330px;
     border: none !important;
     overflow: hidden !important;
@@ -1070,22 +1044,22 @@ color: white;
     cursor: pointer;
 }
 
-/* Optional: Adjust card width for smaller screens */
+
 @media (max-width: 1200px) {
     .card {
-        width: calc(33.333% - 10px); /* 3 cards per row for medium screens */
+        width: calc(33.333% - 10px); 
     }
 }
 
 @media (max-width: 768px) {
     .card {
-        width: calc(50% - 10px); /* 2 cards per row for small screens */
+        width: calc(50% - 10px); 
     }
 }
 
 @media (max-width: 480px) {
     .card {
-        width: calc(100% - 10px); /* 1 card per row for very small screens */
+        width: calc(100% - 10px); 
     }
 }
 
@@ -1099,21 +1073,7 @@ color: white;
         
         
     }
-    /* .course-names{
-        font-weight:400;
-        font-size: 20px;
-        color: grey;
-        text-decoration: none;
-        border-bottom: 2px solid white;
-        transition: color 0.3s, border-color 0.3s;
-       
-    }
-    .course-names:hover{
-        color:black;
-        font-weight:bold;
-        border-bottom: 4px solid rgba(0, 174, 239, 1);
-        transition: color 0.3s, border-color 0.3s;
-    } */
+   
     .course-names {
         font-weight:400;
         font-size:20px;
@@ -1178,7 +1138,7 @@ color: white;
     flex-direction:row;
     gap:4vh;
     margin-left: 19vh;
-    /* justify-content: space-around; */
+    
     padding:2vh;
 }
 .Live-online{
@@ -1278,7 +1238,7 @@ color: white;
    {
       font-size: 30px;
       background-color:#d3d3d3;
-      color: black; /* Match the theme color */
+      color: black; 
       cursor: pointer;
       z-index: 1;
       border-radius: 50%;
@@ -1286,7 +1246,7 @@ color: white;
     .custom-next-icon {
         font-size: 30px;
         background-color:#fff;
-        color: black; /* Match the theme color */
+        color: black; 
         cursor: pointer;
         z-index: 1;
         border-radius: 50%;
@@ -1295,7 +1255,7 @@ color: white;
     
     .carousel-control-prev,
     .carousel-control-next {
-      width: 50px; /* Adjust the width as needed */
+      width: 50px; 
     }
     .footer{
         background-color:black;
