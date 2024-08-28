@@ -11,7 +11,7 @@ const Learners = () => {
     <>
       <div className='training-events'>
         <div className='training-events-head'>
-          <h1 className='association-head'>Our Learners Speak</h1>
+          <h1 className='association-head'>Our Learners Speak on QA Automation</h1>
         </div>
         
         <ImQuotesLeft style={{ height: '113.97px', zIndex: '1', width: '148.59px', color: 'rgba(0, 174, 239, 1)', marginBottom: '-8vh' }} />

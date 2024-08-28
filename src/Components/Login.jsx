@@ -107,7 +107,7 @@ const navigate=useNavigate();
 <div className='icon-holder'>
  <img src={google} alt='google'/>
  <img src={facebook} alt='facebook'/>
- <img src={linkedin} alt='linkedin'/>
+ <img src={linkedin} alt='linkedin' style={{height:'50px',width:'50px' }}/>
 <img src={apple} alt='apple'/>
 </div>
 <p className='go-to-register'>Don't have an account? <Link to='/register' className='link-to-register' > Register </Link></p>

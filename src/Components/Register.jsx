@@ -28,7 +28,7 @@ const Register = () => {
    <div className='icon-text-holder-facebook'>Facebook</div>
     </div>
     <div className='icon-text'>
-  <img src={linkedin} alt='linkedin' className='icon-text-img'/>
+  <img src={linkedin} alt='linkedin' className='icon-text-img-linkedin'/>
    <div className='icon-text-holder-linkedin'>Linkedin</div>
     </div>
     <div className='icon-text'>

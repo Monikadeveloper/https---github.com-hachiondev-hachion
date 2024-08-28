@@ -71,8 +71,8 @@ background-size:cover;
     gap:7vh;
 }
 .icon-holder img{
-  
-    width: 2.4vw;
+  height:45px;
+  width:45px;
 }
 .login-continue{
     font-size: 24px;
@@ -171,6 +171,12 @@ cursor: pointer;
     margin-right:-8px;
     z-index: 1;   
 }
+.icon-text-img-linkedin{
+    height: 75px;
+    width: 75px;
+    margin-right:-8px;
+    z-index: 1;   
+}
 .icon-text-holder{
     margin-left: -5px;
     height: 50px;
@@ -195,6 +201,10 @@ cursor: pointer;
     .icon-text:hover .icon-text-img{
         height:75px;
         width:75px;
+    }
+    .icon-text:hover .icon-text-img-linkedin{
+        height:80px;
+        width:80px;
     }
     .icon-text-holder-facebook{
         height: 50px;
@@ -311,17 +321,17 @@ cursor: pointer;
     padding-right: 3vh;
 }
 .step-one{
-    height: 35px;
-    width: 35px;
-      border-radius: 50%;
+    height: 32px;
+    width: 40px;
+      border-radius: 50% !important;
     background-color: #00AEEF;
 
 
 }
 .step-two{
-    height: 35px;
-    width: 35px;
-      border-radius: 50%;
+    height: 32px;
+    width: 40px;
+      border-radius: 50% !important;
     background-color: #D9D9D9;
 }
 .register-link-to{
@@ -334,16 +344,17 @@ cursor: pointer;
     display: flex;
     justify-content: center;
     align-content: center;
-    padding-top: 10px;
+    padding-top: 8px;
 }
 .steps-head-one{
     font-size: 16px;
     color: white;
     font-weight:bold;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-top: 10px;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+    padding-top: 8px;
 }
 .steps{
     height: 30px;
@@ -581,9 +592,14 @@ justify-content: center;
     font-size: 18px;
     font-weight: 400;
     cursor: pointer;
+    color:black;
     text-decoration: none;
-    color: black;
     padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+.nav-item-link:hover{
+    color:#00AEEF;
+    font-weight: 700;
 }
 
 .nav-item {
@@ -742,8 +758,8 @@ justify-content: center;
     transition: background-color 0.3s ease;
 }
 .login-div-content:hover{
-    background-color: #fff;
-    color: black;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
     font-weight: 600;
 }
 .login-div-content:hover::after{
@@ -751,10 +767,10 @@ justify-content: center;
     position: absolute;
     top: 5px;
     left: 5px;
+    font-weight: 600;
     right: 5px;
     bottom: 5px;
-    
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
     z-index: -1;
     transition: background-color 0.3s ease;
 }
@@ -764,17 +780,16 @@ justify-content: center;
     height: 40px;
     border-radius: 10px;
     border:none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease,color 0.3s ease;
     
 }
 .nav-item:hover{
     border: 3px solid #00AEEF;
     background-color: #87CEEB;
-    color: #00AEEF;
+    color: #00AEEF !important;
     border-radius: 10px; 
-   
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-weight: 500;
 }
 .nav-item:hover::after{
@@ -786,7 +801,7 @@ justify-content: center;
     bottom: 10px;
     border: 2px solid #00AEEF;
     background-color: #87CEEB;
-    color: #00AEEF;
+    color: #00AEEF !important;
     z-index: -1;
     transition: background-color 0.3s ease,color 0.3s ease;
 }
@@ -956,6 +971,42 @@ display:inline-block;
     
 
 }
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+   
+  }
+  
+  .dropdown-list {
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    width:250px;
+    padding:2vh;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+  }
+  
+  .dropdown-item {
+    padding: 6vh;
+    font-size: 16px;
+    font-weight:500;
+    background-color: white;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #00AEEF !important;
+    color: white !important;
+    font-weight:700;
+    transition: background-color 0.3s ease;
+  }
+  
+  
 .course-name {
     font-size: 18px;
     font-weight: 600;
@@ -1006,9 +1057,20 @@ transition: all 0.3s ease
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.card:hover .course-details{
+.card:hover .course-details
+{
     background-color:rgba(0, 174, 239, 1) ;
-color: white;
+color: white !important;
+}
+.card:hover .course-date
+{
+  
+color: white !important;
+}
+.card:hover .course-name
+{
+  
+color: white !important;
 }
 .card:hover .card-icon{
 
@@ -1017,6 +1079,7 @@ color: white;
 .card:hover .enroll-btn{
     background-color: white;
     color: #000000;
+    box-shadow: 1px 1px 1px #d3d3d3;
 }
 .card:hover .enroll-btn:hover{
     background-color: #000000;
@@ -1038,6 +1101,7 @@ color: white;
     overflow: hidden !important;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
+    border-radius: 20px;
     flex-direction: column;
     justify-items: space-between;
     transition: all 0.3s ease;
@@ -1119,7 +1183,7 @@ color: white;
 .online-training-div{
     height:251px;
     width:300px;
-    box-shadow: 5px 5px 5px rgba(97, 97, 97, 1);
+    box-shadow: 5px 5px 5px #d3d3d3;
     border-radius: 10px;
     border-left: 10px solid rgba(0, 174, 239, 1);
     display: flex;
@@ -1236,26 +1300,31 @@ color: white;
     }
     .custom-prev-icon
    {
-      font-size: 30px;
-      background-color:#d3d3d3;
+      font-size: 40px;
+      background-color:#ffffff;
       color: black; 
       cursor: pointer;
       z-index: 1;
       border-radius: 50%;
+      margin-left: 12vh;
     }
     .custom-next-icon {
-        font-size: 30px;
+        font-size: 40px;
         background-color:#fff;
         color: black; 
         cursor: pointer;
         z-index: 1;
         border-radius: 50%;
-        margin-right: 5vh;
+        margin-right: -34vh;
       }
+    
     
     .carousel-control-prev,
     .carousel-control-next {
-      width: 50px; 
+        width: 50px; 
+    }
+    .carousel-control-next {
+        right: -10px; 
     }
     .footer{
         background-color:black;

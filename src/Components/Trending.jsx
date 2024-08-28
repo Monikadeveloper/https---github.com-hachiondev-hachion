@@ -14,6 +14,8 @@ import { useNavigate } from 'react-router-dom';
 const Trending = () => {
   const navigate = useNavigate();
   const [activeCategory, setActiveCategory] = useState('All');
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [dropdownSelection, setDropdownSelection] = useState('Project Management');
 
   const handleCardClick = (path) => {
     navigate(path);
@@ -58,15 +60,36 @@ const Trending = () => {
     { name: 'BPM', cards: [
         { heading: 'Javascript course', image: card7 }
       ]
-    },
-    { name: 'List', cards: [
-        { heading: 'Example Course', image: card1 }
-      ]
-    },
+    }
   ];
 
-  // Filter cards based on the active category
+  const dropdownOptions = [
+    'Project Management',
+    'Business Intelligence',
+    'Programming',
+    'Big Data',
+    'Workday',
+    'Mule Soft',
+    'Mobile Development',
+    'Machine Learning',
+    'Blockchain',
+    'Data Warehousing',
+    'Deep Learning',
+    'Microsoft',
+    'Scrum Master'
+  ];
+
+  // Filter cards based on the active category or dropdown selection
   const filteredCards = categories.find(category => category.name === activeCategory)?.cards || [];
+
+  const handleDropdownClick = () => {
+    setDropdownVisible(!dropdownVisible);
+  };
+
+  const handleDropdownSelection = (selection) => {
+    setDropdownSelection(selection);
+    setDropdownVisible(false);
+  };
 
   return (
     <>
@@ -85,19 +108,28 @@ const Trending = () => {
               onClick={() => setActiveCategory(category.name)}
               style={{ cursor: 'pointer' }}
             >
-              {category.name === 'BPM' ? (
-                <>
-                 BPM
-                </>
-              ) : category.name === 'List' ? (
-                <>
-                  <RiMenuUnfold3Line style={{ fontSize: '1.5rem' }} />
-                </>
-              ) : (
-                category.name
-              )}
+              {category.name}
             </h2>
           ))}
+          <div className='dropdown-container'>
+            <RiMenuUnfold3Line 
+              style={{ fontSize: '1.5rem', cursor: 'pointer',marginTop:'1.3vh' }} 
+              onClick={handleDropdownClick} 
+            />
+            {dropdownVisible && (
+              <div className='dropdown-list'>
+                {dropdownOptions.map((option, index) => (
+                  <div 
+                    key={index} 
+                    className='dropdown-item' 
+                    onClick={() => handleDropdownSelection(option)}
+                  >
+                    {option}
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
         <div className='training-card-holder'>
           {filteredCards.map((card, index) => (
