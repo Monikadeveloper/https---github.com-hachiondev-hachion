@@ -1,20 +1,33 @@
-import React from 'react'
-import { HiDocumentText } from "react-icons/hi2";
-import { CiLinkedin } from "react-icons/ci";
+import React from 'react';
+import CareerImage from '../Assets/image 130.png';
+import Resume from '../Assets/image 131.png';
+import './Course.css';
+
 
 const ProfileBuilding = () => {
   return (<>
-    <div className='career-content'>
-    <h5 className='career-header-content'><HiDocumentText/>  Career Oriented Sessions</h5>
-    <p className='career-session'>Over 10+ live interactive sessions with an 
+  <div className='profile-building'>
+  <div className='profile-building-div'>
+  
+    <img src={CareerImage} alt='career-image' /> 
+    <div>
+    <h5 > Career Oriented Sessions</h5>
+    <p >Over 10+ live interactive sessions with an 
         industry expert to gain knowledge and experience on how to build skills 
         that are expected by hiring managers. These will be guided sessions that 
         will help you stay on track with your upskilling.</p>
-   <h5 className='career-header-content'><CiLinkedin />  Resume & LinkedIn Profile Building</h5>
-   <p className='career-session'>Get assistance in creating a world-class resume
+        </div>
+        </div>
+        <div className='profile-building-div'>
+          <img src={Resume} alt='resume-image'/>
+          <div >
+   <h5 > Resume & LinkedIn Profile Building</h5>
+   <p >Get assistance in creating a world-class resume
      & Linkedin Profile from our career services team and learn how to grab the 
      attention of the hiring manager 
     at the profile shortlisting stage</p>
+    </div>
+    </div>
     </div>
     </>
   )

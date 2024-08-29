@@ -7,7 +7,7 @@ const cardData = {
     'QA Testing': ['QA Automation', 'Load Runner', 'QA Manual Testing', 'Mobile App Testing'],
     'Data Science': ['Python', 'DataScience with Python', 'Data Science with R'],
     'Programming': ['Java Full Stack Development', 'PHP with MySQL','UI/UX Design','Microsoft .NET','Angular JS Training','Node js','MongoDB Training','JavaScript Course','JQuery Training','React JS Training','SQL'],
-      'Salesforce': ['Salesforce Developer', 'Salesforce Admin','Salesforce Lightning','Salesforce Admin Developer Lightning','Salesforce Admin Developer'],
+      'Salesforce': ['Salesforce Developer', 'Salesforce Admin','Salesforce Lightning','Salesforce Admin Developer','Salesforce Admin Developer'],
     'ServiceNow' : ['ServiceNow'],
       'Cloud Computing': ['AWS Solution Architecture', 'AWS Developer','AWS SysOps Admin','Google Cloud','DevOps','Internet of Things','Snowflake'],
     'Workday': ['Subitem 1', 'Subitem 2'],

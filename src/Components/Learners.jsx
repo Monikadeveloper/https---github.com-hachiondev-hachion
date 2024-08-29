@@ -4,7 +4,7 @@ import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import { Carousel } from 'react-bootstrap';
 import LearnerCard from './LearnerCard';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Custom Icons
+import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6'; // Custom Icons
 
 const Learners = () => {
   return (
@@ -17,9 +17,9 @@ const Learners = () => {
         <ImQuotesLeft style={{ height: '113.97px', zIndex: '1', width: '148.59px', color: 'rgba(0, 174, 239, 1)', marginBottom: '-8vh' }} />
         <div className='learner-cover'>
         <Carousel 
-          indicators={false} 
-          prevIcon={<FaArrowLeft className="custom-prev-icon" />} 
-          nextIcon={<FaArrowRight className="custom-next-icon" />} 
+          indicators={true} 
+          prevIcon={<FaAngleLeft className="custom-prev-icon" />} 
+          nextIcon={<FaAngleRight className="custom-next-icon" />} 
           interval={null} 
         >
           <Carousel.Item>

@@ -1318,11 +1318,41 @@ color: white !important;
         margin-right: -34vh;
       }
     
-    
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 50px; 
-    }
+
+      .carousel-indicators {
+          z-index: 2; 
+          bottom: 20px; 
+      }
+      
+      .carousel-indicators li {
+          background-color: grey; 
+          width: 50px; 
+          height: 12px; 
+          border-radius: 10px;
+          margin: 5px;
+      }
+      
+     
+      .carousel-indicators .active {
+          background-color: #00AAEF; 
+          width: 50px; 
+          height: 12px; 
+          border-radius: 10px; 
+      }
+      
+     
+      .carousel-indicators li,
+      .carousel-indicators .active {
+          transition: background-color 0.3s ease;
+      }
+      
+      .custom-prev-icon,
+      .custom-next-icon,
+      .ImQuotesLeft,
+      .ImQuotesRight {
+          z-index: 2; 
+      }
+      
     .carousel-control-next {
         right: -10px; 
     }
