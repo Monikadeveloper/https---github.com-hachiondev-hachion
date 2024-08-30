@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './Corporate.css';
 import { ImQuotesLeft } from "react-icons/im";
 import { ImQuotesRight } from "react-icons/im";
 import profile1 from '../Assets/profile1.jfif';

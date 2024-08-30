@@ -1,57 +1,58 @@
-import React from 'react';
-import './Course.css';
-import { FaCircle } from "react-icons/fa";
-import {FcCalendar} from 'react-icons/fc';
-import BatchType from './BatchType';
+import React, { useState } from 'react';
+import { FcCalendar } from 'react-icons/fc';
+
+import LiveOnlineFees from './LiveOnlineFees';
+import CorporateFees from './CorporateFees';
+import MentoringModeFees from './MentoringModeFees';
+import SelfPlacedFees from './SelfPlacedFees';
 
 const UpcomingBatch = () => {
+  const [activeComponent, setActiveComponent] = useState('LiveOnlineFees');
+
+  const renderComponent = () => {
+    switch (activeComponent) {
+      case 'LiveOnlineFees':
+        return <LiveOnlineFees />;
+      case 'CorporateFees':
+        return <CorporateFees />;
+      case 'MentoringModeFees':
+        return <MentoringModeFees />;
+      case 'SelfPlacedFees':
+        return <SelfPlacedFees />;
+      default:
+        return <LiveOnlineFees />;
+    }
+  };
+
   return (
-   <>
-   <div className='upcoming-batch'>
-   <p className='upcoming-batch-heading'>Upcoming Batches for QA Automation Course</p>
- <BatchType/>
-   <div className='batch-schedule'>
-    <div className='left'>
-        <div className='partition'>
-            <label>
-            <input type='radio' name='radio'/>
-            <span className='custom-radio'></span>
-            <p className='batch-date'> Aug 8 2024<span className='date-span'>(Thursday)</span></p>
-           <p className='batch-date'>09:00 PM IST <span className='date-span'>(1 hour)</span></p>
-           <p className='demo'><FaCircle style={{marginRight:'1vh',height:'20px',width:'20px'}}/>Live Demo</p>
-            </label>
-
-        </div>
-        <div className='separator'></div>
-        <div className='partition'> <label>
-            <input type='radio' name='radio'/>
-            <span className='custom-radio'></span>
-            <p className='batch-date'> Aug 13 2024<span className='date-span'>(Thursday)</span></p>
-           <p className='batch-date'>08:00 PM IST <span className='date-span'>(1 hour)</span></p>
-           <p className='demo'><FaCircle style={{marginRight:'1vh',height:'20px',width:'20px'}}/>Live Demo</p>
-            </label></div>
-        <div className='separator'></div>
-        <div className='partition'> <label>
-            <input type='radio' name='radio'/>
-            <span className='custom-radio'></span>
-            <p className='batch-date'> Aug 20 2024<span className='date-span'>(Thursday)</span></p>
-           <p className='batch-date'>10:00 PM IST <span className='date-span'>(1 hour)</span></p>
-           <p className='demo'><FaCircle style={{marginRight:'1vh',height:'20px',width:'20px'}}/>Live Demo</p>
-            </label></div>
-    </div>
-    <div className='separator'></div>
-    <div className='right'>
-        <p className='batch-date'>Fee : </p>
-        <p className='free'>Free</p>
-        <button className='enroll-now'>Enroll Now </button>
-    </div>
-    
+    <>
+      <div className='upcoming-batch'>
+        <p className='upcoming-batch-heading'>Upcoming Batches for QA Automation Course</p>
+        <div className='batch-type'>
+ <p className='batch-type-content' onClick={() => setActiveComponent('LiveOnlineFees')}>Live online training</p>
+ <p className='batch-type-content' onClick={() => setActiveComponent('MentoringModeFees')}>Mentoring mode</p>
+ <p className='batch-type-content'onClick={() => setActiveComponent('SelfPlacedFees')}>Self-placed Learning</p>
+ <p className='batch-type-content' onClick={() => setActiveComponent('CorporateFees')}>Corporate Training</p>
    </div>
-   <p className='schedule'><FcCalendar/>Schedule your way?<span className='schedule-span'> Request Batch </span></p>
-   </div>
-   
-   </>
-  )
-}
+      
+        {renderComponent()}
 
-export default UpcomingBatch
+        <p className='schedule'>
+          <FcCalendar />
+          Schedule your way? 
+          <span className='schedule-span'> Request Batch </span>
+        </p>
+
+       
+        {/* <div className='button-group'>
+          <button onClick={() => setActiveComponent('LiveOnlineFees')}>Live Online</button>
+          <button onClick={() => setActiveComponent('CorporateFees')}>Corporate</button>
+          <button onClick={() => setActiveComponent('MentoringModeFees')}>Mentoring</button>
+          <button onClick={() => setActiveComponent('SelfPlacedFees')}>Self-Placed</button>
+        </div> */}
+      </div>
+    </>
+  );
+};
+
+export default UpcomingBatch;

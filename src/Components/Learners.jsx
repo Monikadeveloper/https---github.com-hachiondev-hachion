@@ -1,5 +1,5 @@
 import React from 'react';
-import './Home.css';
+import './Corporate.css';
 import { ImQuotesLeft, ImQuotesRight } from "react-icons/im";
 import { Carousel } from 'react-bootstrap';
 import LearnerCard from './LearnerCard';
@@ -16,7 +16,7 @@ const Learners = () => {
         
         <ImQuotesLeft style={{ height: '113.97px', zIndex: '1', width: '148.59px', color: 'rgba(0, 174, 239, 1)', marginBottom: '-8vh' }} />
         <div className='learner-cover'>
-        <Carousel 
+        <Carousel
           indicators={true} 
           prevIcon={<FaAngleLeft className="custom-prev-icon" />} 
           nextIcon={<FaAngleRight className="custom-next-icon" />} 
