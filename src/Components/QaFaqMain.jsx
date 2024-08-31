@@ -3,7 +3,7 @@ import './Course.css';
 import { BsFileEarmarkPdfFill } from 'react-icons/bs';
 import { FaPlus, FaMinus } from 'react-icons/fa6';
 
-const Curriculum = ({ heading, topics, buttonText, additionalTopics }) => {
+const QaFaqMain = ({ heading, topics, buttonText, additionalTopics }) => {
   const [showMore, setShowMore] = useState(false);
   const [expandedTopics, setExpandedTopics] = useState({});
 
@@ -20,18 +20,16 @@ const Curriculum = ({ heading, topics, buttonText, additionalTopics }) => {
     }));
   };
 
-  // Sample content for "Introduction" in bullet list form
-  const introductionContent = [
-    'What is Automation testing?',
-    'When to start Automation?',
-    'When not to go for automation?',
-    'What are the advantages of automation testing?',
-    'What is Selenium?',
+  // Sample content for "What is Selenium 1.0 and Selenium 2.0?" in bullet list form
+  const seleniumContent = [
+    'What is Selenium 1.0?',
+    'When to use Selenium 2.0?',
+    'Difference between Selenium 1.0 and Selenium 2.0?',
     'What are the advantages of Selenium?',
     'Difference between Selenium and QTP?'
   ];
 
-  const renderTopics = (topicList, startIndex = 0) => {
+  const renderTopics = (topicList, startIndex = 2) => {
     return topicList.map((topic, index) => (
       <div key={index + startIndex}>
         <div className='curriculum-content' onClick={() => handleToggleExpand(index + startIndex)}>
@@ -42,10 +40,10 @@ const Curriculum = ({ heading, topics, buttonText, additionalTopics }) => {
         </div>
         {expandedTopics[index + startIndex] && (
           <div className='topic-details'>
-            {/* Conditionally render bullet list for Introduction topic */}
-            {topic === 'Introduction' ? (
+            {/* Conditionally render bullet list for the specific topic */}
+            {topic ==='What is Selenium 1.0 and Selenium 2.0?' ? (
               <ul className='bullet-list'>
-                {introductionContent.map((item, i) => (
+                {seleniumContent.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
               </ul>
@@ -79,4 +77,4 @@ const Curriculum = ({ heading, topics, buttonText, additionalTopics }) => {
   );
 };
 
-export default Curriculum;
+export default QaFaqMain;

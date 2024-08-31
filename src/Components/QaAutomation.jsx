@@ -9,7 +9,6 @@ import UpcomingHeader from './UpcomingHeader';
 import UpcomingBatch from './UpcomingBatch';
 import Corporate from './Corporate';
 import Qacourse from './Qacourse';
-// import Curriculum from './Curriculum';
 import ModeOfTraining from './ModeOfTraining';
 import CareerSupport from './CareerSupport';
 import Learners from './Learners';

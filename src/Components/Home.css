@@ -920,7 +920,7 @@ display:inline-block;
 
 }
 
-.card-image{
+/* .card-image{
     display: block;
     width: 100%;
     height: 165px;
@@ -930,7 +930,7 @@ display:inline-block;
     transition: all 0.3s ease;
     z-index: 0;
 
-}
+} */
 
 .card-img-div{
     position: absolute;
@@ -1054,8 +1054,8 @@ transition: all 0.3s ease
 .card:hover .card-image{
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 .card:hover .course-details
 {
@@ -1093,20 +1093,43 @@ color: white !important;
     margin: 5px auto;
     max-width: 1200px; 
 }
-
 .card {
+    width: calc(25% - 10px); 
+    height: 330px;
+    border: none !important;
+    overflow: hidden !important; /* Ensure that any overflow is hidden */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 20px 20px 50px 50px; /* Ensure that the card has rounded corners */
+}
+
+.card-image {
+    display: block;
+    width: 100%;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 0px 0px 50px 50px; /* Adjust the border radius */
+    transition: all 0.3s ease;
+    z-index: 0;
+}
+
+/* .card {
     width: calc(25% - 10px); 
     height: 330px;
     border: none !important;
     overflow: hidden !important;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     display: flex;
-    border-radius: 20px;
+    
     flex-direction: column;
     justify-items: space-between;
     transition: all 0.3s ease;
     cursor: pointer;
-}
+} */
 
 
 @media (max-width: 1200px) {
