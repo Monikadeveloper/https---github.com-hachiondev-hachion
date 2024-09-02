@@ -12,7 +12,23 @@ const topics1 = [
   'Profiles',
   'Automating Links',
   'Automating Dropdowns',
-  'Xpaths'
+  'Xpaths',
+  'Using CSS SElectors',
+  'TestNG',
+  'Tab and Popup Automation',
+  'Synchronization',
+  'Ajax Testing',
+  'Miscellaneous',
+  'Action Class',
+  'Automating WebTable',
+  'Excel Read/Write',
+  'Frameworks',
+  'Automating Window Components',
+  'Version Controlling',
+  'Maven',
+  'Grid II',
+  'Continuous Integration',
+  'buddy'
  ]
 
 

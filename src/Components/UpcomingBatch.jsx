@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FcCalendar } from 'react-icons/fc';
-
+import './Course.css';
 import LiveOnlineFees from './LiveOnlineFees';
 import CorporateFees from './CorporateFees';
 import MentoringModeFees from './MentoringModeFees';
@@ -27,7 +27,7 @@ const UpcomingBatch = () => {
   return (
     <>
       <div className='upcoming-batch'>
-        <p className='upcoming-batch-heading'>Upcoming Batches for QA Automation Course</p>
+        <p className='qa-heading'>Upcoming Batches for QA Automation Course</p>
         <div className='batch-type'>
  <p className='batch-type-content' onClick={() => setActiveComponent('LiveOnlineFees')}>Live online training</p>
  <p className='batch-type-content' onClick={() => setActiveComponent('MentoringModeFees')}>Mentoring mode</p>

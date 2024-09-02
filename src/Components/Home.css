@@ -785,7 +785,7 @@ justify-content: center;
 }
 .nav-item:hover{
     border: 3px solid #00AEEF;
-    background-color: #87CEEB;
+    background-color: #CCEFFC;
     color: #00AEEF !important;
     border-radius: 10px; 
     padding-left: 10px;

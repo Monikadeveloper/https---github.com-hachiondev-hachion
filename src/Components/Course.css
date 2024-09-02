@@ -370,23 +370,23 @@ text-align:center;
   display: flex;
   justify-content: space-evenly;
 }
-.upcoming-header{
-  margin-top: 4vh;
-  height:80px;
-  background: linear-gradient(to right,#006489,#00AEEF,#006489);
-box-shadow: 5px 5px 5px #D3D3D3;
+/* Add smooth scrolling behavior to the entire page */
+html {
+  scroll-behavior: smooth;
 }
-.upcoming-batch-heading
-  {
-    font-size: 40px;
-    font-weight: 600;
-    background: linear-gradient( #00AEEF,#006489);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-left:5vh;
-  }
 
-.upcoming-header-content{
+.upcoming-header {
+  margin-top: 4vh;
+  height: 80px;
+  background: linear-gradient(to right, #006489, #00AEEF, #006489);
+  box-shadow: 5px 5px 5px hsl(0, 0%, 83%);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.upcoming-header-content {
   font-size: 20px;
   font-weight: 400;
   color: white;
@@ -395,7 +395,56 @@ box-shadow: 5px 5px 5px #D3D3D3;
   justify-content: space-evenly;
   padding: 2.5vh;
 }
-.upcoming-batch{
+
+.upcoming-link {
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+  cursor: pointer;
+  display: inline-block;
+  color: white !important;
+  position: relative;
+}
+
+.upcoming-link:hover::after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  right: -4px;
+  bottom: -16px;
+  height: 4px;
+  background-color: white;
+}
+
+/* .batch-type-content {
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.batch-type-content.active::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: white;
+  transition: width 0.3s ease-in-out;
+}
+
+.batch-type-content:hover {
+ 
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.batch-type-content.active:hover::after {
+  width: 100%;
+} */
+
+
+
+.upcoming-batch {
   height: 574px;
   width: 90%;
   margin: 5vh;
@@ -405,8 +454,8 @@ box-shadow: 5px 5px 5px #D3D3D3;
   background-color: #FFFFFF;
   box-shadow: 5px 5px 5px #d3d3d3;
   padding: 3vh;
-
 }
+
 .batch-type{
   height:70px;
   width:95%;
@@ -436,7 +485,7 @@ text-align: center;
   position: absolute;
   left: -4px;
   right: -4px;
-  bottom: -16px;
+  bottom: -20px;
   height: 4px;
   background-color: white;
 
@@ -450,7 +499,7 @@ text-align: center;
 .batch-type-content.active::after {
   content: '';
   position: absolute;
-  bottom: -16px;
+  bottom: -20px;
   left: 0;
   width: 100%;
   height: 4px;
@@ -495,71 +544,120 @@ text-align: center;
   flex-direction: row;
   padding-top: 4vh;
 }
-.batch-schedule{
-  margin-top: 20px;
+.batch-schedule {
+  margin-top: 10px;
   display: flex;
   margin-left: 5vh;
   background-color: #EEEEEE;
   width: 95%;
-  height: 300px;
+  height: auto;
   border-radius: 10px;
   border: 2px solid #d3d3d3;
+  padding: 10px;
 }
-.left{
+
+.left {
   flex: 2;
   background-color: white;
-  padding:2vh;
-
+  /* padding: 2vh; */
 }
-.right{
+
+.right {
   flex: 1;
   background-color: white;
   padding: 20px;
   justify-content: space-evenly;
   align-items: center;
-  text-align:center;
-}
-.separator{
-  width: 2px;
-  background-color: #d3d3d3;
-}
-.partition{
-  display: inline-block;
-  width: 100%;
-  height: 100px;
-  vertical-align: top;
-  padding: 20px;
-  box-sizing: border-box;
- 
-  border: 2px solid #d3d3d3
-}
-.custom-radio::after{
-  background: linear-gradient(45deg,#006489,#00AEEF);
-}
-.batch-date{
-  font-size:20px;
-  font-weight:400;
-}
-.date-span{
-  font-size: 16px;
-  font-weight: 300;
-  color:#F4111F;
-}
-.partition label{
-  display:flex;
-  flex-direction: row;
-  justify-content: space-between;
   text-align: center;
 }
-.demo{
-  color:#FF5C01;
-font-size:20px;
-font-weight:300;
-font-style: italic;
+
+.separator {
+  width: 2px;
+  background-color: #d3d3d3;
+  margin: 10px 0;
 }
-.demo::after{
-  color:rgba(16, 201, 0, 1);
+
+.partition {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid #d3d3d3;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  
 }
+
+.partition label {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+}
+
+
+.partition-schedule{
+  display: flex;
+  flex-direction: row;
+  justify-items:space-evenly;
+  gap:10vh;
+align-items: center;
+margin-top: 2vh;
+}
+.custom-radio {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid grey;
+  margin-right: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-radio::after {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background: transparent; /* Initially transparent */
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  display: none;
+}
+input[type="radio"]:checked + .custom-radio::after {
+  display: block; 
+  background: linear-gradient(to right, #006489, #00AEEF, #006489); /* Fill with gradient on click */
+}
+
+input[type="radio"] {
+  display: none; 
+}
+
+
+.batch-date {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.date-span {
+  font-size: 16px;
+  font-weight: 300;
+  color: #F4111F;
+}
+
+.demo {
+  color: #FF5C01;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+}
+
 .free
   {
     font-size: 48px;
@@ -632,9 +730,10 @@ font-style: italic;
   }
   .schedule{
     text-align:center;
+    font-size:22px;
   }
   .schedule-span{
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
     background: linear-gradient( #00AEEF,#006489);
     -webkit-background-clip: text;
@@ -656,7 +755,7 @@ font-style: italic;
     background: linear-gradient( #00AEEF,#006489);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  padding-bottom: 3vh;
+  padding-bottom: 1.5vh;
   }
   .qa-subheading{
     font-size: 20px;
@@ -912,3 +1011,17 @@ font-style: italic;
   font-weight: 400;
 }
 
+.request-batch{
+  height:672px;
+  width: 600px;
+  border-radius: 20px;
+  background-color: white;
+}
+.request-header{
+  height: 100px;
+  background: linear-gradient(to right, #006489, #00AEEF, #006489);
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}

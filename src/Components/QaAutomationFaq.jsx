@@ -1,5 +1,6 @@
 import React from 'react'
 import Curriculum from './Curriculum';
+import QaFaqMain from './QaFaqMain';
 
 const topics3 = [
     'What is Selenium 1.0 and Selenium 2.0?',
@@ -19,7 +20,7 @@ const QaAutomationFaq = () => {
   return (
    <>
    <div>
-   <Curriculum 
+   <QaFaqMain 
         heading="QA Automation FAQ's"
         topics={topics3}
         buttonText="Download FAQ's"

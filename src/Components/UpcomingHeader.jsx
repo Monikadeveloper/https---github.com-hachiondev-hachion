@@ -1,22 +1,21 @@
-import React from 'react'
-import './Home.css';
+import React from 'react';
+import './Course.css';
+import { HashLink } from 'react-router-hash-link';
 
 const UpcomingHeader = () => {
   return (
-    <>
-<div className='upcoming-header'>
-<div className='upcoming-header-content'>
-    <p>Upcoming Batches</p>
-    <p>About Course</p>
-    <p>Curriculum</p>
-    <p>Mode of Training's</p>
-    <p>Career Support</p>
-    <p>Reviews</p>
-    <p>FAQ's</p>
-</div>
-</div>
-    </>
-  )
+    <div className='upcoming-header'>
+      <div className='upcoming-header-content'>
+        <HashLink to="#upcoming-batch" className='upcoming-link'>Upcoming Batches</HashLink>
+        <HashLink to="#corporate" className='upcoming-link'>About Course</HashLink>
+        <HashLink to="#curriculum" className='upcoming-link'>Curriculum</HashLink>
+        <HashLink to="#mode-of-training" className='upcoming-link'>Mode of Training</HashLink>
+        <HashLink to="#career-support" className='upcoming-link'>Career Support</HashLink>
+        <HashLink to="#learners" className='upcoming-link'>Reviews</HashLink>
+        <HashLink to="#qa-faq" className='upcoming-link'>FAQ's</HashLink>
+      </div>
+    </div>
+  );
 }
 
-export default UpcomingHeader
+export default UpcomingHeader;

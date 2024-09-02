@@ -1,6 +1,6 @@
 import React from 'react';
-import CareerImage from '../Assets/image 130.png';
-import Resume from '../Assets/image 131.png';
+import CareerImage from '../Assets/la_chalkboard-teacher.png';
+import Resume from '../Assets/streamline_business-user-curriculum.png';
 import './Course.css';
 
 

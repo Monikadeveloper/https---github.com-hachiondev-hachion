@@ -20,17 +20,86 @@ const Curriculum = ({ heading, topics, buttonText, additionalTopics }) => {
     }));
   };
 
-  // Sample content for "Introduction" in bullet list form
-  const introductionContent = [
-    'What is Automation testing?',
-    'When to start Automation?',
-    'When not to go for automation?',
-    'What are the advantages of automation testing?',
-    'What is Selenium?',
-    'What are the advantages of Selenium?',
-    'Difference between Selenium and QTP?'
-  ];
+  // Sample content for each topic
+  const contentMapping = {
+    'Introduction': [
+      'What is Automation testing?',
+      'When to start Automation?',
+      'When not to go for automation?',
+      'What are the advantages of automation testing?',
+      'What is Selenium?',
+      'What are the advantages of Selenium?',
+      'Difference between Selenium and QTP?'
+    ],
+    'Selenium IDE': [
+      'What is Selenium IDE?',
+      'Installing IDE',
+      'Record and playback',
+      'Converting Selenium script into other languages',
+      'Batch testing in IDE'
+    ],
+    'Java': [
+      'Introduction to Java',
+      'Installing JDK',
+      'Configuring Eclipse IDE',
+      'Creating Java project',
+      'Sample Java program',
+      'Classes and objects',
+      'Downloading Selenium server jar',
+      'Configuring Selenium into the Java project',
+      'Conditional Statements in Java',
+      'Loops in Java',
+      'Arrays in Java',
+      'Array List in Java',
+      'Methods in Java',
+      'Utility functions in Java',
+      'Local and global variable in Java',
+      'Static and instance variables in Java',
+      'Hash set in Java',
+      'Method overloading in Java',
+      'Constructors in Java',
+      'Inheritance in Java',
+      'Interfaces in Java',
+      'Packages in Java'
+    ],
+    'WebDriver Introduction': [
+      'Browser Launching Automation',
+      'Working on',
+      'Firefox',
+      'Chrome',
+      'IE'
+    ],
+    'Add on and Methods': [
+      'Firebug and Fire path',
+      'Login functionality test',
+      'Locators in WebDriver',
+      'Methods in WebDriver'
+    ],
+    'Profiles':[
+      'Firefox Profiles',
+      'Making WebDriver launch a customized instance of Firefox',
+      'Basic HTML notations'
+    ],
+    'Automating Links':[
+      'Links testing',
+    'Clicking on a link and validating',
+  'Capturing links from a section of the page',
+'Validating the captured Links',
+'Links testing types',
+'Visible links and hidden links',
+'Validating all the links based on href property',
+'checking for broken links'],
 
+'Automating Dropdowns':[
+  'Dropdown Testing',
+  'Selection an option from the Dropdown',
+  'Capturing all elements in a dropdown',
+  'Checking the correctness of options in the Dropdown',
+  'Validating multiple Dropdowns'
+]
+  };
+
+  // Render topics and conditionally expand detailed content
   const renderTopics = (topicList, startIndex = 0) => {
     return topicList.map((topic, index) => (
       <div key={index + startIndex}>
@@ -42,16 +111,11 @@ const Curriculum = ({ heading, topics, buttonText, additionalTopics }) => {
         </div>
         {expandedTopics[index + startIndex] && (
           <div className='topic-details'>
-            {/* Conditionally render bullet list for Introduction topic */}
-            {topic === 'Introduction' ? (
-              <ul className='bullet-list'>
-                {introductionContent.map((item, i) => (
-                  <li key={i}>{item}</li>
-                ))}
-              </ul>
-            ) : (
-              <p>Detailed content for {topic}</p>
-            )}
+            <ul className='bullet-list'>
+              {contentMapping[topic]?.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
           </div>
         )}
       </div>

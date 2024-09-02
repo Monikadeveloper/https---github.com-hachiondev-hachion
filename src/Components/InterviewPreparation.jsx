@@ -1,5 +1,6 @@
 import React from 'react'
-import CareerImage from '../Assets/image 130.png';
+import CareerImage from '../Assets/interview.png';
+import mentorImage from '../Assets/mentor.png';
 import './Course.css'
 
 const InterviewPreparation = () => {
@@ -14,7 +15,7 @@ const InterviewPreparation = () => {
    </div>
    </div>
    <div className='profile-building-div'>
-   <img src={CareerImage} alt='mock-interview'/>
+   <img src={mentorImage} alt='mock-interview'/>
    <div>
    <h5 >  1 on 1 Career Mentoring Sessions</h5>
    <p >Attend one-on-one sessions with career mentors on how to develop the required skills and attitude to secure a dream job based on a learner’s 
