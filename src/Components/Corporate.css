@@ -429,4 +429,9 @@
    .carousel-indicators .active {
        transition: background-color 0.3s ease;
    }
-   
+   .query{
+    height:698px;
+    width:600px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px #d3d3d3;
+   }

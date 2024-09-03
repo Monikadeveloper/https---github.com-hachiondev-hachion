@@ -5,6 +5,7 @@ import Login from './Components/Login';
 
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import Register from './Components/Register';
+import HaveAnyQuery from './Components/HaveAnyQuery';
 import RegisterNext from './Components/RegisterNext';
 import RegisterHere from './Components/RegisterHere';
 import LoginSuccess from './Components/LoginSuccess';
@@ -28,6 +29,7 @@ function App() {
       <Route path='/course' element={<Course/>}/>
       <Route path='/qaautomation' element={<QaAutomation/>}/>
       <Route path='/corporate' element={<CorporateTraining/>}/>
+      <Route path='/haveanyquery' element={<HaveAnyQuery/>}/>
       </Routes></BrowserRouter>
     </>
   );

@@ -5,9 +5,11 @@ import LiveOnlineFees from './LiveOnlineFees';
 import CorporateFees from './CorporateFees';
 import MentoringModeFees from './MentoringModeFees';
 import SelfPlacedFees from './SelfPlacedFees';
+import RequestBatch from './RequestBatch'; // Import the RequestBatch component
 
 const UpcomingBatch = () => {
   const [activeComponent, setActiveComponent] = useState('LiveOnlineFees');
+  const [showModal, setShowModal] = useState(false); // State to control the modal
 
   const renderComponent = () => {
     switch (activeComponent) {
@@ -29,28 +31,29 @@ const UpcomingBatch = () => {
       <div className='upcoming-batch'>
         <p className='qa-heading'>Upcoming Batches for QA Automation Course</p>
         <div className='batch-type'>
- <p className='batch-type-content' onClick={() => setActiveComponent('LiveOnlineFees')}>Live online training</p>
- <p className='batch-type-content' onClick={() => setActiveComponent('MentoringModeFees')}>Mentoring mode</p>
- <p className='batch-type-content'onClick={() => setActiveComponent('SelfPlacedFees')}>Self-placed Learning</p>
- <p className='batch-type-content' onClick={() => setActiveComponent('CorporateFees')}>Corporate Training</p>
-   </div>
-      
+          <p className='batch-type-content' onClick={() => setActiveComponent('LiveOnlineFees')}>Live online training</p>
+          <p className='batch-type-content' onClick={() => setActiveComponent('MentoringModeFees')}>Mentoring mode</p>
+          <p className='batch-type-content'onClick={() => setActiveComponent('SelfPlacedFees')}>Self-placed Learning</p>
+          <p className='batch-type-content' onClick={() => setActiveComponent('CorporateFees')}>Corporate Training</p>
+        </div>
+        
         {renderComponent()}
 
         <p className='schedule'>
           <FcCalendar />
           Schedule your way? 
-          <span className='schedule-span'> Request Batch </span>
+          <span className='schedule-span' onClick={() => setShowModal(true)}> Request Batch </span>
         </p>
-
-       
-        {/* <div className='button-group'>
-          <button onClick={() => setActiveComponent('LiveOnlineFees')}>Live Online</button>
-          <button onClick={() => setActiveComponent('CorporateFees')}>Corporate</button>
-          <button onClick={() => setActiveComponent('MentoringModeFees')}>Mentoring</button>
-          <button onClick={() => setActiveComponent('SelfPlacedFees')}>Self-Placed</button>
-        </div> */}
       </div>
+
+      {showModal && (
+        <div className="modal">
+          <div className="modal-content">
+            <button className="btn-close" onClick={() => setShowModal(false)}>X</button>
+            <RequestBatch />
+          </div>
+        </div>
+      )}
     </>
   );
 };
