@@ -2,6 +2,7 @@ import React from 'react'
 import Curriculum from './Curriculum';
 
 const topics1 = [
+  'Course Demo Video Links',
   'Introduction',
   'Selenium IDE',
   'Java',

@@ -9,8 +9,9 @@ import RequestBatch from './RequestBatch'; // Import the RequestBatch component
 
 const UpcomingBatch = () => {
   const [activeComponent, setActiveComponent] = useState('LiveOnlineFees');
-  const [showModal, setShowModal] = useState(false); // State to control the modal
+  const [isModalOpen, setIsModalOpen] = useState(false); // State to control the modal visibility
 
+  // Function to render the selected batch component
   const renderComponent = () => {
     switch (activeComponent) {
       case 'LiveOnlineFees':
@@ -26,6 +27,11 @@ const UpcomingBatch = () => {
     }
   };
 
+  // Function to close the modal
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <>
       <div className='upcoming-batch'>
@@ -33,24 +39,39 @@ const UpcomingBatch = () => {
         <div className='batch-type'>
           <p className='batch-type-content' onClick={() => setActiveComponent('LiveOnlineFees')}>Live online training</p>
           <p className='batch-type-content' onClick={() => setActiveComponent('MentoringModeFees')}>Mentoring mode</p>
-          <p className='batch-type-content'onClick={() => setActiveComponent('SelfPlacedFees')}>Self-placed Learning</p>
+          <p className='batch-type-content' onClick={() => setActiveComponent('SelfPlacedFees')}>Self-placed Learning</p>
           <p className='batch-type-content' onClick={() => setActiveComponent('CorporateFees')}>Corporate Training</p>
         </div>
         
+        {/* Render the selected batch type */}
         {renderComponent()}
 
+        {/* Request Batch link */}
         <p className='schedule'>
           <FcCalendar />
           Schedule your way? 
-          <span className='schedule-span' onClick={() => setShowModal(true)}> Request Batch </span>
+          <span 
+            className='schedule-span' 
+            onClick={() => setIsModalOpen(true)} // Open the modal on click
+            style={{ cursor: 'pointer', color: 'blue' }}
+          >
+            Request Batch
+          </span>
         </p>
       </div>
 
-      {showModal && (
+      {/* Modal to show the RequestBatch component */}
+      {isModalOpen && (
         <div className="modal">
           <div className="modal-content">
-            <button className="btn-close" onClick={() => setShowModal(false)}>X</button>
-            <RequestBatch />
+            <button 
+              className="btn-close" 
+              onClick={handleCloseModal} // Close modal on click
+              style={{ position: 'absolute', top: '10px', right: '10px', fontSize: '1.5rem', cursor: 'pointer' }}
+            >
+              &times;
+            </button>
+            <RequestBatch closeModal={handleCloseModal} />
           </div>
         </div>
       )}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Topbar from './Topbar';
 import NavbarTop from './NavbarTop';
 import './Course.css';
@@ -17,6 +17,18 @@ import CurriculumMain from './CurriculumMain';
 import QaAutomationFaq from './QaAutomationFaq';
 
 const QaAutomation = () => {
+  const curriculumRef = useRef(null);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  const handleVideoButtonClick = () => {
+    if (curriculumRef.current) {
+      curriculumRef.current.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <>
       <div className='course-top'>
@@ -25,10 +37,9 @@ const QaAutomation = () => {
         <div className='course-banner'>
           <h3 className='course-banner-content'>QA Automation</h3>
         </div>
-        <QaTop />
+        <QaTop onVideoButtonClick={handleVideoButtonClick} />
         <KeyHighlights />
-        
-        {/* Add id attributes to the sections you want to scroll to */}
+
         <div id="upcoming-batch">
           <UpcomingHeader />
           <UpcomingBatch />
@@ -38,7 +49,7 @@ const QaAutomation = () => {
           <Corporate />
         </div>
 
-        <div id="curriculum">
+        <div id="curriculum" ref={curriculumRef}>
           <CurriculumMain />
         </div>
 

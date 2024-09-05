@@ -4,10 +4,9 @@ import 'react-datepicker/dist/react-datepicker.css';
 import calendar from '../Assets/calendar.png'; // Black calendar icon
 import './Course.css';
 
-const RequestBatch = () => {
+const RequestBatch = ({ closeModal }) => {
   const [startDate, setStartDate] = useState(null); 
   const [time, setTime] = useState(''); // State for time
-  const [isModalOpen, setIsModalOpen] = useState(true); // State to control modal visibility
   const timeInputRef = useRef(null); // Ref for time input
 
   // Function to trigger time input focus on clock image click (If you decide to keep the clock icon)
@@ -16,13 +15,6 @@ const RequestBatch = () => {
       timeInputRef.current.focus();
     }
   };
-
-  // Function to close the modal
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-  };
-
-  if (!isModalOpen) return null; // Don't render anything if modal is closed
 
   return (
     <>
@@ -35,7 +27,7 @@ const RequestBatch = () => {
             type="button" 
             className="btn-close" 
             aria-label="Close" 
-            onClick={handleCloseModal} // Close modal on click
+            onClick={closeModal} // Close modal on click
             style={{
               background: 'transparent', 
               border: 'none',
@@ -79,7 +71,6 @@ const RequestBatch = () => {
                 paddingLeft: '10px', // Adjusted padding now that the clock image is removed
               }}
             />
-            {/* Clock image is removed */}
           </div>
 
           <div className="form-group col-10">

@@ -22,6 +22,10 @@ const Curriculum = ({ heading, topics, buttonText, additionalTopics }) => {
 
   // Sample content for each topic
   const contentMapping = {
+    'Course Demo Video Links':['Demo Link 1',
+      'Demo Link 2',
+      'Demo Link 3'
+    ],
     'Introduction': [
       'What is Automation testing?',
       'When to start Automation?',

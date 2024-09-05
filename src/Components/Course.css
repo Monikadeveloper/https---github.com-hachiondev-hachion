@@ -252,7 +252,7 @@ padding: 10px;
   background-repeat: no-repeat;
   background-size: 100%;
  margin:30px;
- padding:40px;
+ padding:20px;
  display: flex;
  flex-direction: row;
  justify-content: space-between;
@@ -263,12 +263,28 @@ padding: 10px;
 .qa-automation-left{
   display: flex;
   flex-direction: row;
+  margin-left: 8vh;
 
 }
 .qa-automation-left img{
   margin-right: -20px;
   height:180px;
 
+}
+.video-btn{
+  height:43px;
+  width:443px;
+  border-radius: 10px;
+  padding: 5px 10px 5px 10px;
+  border: 1px solid white;
+  background-color:#00AAEF;
+  box-shadow:2px 2px 2px black;
+  color:white;
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-left: 6vh;
+  
 }
 .fee{
   padding-top: 5vh;
@@ -293,6 +309,7 @@ padding: 10px;
   font-weight:500;
 text-align:right;
 padding-top: 3vh;
+margin-left: 8vh;
 }
 .enroll-now{
   height:70px;
@@ -320,15 +337,25 @@ padding-top: 3vh;
   margin: 2vh;
   box-shadow: 5px 5px 5px #D3D3D3;
 }
+.download:hover{
+  background-color: blue;
+  color:white;
+}
 .qa-button{
  display: flex;
  justify-content: space-evenly;
 }
+.qa-right{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  margin-right: 13vh;
+}
 .qa-right img{
   width:540px;
-  height:370px;
+  height:350px;
   border-radius: 20px;
- 
+
 }
 .certified{
   font-weight: 700;
@@ -414,35 +441,6 @@ html {
   height: 4px;
   background-color: white;
 }
-
-/* .batch-type-content {
-  cursor: pointer;
-  padding: 10px;
-  position: relative;
-}
-
-.batch-type-content.active::after {
-  content: '';
-  position: absolute;
-  bottom: -16px;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: white;
-  transition: width 0.3s ease-in-out;
-}
-
-.batch-type-content:hover {
- 
-  color: white;
-  transition: background-color 0.3s ease;
-}
-
-.batch-type-content.active:hover::after {
-  width: 100%;
-} */
-
-
 
 .upcoming-batch {
   height: 574px;
@@ -559,7 +557,7 @@ text-align: center;
 .left {
   flex: 2;
   background-color: white;
-  /* padding: 2vh; */
+
 }
 
 .right {
@@ -621,7 +619,7 @@ margin-top: 2vh;
   content: '';
   width: 14px;
   height: 14px;
-  background: transparent; /* Initially transparent */
+  background: transparent; 
   border-radius: 50%;
   position: absolute;
   top: 4px;
@@ -630,7 +628,7 @@ margin-top: 2vh;
 }
 input[type="radio"]:checked + .custom-radio::after {
   display: block; 
-  background: linear-gradient(to right, #006489, #00AEEF, #006489); /* Fill with gradient on click */
+  background: linear-gradient(to right, #006489, #00AEEF, #006489); 
 }
 
 input[type="radio"] {
@@ -767,15 +765,7 @@ input[type="radio"] {
     font-size: 16px;
     font-weight: 400;
   }
-  /* .curriculum{
-    height: 484px;
-    background-color: #FFFFFF;
-    margin: 5vh;
-    box-shadow: 5px 5px 5px #d3d3d3;
-    border-radius: 10px;
-    padding:1.5vh;
   
-  } */
   .curriculum {
     background-color: #FFFFFF;
     margin: 5vh;
@@ -786,7 +776,7 @@ input[type="radio"] {
   }
   
   .curriculum-expanded {
-    height: auto; /* Allow height to expand with content */
+    height: auto; 
   }
   
   .curriculum-content {
@@ -804,7 +794,7 @@ input[type="radio"] {
   }
   
   .topic-details {
-    background-color: #F5F5F5;
+    background-color: #Fff;
     padding: 10px 30px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -839,17 +829,7 @@ input[type="radio"] {
     justify-content:space-between;
 
   }
-  /* .curriculum-content{
-    height:60px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 30px 15px 30px;
-    background-color: #EEEEEE;
-    font-size: 20px;
-    font-weight: 600;
-    color: #006489;
-  } */
+ 
   .curriculum-topic{
     display:flex;
     justify-content:space-evenly;
@@ -1010,11 +990,49 @@ input[type="radio"] {
   font-size: 24px;
   font-weight: 400;
 }
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* Darken background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it overlays other content */
+}
+
+.modal-content {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 20px;
+  width: 600px; /* Adjust width as needed */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 1.5rem;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
 .request-batch {
   height: 672px;
   width: 600px;
-  border-radius: 20px;
+  border-radius: 20px !important;
   background-color: white;
 }
 
@@ -1028,52 +1046,34 @@ input[type="radio"] {
   text-align: center;
   display: flex;
   align-items: center;
-  justify-content: center; /* Centers the text horizontally */
+  justify-content: center; 
 }
 
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000; /* Ensure it is above other content */
-}
-
-.modal-content {
-  position: relative;
-  background-color: white;
-  border-radius: 20px;
-  max-width: 600px;
-  max-height: 672px;
-  width: 100%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.btn-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  color: white;
-  border: 2px solid white; /* White border to create a circle */
-  border-radius: 50%; /* Makes the button circular */
-  padding: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .form-group {
-  position: relative;
-  margin-bottom: 1.5rem; /* Adjusts the spacing between input fields */
+  margin-bottom: 15px; 
 }
+
+.mobile-number-container {
+  display: flex;
+  align-items: center;
+  gap: 0px; 
+}
+
+.mobile-number-container .form-select {
+  width: 100px; 
+}
+
+#exampleFormControlTextarea1 {
+  width: calc(100% - 60px); 
+  margin-top: 0;
+  margin-left: 30px; 
+}
+
+#inputNumber {
+  flex-grow: 2; 
+}
+
+
 
 .form-control {
   width: 100%;
