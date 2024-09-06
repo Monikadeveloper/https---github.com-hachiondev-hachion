@@ -1,18 +1,18 @@
 
 import './App.css';
-import { Home } from './Components/Home';
-import Login from './Components/Login';
+import { Home } from './Components/UserPanel/Home';
+import Login from './Components/UserPanel/Login';
 
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import Register from './Components/Register';
-import HaveAnyQuery from './Components/HaveAnyQuery';
-import RegisterNext from './Components/RegisterNext';
-import RegisterHere from './Components/RegisterHere';
-import LoginSuccess from './Components/LoginSuccess';
-import ForgotPassword from './Components/ForgotPassword';
-import Course from './Components/Course';
-import QaAutomation from './Components/QaAutomation';
-import CorporateTraining from './Components/CorporateTraining';
+import Register from './Components/UserPanel/Register';
+import HaveAnyQuery from './Components/UserPanel/HaveAnyQuery';
+import RegisterNext from './Components/UserPanel/RegisterNext';
+import RegisterHere from './Components/UserPanel/RegisterHere';
+import LoginSuccess from './Components/UserPanel/LoginSuccess';
+import ForgotPassword from './Components/UserPanel/ForgotPassword';
+import Course from './Components/UserPanel/Course';
+import QaAutomation from './Components/UserPanel/QaAutomation';
+import CorporateTraining from './Components/UserPanel/CorporateTraining';
 
 function App() {
   return (
