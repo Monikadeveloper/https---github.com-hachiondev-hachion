@@ -243,8 +243,8 @@
 
 .advisor-form {
     height: 834px;
-    margin-left: 8vh;
-    margin-right: 8vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
     border-radius: 20px;
     background-color: white;
 }
@@ -274,22 +274,25 @@
     color: red;
 }
 
-.form-control {
-    height: 50px;
+.form-control,.form-select {
+    height: 50px ;
     width: 520px;
+}
+.form-select{
+    margin-left:3.5vh;
 }
 
 #Textarea {
-    height: 130px;
+    height: 120px;
     width: 100%;
 }
 
 .row {
-    padding: 6vh;
+    padding: 5vh;
 }
 
 .row .col-md-6 {
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
 }
 
 .submit-btn {

@@ -52,7 +52,7 @@ const UpcomingBatch = () => {
           Schedule your way? 
           <span 
             className='schedule-span' 
-            onClick={() => setIsModalOpen(true)} // Open the modal on click
+            onClick={() => setIsModalOpen(true)} 
             style={{ cursor: 'pointer', color: 'blue' }}
           >
             Request Batch
@@ -60,13 +60,13 @@ const UpcomingBatch = () => {
         </p>
       </div>
 
-      {/* Modal to show the RequestBatch component */}
+      
       {isModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
+        <div className="modal-request">
+          <div className="modal-request-content">
             <button 
               className="btn-close" 
-              onClick={handleCloseModal} // Close modal on click
+              onClick={handleCloseModal} 
               style={{ position: 'absolute', top: '10px', right: '10px', fontSize: '1.5rem', cursor: 'pointer' }}
             >
               &times;

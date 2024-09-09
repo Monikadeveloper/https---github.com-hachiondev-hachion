@@ -1,0 +1,678 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  'Open Sans', sans-serif;
+  
+}
+
+.login{
+    display: flex;
+    flex-direction: row;
+    font-style: Open-Sans;
+}
+
+.login-left{
+    width: 45vw;
+    height: 100vh;
+ 
+}
+.login-with{
+    width: 42vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.login-right{
+   width: 55vw;
+   height: 100vh;
+   background-image: url('../../Assets/sider.png');
+    background-repeat: no-repeat;
+background-position: center;
+background-size:cover;
+    color: white;
+   padding:5vh;
+}
+
+.welcome-back{
+    margin-top: 3vh;
+    font-weight:700;
+    margin-bottom: 1vh;
+    font-weight: 36px;
+}
+.login-top{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    padding-top: 109px;
+   
+}
+
+.form-floating img{
+    position:absolute;
+    bottom: 22px;
+    right:18px;
+    width:30px;
+    height:30px;
+   
+}
+.login-mid-name{
+  padding-top: 6vh;
+   }
+.icon-holder{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2.5rem;
+    cursor: pointer;
+    gap:7vh;
+}
+.icon-holder img{
+  height:45px;
+  width:45px;
+}
+.login-continue{
+    font-size: 24px;
+    margin-bottom: 2vh;
+    font-weight:400;
+    color:rgba(0, 0,0,1);
+}
+.forgot-password{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    color:#00AEEF;
+    cursor: pointer;
+}
+
+.login-right-header{
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom:1.2vh;
+}
+.login-right-span{
+    font-weight:bold;
+}
+.login-right-content{
+    padding-bottom: 1.2vh;
+   font-size: 24px;
+   font-weight: 400;
+ 
+}
+
+.login-option{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0,0,0,1);
+   padding: 1.5vh;
+}
+.go-to-register{
+    padding: 1vh;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+  
+.login .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+  }
+  
+  .login-label {
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .form-control {
+    width: 520px;
+    height: 50px;
+    border-radius: 5px;
+    padding-right: 50px; /* Add padding to make space for the lock icon */
+ 
+}
+  
+  .input-group {
+    position: relative;
+    width: 520px;
+    margin-left: 0vh;
+   
+  }
+  
+  .input-group .form-control {
+    width: 520px;
+    height: 50px;
+    margin-left: 0vh;
+   border:1px solid #d3d3d3;
+    
+  }
+  
+  .input-group-text {
+    position: absolute;
+    right: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* .input-group-text img {
+    width: 30px;
+    height: 30px;
+  } */
+  
+  .form-check-input {
+    color: black !important;
+  
+   font-size: 1.5rem;
+  margin-top: 10px;
+  }
+  .form-check-label{
+    margin-top:0.4vh;
+  }
+  
+
+  .forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+    font-style: italic;
+    color: #00AEEF;
+    cursor: pointer;
+  }
+  
+  
+.btn{
+    width:520px;
+    height:50px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.btn-close{
+    height: 25px;
+    width:25px;
+    border-radius: 50%;
+    border: 1px solid blue;
+    color: blue;
+}
+@media (max-width: 768px) {
+    .login {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .login-left,
+    .login-right {
+      width: 100%;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .login-top {
+      padding-top: 20px;
+    }
+  
+    .welcome-back {
+      font-size: 24px;
+    }
+  
+    .login-continue {
+      font-size: 18px;
+    }
+  
+    .input-group {
+      margin-bottom: 15px;
+    }
+  
+    .icon-holder {
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .go-to-register {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Small Mobile Phones */
+  @media (max-width: 480px) {
+    .login-top {
+      padding-top: 10px;
+    }
+  
+    .login-logo {
+      max-width: 80px;
+    }
+  
+    .welcome-back {
+      font-size: 20px;
+    }
+  
+    .login-continue {
+      font-size: 16px;
+    }
+  
+    .input-group,
+    .form-control,
+    .btn {
+      width: 100%;
+    }
+  
+    .icon-holder {
+      justify-content: space-around;
+      gap: 10px;
+    }
+  
+    .go-to-register {
+      font-size: 0.9rem;
+    }
+  }
+.register-head{
+    padding-top: 3vh;
+    padding-bottom: 2vh;
+    font-size: 36px;
+}
+.icon-places{
+    padding: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon-text{
+    height: 70px;
+    width: 325px;
+display: flex;
+flex-direction: row;
+object-fit:fill;
+cursor: pointer;
+
+}
+
+.icon-text-img{
+    height: 65px;
+    width: 65px;
+    margin-right:-8px;
+    z-index: 1;   
+}
+.icon-text-img-linkedin{
+    height: 70px;
+    width: 70px;
+    margin-right:-8px;
+    z-index: 1;   
+}
+.icon-text-holder{
+    margin-left: -5px;
+    height: 50px;
+    width: 300px;
+    z-index: 0;
+    border-radius:5px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    color: black;
+    margin-top: 1vh;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .icon-text:hover .icon-text-holder{
+        font-size: 22px;
+        background-color: #D3D3D3;
+    }
+    .icon-text:hover .icon-text-img{
+        height:70px;
+        width:70px;
+    }
+    .icon-text:hover .icon-text-img-linkedin{
+        height:75px;
+        width:75px;
+    }
+    .icon-text-holder-facebook{
+        height: 50px;
+        width: 300px;
+       z-index: 0;
+       margin-left: -5px;
+       border-radius:5px;
+        margin-top: 1vh;
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #3B5998;
+        color: white;
+    }
+    .icon-text:hover .icon-text-holder-facebook{
+        font-size: 22px;
+        background-color: #1275B1;
+    }
+    .icon-text-holder-linkedin{
+        height: 50px;
+        width: 300px;
+       z-index: 0;
+       border-radius:5px;
+       margin-left: -5px;
+        margin-top: 1.35vh;
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1275B1;
+        color: white;
+    }
+    .icon-text:hover .icon-text-holder-linkedin{
+        font-size: 22px;
+        background-color: #4e88be;
+    }
+    .icon-text-holder-apple{
+        height: 50px;
+        width: 300px;
+       z-index: 0;
+       border-radius:5px;
+       margin-left: -5px;
+        margin-top: 1vh;
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        color: white;
+    }
+    .icon-text:hover .icon-text-holder-apple{
+        font-size: 22px;
+        background-color: #454545;
+    }
+    .star{
+        color:red;
+    }
+    .icon-text-holder-email{
+        height: 50px;
+        width: 300px;
+        z-index: 0;
+        border-radius: 5px;
+        margin-top: 1vh;
+        margin-left: -5px;
+        font-weight: bold;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #EA4335;
+        color: white;
+       
+    }
+    .icon-text:hover .icon-text-holder-email{
+        font-size: 22px;
+        background-color: #FF7F7F;
+    }
+
+.icon-places{
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+}
+.login-link{
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+.link-to-register{
+    color:#00AEEF;
+    text-decoration-line: none;
+    font-weight: bold;
+}
+@media (max-width: 1024px) {
+    .login {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .login-left {
+        width: 100vw;
+        height: auto;
+        padding: 2vh;
+    }
+
+    .login-right {
+        width: 100vw;
+        height: auto;
+    }
+
+    .icon-places {
+        flex-direction: column;
+        gap: 2vh;
+        width: 100%;
+        align-items: center;
+    }
+
+    .icon-text {
+        width: 80%;
+        height: 60px;
+    }
+
+    .icon-text-img, .icon-text-img-linkedin {
+        height: 50px;
+        width: 50px;
+    }
+
+    .icon-text-holder {
+        width: 70%;
+        font-size: 18px;
+    }
+
+    .register-head {
+        font-size: 28px;
+    }
+
+    .login-link {
+        font-size: 14px;
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .register-head {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .icon-text {
+        width: 90%;
+    }
+
+    .icon-text-holder, .icon-text-holder-facebook, 
+    .icon-text-holder-linkedin, .icon-text-holder-apple, 
+    .icon-text-holder-email {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .login-left h4 {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .login-link {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+.icon-places {
+    padding: 3vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icon-text {
+    height: 70px;
+    width: 325px;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.icon-text-img {
+    height: 65px;
+    width: 65px;
+    margin-right: -8px;
+    z-index: 1;
+}
+
+.icon-text-holder {
+    margin-left: -5px;
+    height: 50px;
+    width: 300px;
+    z-index: 0;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    margin-top: 1vh;
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-text:hover .icon-text-holder {
+    font-size: 22px;
+    background-color: #d3d3d3;
+}
+
+
+.login-link {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+.link-to{
+    color:#00AEEF;
+    text-decoration-line: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+.form-error{
+    color:red;
+    font-size:12px;
+    font-weight:bold;
+}
+.register-learning{
+    font-size: 36px;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+.steps-head{
+    font-weight: 20px;
+    font-weight: 500;
+    padding-right: 3vh;
+}
+.step-one{
+    height: 32px;
+    width: 40px;
+      border-radius: 50% !important;
+    background-color: #00AEEF;
+    cursor:pointer;
+
+
+}
+.step-two{
+    height: 32px;
+    width: 40px;
+      border-radius: 50% !important;
+    background-color: #D9D9D9;
+    cursor:pointer;
+}
+.register-link-to{
+    text-decoration-line: none;
+}
+.steps-head-two{
+    font-size: 16px;
+    color: black;
+    font-weight:bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 8px;
+}
+.steps-head-one{
+    font-size: 16px;
+    color: white;
+    font-weight:bold;
+    display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+    padding-top: 8px;
+}
+.steps{
+    height: 30px;
+    width:276px;
+    display: flex;
+    flex-direction: row;
+    padding:3vh;
+    
+    
+}
+.enter-otp{
+   display:flex;
+   justify-content: flex-start;
+   padding-top: 1vh;
+   font-weight:bold;
+}
+.otp-verify{
+    padding: 2vh;
+}
+.otp-number{
+    height:50px;
+width: 50px;
+border:1px solid #D3D3D3;
+border-radius:5%;
+box-shadow: darkgrey;
+}
+
+.otp{
+    width: 350px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.register-btn{
+    width: 520px;
+    height: 50px;
+    background-color: #00AEEF;
+    color: white;
+    font-weight: bold;
+    font-size: 20;
+    margin:1vh;
+    border:0px;
+    border-radius: 5px;
+}
+.otp-number:focus {
+    border-color: #00AEEF;
+    outline: none;
+    box-shadow: 0 0 5px #00AEEF;
+}
+
+.floatingInputLabel{
+    color:#D3D3D3;
+}
+.login-with-hachion{
+    font-size: 14px;
+}
+.login-label-password{
+    display: flex;
+    justify-content: flex-start;
+}

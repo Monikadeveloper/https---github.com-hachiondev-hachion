@@ -5,7 +5,7 @@ import youtube from '../../Assets/youtube.png';
 import linkedin from '../../Assets/linkedin.png';
 import instagram from '../../Assets/instagram.png';
 import dribble from '../../Assets/dribbble.png';
-
+import './Home.css';
 const Footer = () => {
   return (
     
@@ -52,7 +52,7 @@ const Footer = () => {
       <div className='footer-link'>
       <img src={facebook} alt='facebook'/>
       <img src={twitter} alt='twitter'/>
-      <img src={linkedin} alt='linkedin'/>
+      <img src={linkedin} alt='linkedin' className='footer-linkedin'/>
       <img src={instagram} alt='instagram'/>
       <img src={dribble} alt='dribble'/>
       <img src={youtube} alt='youtube'/>

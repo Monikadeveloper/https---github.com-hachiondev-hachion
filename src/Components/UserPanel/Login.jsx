@@ -34,7 +34,9 @@ const Login = () => {
    
     navigate('/'); 
   };
-
+const googleLogin=()=>{
+  console.log('google login clicked');
+}
   const togglePasswordVisibility = () => {
     setPasswordType(prevType => prevType === 'password' ? 'text' : 'password');
   };
@@ -111,7 +113,7 @@ const Login = () => {
             </div>
 
             <div className='icon-holder'>
-              <img src={google} alt='google' />
+              <img src={google} alt='google' onClick={googleLogin} />
               <img src={facebook} alt='facebook' />
               <img src={linkedin} alt='linkedin' style={{ height: '50px', width: '50px' }} />
               <img src={apple} alt='apple' />

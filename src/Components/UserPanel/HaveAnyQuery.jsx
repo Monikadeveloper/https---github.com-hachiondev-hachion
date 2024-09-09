@@ -1,5 +1,6 @@
 import React from 'react';
 import './Course.css';
+import {AiOutlineCloseCircle} from 'react-icons/ai';
 
 const HaveAnyQuery = ({ closeModal }) => {
   
@@ -10,15 +11,11 @@ const HaveAnyQuery = ({ closeModal }) => {
           <div className='request-header'>
             Have any Query ?
           </div>
-          <button 
-            type="button" 
-            className="btn-close" 
-            aria-label="Close" 
+          <AiOutlineCloseCircle
             onClick={closeModal}
-          >
-            &times;
-          </button>
-
+          className='button-close'/>
+            
+          
           <form>
             <div className="form-group col-10">
               <label htmlFor="inputName" className="form-label">Full Name*</label>

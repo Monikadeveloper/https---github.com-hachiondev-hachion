@@ -3,6 +3,7 @@ import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import calendar from '../../Assets/calendar.png'; // Black calendar icon
 import './Course.css';
+import {AiOutlineCloseCircle} from 'react-icons/ai';
 
 const RequestBatch = ({ closeModal }) => {
   const [startDate, setStartDate] = useState(null); 
@@ -23,20 +24,10 @@ const RequestBatch = ({ closeModal }) => {
           Let us know your preferred start date
         </div>
         <form>
-          <button 
-            type="button" 
-            className="btn-close" 
-            aria-label="Close" 
-            onClick={closeModal} // Close modal on click
-            style={{
-              background: 'transparent', 
-              border: 'none',
-              fontSize: '1.5rem',
-              cursor: 'pointer'
-            }}
-          >
-            &times;
-          </button>
+       
+          <AiOutlineCloseCircle
+            onClick={closeModal}
+          className='button-close'/>
 
           <div className="form-group col-10">
             <label htmlFor="inputDate" className="form-label">Preferred batch start date</label>

@@ -32,7 +32,14 @@ const Advisor = () => {
             <label htmlFor="inputNumber4" className="form-label">
               Mobile Number<span className="required">*</span>
             </label>
-            <input type="number" className="form-control" id="inputNumber4" placeholder='Enter your number'/>
+            <div className="form-group col-12 mobile-number-container">
+              <select className="form-select">
+                <option>+1</option>
+                <option>+91</option>
+                <option>+44</option>
+              </select>
+              <input type="number" className="form-control" id="inputNumber" placeholder="Enter your number"/>
+            </div>
           </div>
           <div className="col-md-6">
             <label htmlFor="inputState" className="form-label">
