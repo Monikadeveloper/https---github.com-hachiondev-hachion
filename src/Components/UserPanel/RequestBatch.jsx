@@ -52,14 +52,14 @@ const RequestBatch = ({ closeModal }) => {
             <label htmlFor="inputTime" className="form-label">Preferred batch Time</label>
             <input
               type="time"
-              ref={timeInputRef}  // Assign the ref to time input
+              ref={timeInputRef}  
               value={time}
               onChange={(e) => setTime(e.target.value)}
               className="form-control"
               style={{
                 border: "1px solid #B3B3B3",
                 color: '#173767',
-                paddingLeft: '10px', // Adjusted padding now that the clock image is removed
+                paddingLeft: '10px', 
               }}
             />
           </div>

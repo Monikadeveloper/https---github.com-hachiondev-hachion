@@ -625,6 +625,77 @@ cursor: pointer;
     
     
 }
+@media screen and (max-width: 1024px) {
+    .login {
+        flex-direction: column;
+    }
+
+    .login-left, .login-right {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .steps {
+        width: 100%;
+    }
+
+    .register-learning {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .login-left, .login-right {
+        height: auto;
+        padding: 5vh;
+    }
+
+    .steps {
+        padding: 2vh;
+    }
+
+    .register-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .register-learning {
+        font-size: 1.25rem;
+    }
+
+    .steps-head {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-left, .login-right {
+        padding: 3vh;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .register-learning {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .steps-head {
+        font-size: 0.85rem;
+    }
+
+    .steps-head-one, .steps-head-two {
+        font-size: 0.85rem;
+    }
+
+    .register-btn {
+        padding: 6px 12px;
+        font-size: 0.85rem;
+    }
+}
 .enter-otp{
    display:flex;
    justify-content: flex-start;
@@ -675,4 +746,52 @@ box-shadow: darkgrey;
 .login-label-password{
     display: flex;
     justify-content: flex-start;
+}
+@media screen and (max-width: 1024px) {
+    .login {
+        flex-direction: column;
+    }
+
+    .login-left {
+        width: 100%;
+        height: auto;
+    }
+
+    .register-btn {
+        width: 100%;
+        height: 45px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .otp-number {
+        width: 40px;
+        height: 40px;
+    }
+
+    .register-btn {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .login-left {
+        padding: 2vh;
+    }
+
+    .otp {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .otp-number {
+        width: 35px;
+        height: 35px;
+    }
+
+    .register-btn {
+        font-size: 0.85rem;
+        height: 40px;
+    }
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import LoginSide from './LoginSide'
 import logo from '../../Assets/logo.png'
-import './Home.css'
+import './Login.css'
 import facebook from '../../Assets/facebook_symbol.svg.png'
 import google from '../../Assets/google_symbol.svg.png'
 import linkedin from '../../Assets/linkedin.png';

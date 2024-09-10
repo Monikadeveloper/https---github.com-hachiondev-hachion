@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import './Home.css';
+import './Login.css';
 import logo from '../../Assets/logo.png';
 import {useFormik} from 'formik';
 import {LoginSchema} from '../Schemas';

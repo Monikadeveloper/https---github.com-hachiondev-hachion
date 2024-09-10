@@ -1,5 +1,5 @@
 import React from 'react'
-import './Home.css'
+import './Login.css'
 import logo from '../../Assets/logo.png'
 import LoginSide from './LoginSide'
 import {useFormik} from 'formik';
