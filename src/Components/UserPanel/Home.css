@@ -8,7 +8,7 @@
 
 
 .topbar {
-    height: 60px;
+    height: 6vh;
     background-color: rgba(0, 174, 239, 1);
     display: flex;
     flex-direction: row;
@@ -20,19 +20,19 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%; /* Take full width and adjust inside with padding */
-    max-width: 700px; /* Limit the width on larger screens */
+    max-width: 40vw; /* Limit the width on larger screens */
     padding-left: 1vw;
 }
 .query{
-    height: 24px;
-    width: 171px;
+    height: 2.4vh;
+    width: 8.55vw;
 display: flex;
 justify-content: center;
 }
 .query-content{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     color: white;
     cursor: pointer;
@@ -41,7 +41,7 @@ justify-content: center;
 
 }
 .whatsapp{
-    height: 30px;
+    height: 3vh;
     cursor: pointer;
     display:flex;
     flex-direction: row;
@@ -50,14 +50,13 @@ justify-content: center;
 }
 .whatsapp-number{
     font-weight: 500;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: white;
     margin-right: 1vh;
-    padding-top: 0.5vh;
   
 }
 .training-mail{
-    height: 30px;
+    height: 3vh;
     cursor: pointer;
     display:flex;
     flex-direction: row;
@@ -67,8 +66,8 @@ justify-content: center;
 }
 .training-email{
     font-weight: 500;
-    font-size: 20px;
-    padding-top: 0.5vh;
+    font-size: 1.25rem;
+ 
    
 }
 .close-btn{
@@ -86,22 +85,22 @@ justify-content: center;
     flex-direction: column;
 }
 .success-gif{
-    width: 80px;
-    height: 80px;
+    width: 4vw;
+    height: 8vh;
    
 }
 .button-login{
-    width:137px;
-    height:40px;
+    width:6.85vw;
+    height:4vh;
     border-radius:5px;
-    padding:8px 20px 8px 20px;
+    padding:8px;
     background-color: rgba(0, 174, 239, 1);
     color:white;
     font-weight: 700;
-    font-size:18px;
+    font-size:1.1rem;
     border:none;
-    margin-left: 220px;
-    margin-bottom: 20px;
+    margin-left: 13vw;
+    margin-bottom: 2vh;
 
 }
 .modal-footer{
@@ -111,22 +110,22 @@ justify-content: center;
 
 
 .modal fade{
-    width: 430px;
-    height:294px ;
+    width: 21.5vw;
+    height:29.4vh ;
     border-radius: 20px 20px 20px 20px;
 }
 .modal-para{
-    font-size:20px;
+    font-size:1.25rem;
     font-weight: 400;
     color:rgba(22, 159, 44, 1);
 }
 .recover{
     font-weight:400 ;
-    font-size: 36px;
+    font-size: 2.25rem;
     margin: 4vh;
 }
 .login-link-home{
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 500;
   padding-top: 0.5vh;
    
@@ -139,7 +138,7 @@ justify-content: center;
     align-items: center;
     flex-direction: row;
     color: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
    gap:1rem;
 
@@ -151,7 +150,7 @@ justify-content: center;
     }
 
     .whatsapp-number, .training-email, .query-content {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .login-div {
@@ -172,7 +171,7 @@ justify-content: center;
     }
 
     .query-content, .whatsapp-number, .training-email {
-        font-size: 14px; 
+        font-size: 0.9rem; 
         text-align: center; 
     }
 
@@ -192,7 +191,7 @@ justify-content: center;
 }
 /* General styling */
 .navbar {
-    height: 100px;
+    height: 12vh;
     background-color: #EEEEEE !important;
     display: flex;
     align-items: center;
@@ -201,9 +200,9 @@ justify-content: center;
   }
  
   .search-div-home {
-    height: 60px;
+    height: 6vh;
     width: 100%;
-    max-width: 500px;
+    max-width: 35vw;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #BABABA;
     display: flex;
@@ -214,7 +213,7 @@ justify-content: center;
   
   .search-input-home {
     flex: 1;
-    padding-left: 20px;
+    padding-left: 1vw;
     border-radius: 10px 0px 0px 10px;
     border: 1px solid rgba(186, 186, 186, 1);
     outline: none;
@@ -222,8 +221,8 @@ justify-content: center;
   }
   
   .btn-search-home {
-    width: 100px;
-    height: 60px;
+    width: 5vw;
+    height: 6vh;
     background-color: rgba(0, 174, 239, 1);
     color: white;
     border-radius: 0px 10px 10px 0px;
@@ -239,7 +238,7 @@ justify-content: center;
   }
   
   .nav-item-link {
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 400;
     cursor: pointer;
     color: black;
@@ -264,8 +263,8 @@ justify-content: center;
     background-color: #CCEFFC;
     color: #00AEEF !important;
     border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
     font-weight: 500;
   }
   
@@ -277,32 +276,32 @@ justify-content: center;
     }
   
     .navbar img {
-      width: 80px;
+      width: 4vw;
       height: auto;
     }
   
     .search-div-home {
-      margin-top: 10px;
+      margin-top: 1vh;
       width: 100%;
-      max-width: 350px;
+      max-width: 17.5vw;
     }
   
     .navbar-nav {
       flex-direction: column;
       margin-left: 0;
-      margin-top: 10px;
+      margin-top: 1vh;
       width: 100%;
     }
   
     .nav-item {
       width: 100%;
       text-align: center;
-      margin-bottom: 5px;
+      margin-bottom: 0.5vh;
     }
   
     .nav-item-link {
-      font-size: 16px;
-      padding: 10px 0;
+      font-size: 1rem;
+      padding: 1vh 0;
     }
   
     .nav-item.active {
@@ -313,29 +312,29 @@ justify-content: center;
   /* Responsive styling for large screens */
   @media (min-width: 1200px) {
     .navbar {
-      padding: 0 50px;
+      padding: 0 5vh;
     }
   
     .search-div-home {
-      width: 600px;
+      width: 30vw;
     }
   
     .nav-item-link {
-      font-size: 20px;
+      font-size: 1.25rem;
     }
   }
   
 
 #autoScrollingBanner .carousel-indicators {
     position: absolute; /* Ensure the indicators are positioned relative to the banner */
-    top:490px; /* Set 20px margin from the bottom of the banner */
+    top:49vh; /* Set 20px margin from the bottom of the banner */
     left: 35%; /* Center the indicators horizontally */
     transform: translateX(-35%); /* Centering adjustment */
   }
   
   #autoScrollingBanner .carousel-indicators button {
-    width: 12px;
-    height: 12px;
+    width: 0.6vw;
+    height: 1.2vh;
     border-radius: 50%;
     background-color: black 50% opacity !important; 
     border: 2px solid #000; 
@@ -349,37 +348,37 @@ justify-content: center;
   
 .career-skills{
     font-weight: 700;
-    font-size: 40px;
+    font-size: 2.5rem;
     color:rgba(0, 0, 0, 1);
     display: flex;
     justify-content: center;
 }
 .discount{
     font-weight:700;
-    font-size:48px;
+    font-size:3rem;
     color:#EA4335;
 }
 
 .course-discount{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #000000;
 }
 .coupon-btn{
-    width:205px;
-    height: 45px;
+    width:10.25vw;
+    height: 4.5vh;
     background-color: #000000;
     color: white;
     border-radius: 30px;
     padding: 10px, 20px, 10px, 20px;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 600;
 }
 .coupon-btn:hover{
     background-color: #EA4335;
 }
 .banner-head{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 700;
     color: rgba(255,255,255,1);
     margin-bottom: 3vh;
@@ -389,22 +388,22 @@ justify-content: center;
  align-items: center;
    flex-direction: column;
    margin-right: 42vh;
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
     color: rgba(255,255,255,1);
 }
 .live-session{
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 600;
     color: rgba(255,255,255,1);
     
 }
 .live-session-span{
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 600;
 }
 .banner-second{
-    font-size:32px;
+    font-size:2rem;
     font-weight: 600;
 }
 .banner-content-second{
@@ -415,108 +414,20 @@ justify-content: center;
       margin-bottom: 4vh;
       margin-left: -18vh;
   }
-  #autoScrollingBanner .carousel-indicators {
-    position: absolute; /* Ensure the indicators are positioned relative to the banner */
-    top:490px; /* Set 20px margin from the bottom of the banner */
-    left: 35%; /* Center the indicators horizontally */
-    transform: translateX(-35%); /* Centering adjustment */
-  }
-  
-  #autoScrollingBanner .carousel-indicators button {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background-color: black 50% opacity !important; 
-    border: 2px solid #000; 
-    opacity: 1;
-  }
-  
-  #autoScrollingBanner .carousel-indicators .active {
-    background-color: #000 !important; 
-    border-color: #000; 
-  }
-  
-.career-skills{
-    font-weight: 700;
-    font-size: 40px;
-    color:rgba(0, 0, 0, 1);
-    display: flex;
-    justify-content: center;
-}
-.discount{
-    font-weight:700;
-    font-size:48px;
-    color:#EA4335;
-}
 
-.course-discount{
-    font-size: 24px;
-    font-weight: 400;
-    color: #000000;
-}
-.coupon-btn{
-    width:205px;
-    height: 45px;
-    background-color: #000000;
-    color: white;
-    border-radius: 30px;
-    padding: 10px, 20px, 10px, 20px;
-    font-size: 18px;
-    font-weight: 600;
-}
-.coupon-btn:hover{
-    background-color: #EA4335;
-}
-.banner-head{
-    font-size: 40px;
-    font-weight: 700;
-    color: rgba(255,255,255,1);
-    margin-bottom: 3vh;
-}
-.banner-content{
-   display: flex;
- align-items: center;
-   flex-direction: column;
-   margin-right: 42vh;
-    font-size: 32px;
-    font-weight: 600;
-    color: rgba(255,255,255,1);
-}
-.live-session{
-    font-size: 40px;
-    font-weight: 600;
-    color: rgba(255,255,255,1);
-    
-}
-.live-session-span{
-    font-size: 32px;
-    font-weight: 600;
-}
-.banner-second{
-    font-size:32px;
-    font-weight: 600;
-}
-.banner-content-second{
-    display: flex;
-    align-items:center;
-      flex-direction: column;
-      margin-right: 53vh;
-      margin-bottom: 4vh;
-      margin-left: -18vh;
-  }
   .home-background{
     background-color:#EEEEEE;
   }
 .register-now-btn{
-    height:45px;
-    width:169px;
+    height:4.5vh;
+    width:10.25vw;
     border-radius: 30px;
-    padding:10px 20px 10px 20px;
+padding:5px;
     background-color: #ECC963;
     color: #000000;
     border: none;
     margin-top: 2vh;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
 }
 .register-now-btn:hover{
@@ -530,7 +441,7 @@ justify-content: center;
     align-items: center;
 }
 .association-head{
-    font-size: 30px;
+    font-size: 1.9rem;
     font-weight: 700;
     letter-spacing: 2%;
     background:linear-gradient(180deg, #00AEEF 0%, #006489 100%);
@@ -546,7 +457,7 @@ justify-content: center;
     }
 }
 .logos-slide img{
-    height:50px;
+    height:5vh;
     margin: -15px 30px;
 }
 
@@ -568,7 +479,7 @@ justify-content: center;
 .login-div-content{
     position: relative;
     display: inline-block;
-    height:40px;
+    height:4vh;
     padding: 5px;
     border-radius: 10px;
     background-color:#00AEEF;
@@ -584,11 +495,11 @@ justify-content: center;
 .login-div-content:hover::after{
     content: "";
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 0.5vh;
+    left: 0.25vw;
     font-weight: 600;
-    right: 5px;
-    bottom: 5px;
+    right: 0.25vw;
+    bottom: 0.5vh;
     background-color: rgba(255, 255, 255, 0.2);
     z-index: -1;
     transition: background-color 0.3s ease;
@@ -596,7 +507,7 @@ justify-content: center;
 .nav-item{
     position: relative;
     display: inline-block;
-    height: 40px;
+    height: 4vh;
     border-radius: 10px;
     border:none;
     transition: background-color 0.3s ease,color 0.3s ease;
@@ -607,8 +518,8 @@ justify-content: center;
     background-color: #CCEFFC;
     color: #00AEEF !important;
     border-radius: 10px; 
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
     font-weight: 500;
 }
 
@@ -644,7 +555,7 @@ justify-content: center;
   @media (max-width: 992px) and (min-width: 769px) {
     .search-div {
       margin: 10px 0;
-      max-width: 300px;
+      max-width: 15vw;
     }
   
     .navbar-nav {
@@ -682,14 +593,14 @@ justify-content: center;
   }
 
 .view-all{
-    height: 50px;
-    width: 140px;
+    height: 5vh;
+    width: 7vw;
     border-radius: 10px;
     Padding:13px, 30px, 13px, 30px;
     background-color: rgba(0, 174, 239, 1);
     color:rgba(255, 255, 255, 1);
     font-weight:700;
-    font-size: 18px;
+    font-size: 1.1rem;
     border: none;
     box-shadow:5px 5px 5px #d3d3d3;
   
@@ -719,7 +630,7 @@ justify-content: center;
    
 }
 .view-btn:hover{
-    font-size:18px;
+    font-size:1.1rem;
 }
 
 
@@ -744,11 +655,11 @@ display:inline-block;
 
 .card-img-div{
     position: absolute;
-    top:50px;
+    top:5vh;
     left: 50%;
     transform: translateX(-50%);
-    width: 90px;
-    height: 90px;
+    width: 6vw;
+    height: 12vh;
     background-color: white;
     border-radius: 50%;
     display: flex;
@@ -760,21 +671,21 @@ display:inline-block;
 }
 .card-icon{
  position: absolute;
- top: 50px;
+ top: 5vh;
  left: 50%;
  transform: translateX(-50%);
- height: 90px;
+ height: 9vh;
  z-index: 1;
  transition: all 0.3s ease;
 }
 .card-header{
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.1rem;
     font-style:italic;
     position: absolute;
     left: 47%;
     border-radius:10px;
-    top:10px;
+    top:1vh;
     transform: translate(-50%,-50%);
     padding:5px 5px;
     text-align: center;
@@ -791,7 +702,7 @@ display:inline-block;
     position: absolute;
     top: 2rem;
     right: 0;
-    width:250px;
+    width:12.5vw;
     padding:2vh;
     background-color: white;
     border: 1px solid #ccc;
@@ -802,7 +713,7 @@ display:inline-block;
   
   .dropdown-item {
     padding: 6vh;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight:500;
     background-color: white;
     cursor: pointer;
@@ -818,15 +729,15 @@ display:inline-block;
   
   
 .course-name {
-    font-size: 18px;
+    font-size: 1.1rem;
     font-weight: 600;
     color: black; 
-    margin: 10px 0;
+    margin: 1vh 0;
     text-align: center;
   }
   
 .course-details{
-  padding: 10px;
+  padding: 1vh;
   text-align: center;
   transition: all 0.3s ease;
 }
@@ -836,29 +747,29 @@ display:inline-block;
     justify-content: space-between;
     gap: 8vh;
 }
-.course-date{  font-size: 18px;
+.course-date{  font-size: 1.1rem;
 font-weight: 400;
 margin: 5px 0;
 transition: all 0.3s ease;
 }
 .enroll-btn{
     border-radius:10px;
-padding:10px 20px;
-font-size:18px;
+padding:1vh 2vh;
+font-size:1.1rem;
 font-weight: 700;
 background-color: rgba(0, 174, 239, 1);
 color: white;
 box-shadow:5px 5px 5px #d3d3d3;
 border: none;
-margin-top: 5px;
+margin-top: 0.5vh;
 transition: all 0.3s ease
 }
 .enroll-btn:hover{
     background-color: darkblue;
 }
 .card:hover .card-img-div{
-    width:140px;
-    height: 150px;
+    width:7vw;
+    height: 15vh;
     filter: blur(10px);
 }
 .card:hover .card-image{
@@ -884,7 +795,7 @@ color: white !important;
 }
 .card:hover .card-icon{
 
-    height: 100px;
+    height: 10vh;
 }
 .card:hover .enroll-btn{
     background-color: white;
@@ -899,13 +810,13 @@ color: white !important;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start; 
-    gap: 10px; 
+    gap: 1.4vh; 
     margin: 5px auto;
-    max-width: 1200px; 
+    max-width: 71vw; 
 }
 .card {
     width: calc(25% - 10px); 
-    height: 330px;
+    height: 42vh;
     border: none !important;
     overflow: hidden !important; /* Ensure that any overflow is hidden */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -915,12 +826,13 @@ color: white !important;
     transition: all 0.3s ease;
     cursor: pointer;
     border-radius: 20px 20px 50px 50px; /* Ensure that the card has rounded corners */
+    
 }
 
 .card-image {
     display: block;
     width: 100%;
-    height: 165px;
+    height: 16.5vh;
     object-fit: cover;
     border-radius: 0px 0px 50px 50px; /* Adjust the border radius */
     transition: all 0.3s ease;
@@ -973,13 +885,13 @@ color: white !important;
    
     .course-names {
         font-weight:400;
-        font-size:20px;
+        font-size:1.25rem;
         color:gray;
         text-decoration: none;
         cursor: pointer;
         transition: color 0.3s ease;
         border-bottom: 2px solid #EEEEEE;
-        margin: 10px 20px;
+        margin: 1vh 2vh;
       }
       
       .course-names.active {
@@ -999,23 +911,23 @@ color: white !important;
     }
 
 .course-review{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     font-style: italic;
 }
 .star-icon{
-    height:19px;
-    width:20px;
+    height:1.9vh;
+    width:1vw;
     color:rgba(251, 188, 5, 1);
 }
 .course-month{
-    font-size:16px;
+    font-size:1rem;
     font-weight:400;
 
 }
 .online-training-div{
-    height:251px;
-    width:300px;
+    height:28vh;
+    width:17vw;
     box-shadow: 5px 5px 5px #d3d3d3;
     border-radius: 10px;
     border-left: 10px solid rgba(0, 174, 239, 1);
@@ -1027,8 +939,8 @@ color: white !important;
     padding: 1vh;
 }
 .online-training-div img{
-    height:90px;
-    width:90px;
+    height:9vh;
+    width:4.5vw;
 }
 .career-div{
     display:flex;
@@ -1040,12 +952,12 @@ color: white !important;
 }
 .Live-online{
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25rem;
     padding-top: 1.5vh;
 }
 .training-content{
     font-weight:400;
-    font-size:16px;
+    font-size:1rem;
    color: rgba(97, 97, 97, 1);
    padding:2vh;
    align-content: center;
@@ -1056,10 +968,10 @@ color: white !important;
     .footer{
         background-color:black;
         color:white;
-        height:472px;
+        height:47.2vh;
         display: flex;
         margin-top: 10vh;
-        padding-bottom:60px;
+        padding-bottom:6vh;
         flex-direction: column;
         justify-content: space-evenly;
    
@@ -1072,23 +984,23 @@ color: white !important;
     }
  .footer-copyright{
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.1rem;
     text-align: center;
  }
     .learner-card-item{
         display: flex;
         flex-direction: row;
         margin-left: 24vh;
-        margin-top: 14px;
+        margin-top: 1.4vh;
         gap:5vh;
     }
     .footer-heading{
         font-weight:600;
-        font-size:18px;
+        font-size:1.15rem;
     }
     .footer-content{
         font-weight:400 ;
-        font-size: 18px;
+        font-size: 1.15rem;
     }
     .footer-bottom{
         display:flex;
@@ -1104,19 +1016,19 @@ color: white !important;
         
     }
     .footer-link img{
-        height: 30px;
-        width: 30px;
+        height: 3vh;
+        width: 1.5vw;
         cursor:pointer;
     }
     .footer-linkedin{
-        height:25px !important;
-        width:25px !important;
+        height:2.5vh !important;
+        width:1.25vw !important;
     }
     .footer-linkedin:hover{
-        height: 28px;
-        width: 28px;
+        height: 2.8vh;
+        width: 1.3vw;
     }
     .footer-link img:hover{
-   height: 32px;
-   width: 32px;
+   height: 3.2vh;
+   width: 1.6vw;
     }

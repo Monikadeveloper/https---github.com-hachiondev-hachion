@@ -126,18 +126,18 @@ const Login = () => {
             </div>
 
             <div className='icon-holder'>
-              {/* <button className="social-login-btn" onClick={googleLogin}> */}
-                <img src={google} alt='google' onClick={googleLogin} />
-              {/* </button> */}
-              {/* <button className="social-login-btn" onClick={facebookLogin}> */}
-                <img src={facebook} alt='facebook' onClick={facebookLogin}/>
-              {/* </button> */}
-              {/* <button className="social-login-btn" onClick={linkedinLogin}> */}
-                <img src={linkedin} alt='linkedin' style={{ height: '5vh', width: '2.5vw' }} onClick={linkedinLogin}/>
-              {/* </button> */}
-              {/* <button className="social-login-btn" onClick={appleLogin}> */}
-                <img src={apple} alt='apple' onClick={appleLogin}/>
-              {/* </button> */}
+              <button className="social-login-btn" onClick={googleLogin}>
+                <img src={google} alt='google'  />
+              </button>
+              <button className="social-login-btn" onClick={facebookLogin}>
+                <img src={facebook} alt='facebook'/>
+              </button>
+              <button className="social-login-btn" onClick={linkedinLogin}>
+                <img src={linkedin} alt='linkedin' style={{ height: '5.2vh', width: '2.8vw' }} />
+              </button>
+              <button className="social-login-btn" onClick={appleLogin}>
+                <img src={apple} alt='apple' />
+              </button>
             </div>
 
             <p className='go-to-register'>Don't have an account? <Link to='/register' className='link-to-register'> Register </Link></p>

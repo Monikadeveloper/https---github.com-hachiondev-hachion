@@ -6,17 +6,17 @@
 }
 
 .admin-nav {
-    height: 80px;
+    height: 8vh;
     background: linear-gradient(45deg,#006489,#00AEEF);
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 2vh;
 }
 
 .search-div {
-    height: 50px;
-    width: 509px;
+    height: 5vh;
+    width: 25.4vw;
     border-radius: 30px;
     display: flex;
     background-color: white;
@@ -27,15 +27,15 @@
 
 .search-input {
     flex: 1;
-    padding-left: 20px;
+    padding-left: 1vw;
     border-radius: 30px 0px 0px 30px;
   border: none;
     background-color: white;
 }
 
 .btn-search {
-    width: 70px;
-    height: 47px;
+    width: 3.5vw;
+    height: 4.7vh;
     background-color: rgba(0, 174, 239, 1);
     color: white;
     border-radius: 0px 30px 30px 0px;
@@ -61,14 +61,14 @@
 }
 
 .icon-container {
-    height: 50px;
-    width: 50px;
+    height: 5vh;
+    width: 2.5vw;
     border-radius: 50%;
     background: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 0.5vw;
 }
 
 .user-info {
@@ -78,8 +78,8 @@
 }
 
 .image-block {
-    height: 32px;
-    width: 32px;
+    height: 3.2vh;
+    width: 1.7vw;
     border-radius: 50%;
     border: 2px solid white;
     overflow: hidden;
@@ -95,15 +95,15 @@
 .btn-logout {
     background-color: #00AEEF;
     color: white;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 600;
     border: none;
     cursor: pointer;
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    height:80px !important;
-    width:200px;
+    height:8vh !important;
+    width:10vw;
     padding-top: 3vh !important;
 
 }
@@ -122,11 +122,11 @@
     margin: 0;
 }
 .sidebar-admin {
-    width: 420px;
+    width: 25vw;
     background: linear-gradient(45deg, #006489, #00AEEF);
     color: white;
     left: 0;
-    min-width: 380px;
+    min-width: 22vw;
     right: 5px;
     overflow: hidden; /* Removed scrollbar */
     height: 100vh;
@@ -156,16 +156,16 @@
     background: linear-gradient(45deg, #006489, #00AEEF);
     color: white;
     width: 100%;
-    height: 50px;
+    height: 5vh;
     border: none;
     text-align: left; /* Align text to left */
-    padding-left: 15px;
+    padding-left: 0.8vw;
     display: flex;
     align-items: center;
   }
   
   .menu-item-admin .menu-icon {
-    margin-right: 10px;
+    margin-right: 0.5vw;
   }
   
   .menu-item-admin:hover {
@@ -181,7 +181,36 @@
     border-radius: 0px 20px 20px 0px;
     border: 1px solid white;
   }
-  
-  .menu-item-admin:focus {
-    outline: none;
+  .admin-dashboard-content{
+    display:flex;
+    flex-wrap: wrap;
+    gap:2vw;
   }
+  .dashboard-div {
+    display: flex;
+    align-items: center;
+    height: 14vh;
+    width: 13vw;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 5px 5px 5px #d3d3d3;
+  }
+  
+  .dashboard-icon {
+    margin-right: 15px;
+  }
+  
+  .dashboard-text {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dashboard-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .dashboard-content {
+    font-size: 1rem;
+  }
+  

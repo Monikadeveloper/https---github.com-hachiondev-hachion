@@ -1,11 +1,11 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import './Login.css';
 import logo from '../../Assets/logo.png';
-import {useFormik} from 'formik';
-import {LoginSchema} from '../Schemas';
+import { useFormik } from 'formik';
+import { LoginSchema } from '../Schemas';
 import LoginSide from './LoginSide';
-import lock from '../../Assets/Component 1.png';
-import {Link, useNavigate} from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'; // For eye icons
 
 const initialValues = {
   password: "",
@@ -14,13 +14,14 @@ const initialValues = {
 
 const RegisterNext = () => {
   const [passwordType, setPasswordType] = useState('password'); 
+  const [confirmPasswordType, setConfirmPasswordType] = useState('password'); // For confirm password field
   const navigate = useNavigate();
 
   const handleClick = () => {
     navigate('/loginsuccess');
   };
 
-  const {values, errors, handleBlur, touched, handleChange, handleSubmit} = useFormik({
+  const { values, errors, handleBlur, touched, handleChange, handleSubmit } = useFormik({
     initialValues: initialValues,
     validationSchema: LoginSchema,
     onSubmit: (values) => {
@@ -31,6 +32,10 @@ const RegisterNext = () => {
 
   const togglePasswordVisibility = () => {
     setPasswordType(prevType => prevType === 'password' ? 'text' : 'password');
+  };
+
+  const toggleConfirmPasswordVisibility = () => {
+    setConfirmPasswordType(prevType => prevType === 'password' ? 'text' : 'password');
   };
 
   return (
@@ -70,7 +75,6 @@ const RegisterNext = () => {
                   <input 
                     type={passwordType} 
                     className="form-control" 
-                    id="floatingPassword" 
                     placeholder="Enter your password"
                     name='password' 
                     value={values.password} 
@@ -78,7 +82,7 @@ const RegisterNext = () => {
                     onBlur={handleBlur} 
                   />
                   <span className="input-group-text" onClick={togglePasswordVisibility}>
-                    <img src={lock} alt='lock' />
+                    {passwordType === 'password' ? <AiFillEyeInvisible /> : <AiFillEye />}
                   </span>
                 </div>
                 {errors.password && touched.password ? (<p className='form-error'>{errors.password}</p>):null}
@@ -86,17 +90,16 @@ const RegisterNext = () => {
                 <label className='login-label'>Confirm Password<span className='star'>*</span></label>
                 <div className="input-group mb-2">
                   <input 
-                    type={passwordType} 
+                    type={confirmPasswordType} 
                     className="form-control" 
-                    id="floatingPassword" 
                     placeholder="Please confirm password"
                     name='confirm_password' 
                     value={values.confirm_password} 
                     onChange={handleChange} 
                     onBlur={handleBlur} 
                   />
-                  <span className="input-group-text" onClick={togglePasswordVisibility}>
-                    <img src={lock} alt='lock' />
+                  <span className="input-group-text" onClick={toggleConfirmPasswordVisibility}>
+                    {confirmPasswordType === 'password' ? <AiFillEyeInvisible /> : <AiFillEye />}
                   </span>
                 </div>
                 {errors.confirm_password && touched.confirm_password ? (<p className='form-error'>{errors.confirm_password}</p>):null}
