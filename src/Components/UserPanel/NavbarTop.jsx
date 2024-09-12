@@ -26,9 +26,9 @@ const NavbarTop = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
-          <div className="search-div" role="search">
-            <input className="search-input" type="search" placeholder="Enter Courses, Category or Keywords" aria-label="Search" />
-            <button className="btn-search" type="submit"><IoSearch style={{ fontSize: '2rem' }} /></button>
+          <div className="search-div-home" role="search">
+            <input className="search-input-home" type="search" placeholder="Enter Courses, Category or Keywords" aria-label="Search" />
+            <button className="btn-search-home" type="submit"><IoSearch style={{ fontSize: '2rem' }} /></button>
           </div>
 
           <div className="navbar-nav">

@@ -14,6 +14,7 @@ import Course from './Components/UserPanel/Course';
 import QaAutomation from './Components/UserPanel/QaAutomation';
 import CorporateTraining from './Components/UserPanel/CorporateTraining';
 import AdminNavbar from './Components/AdminPanel/AdminNavbar';
+import AdminSidebar from './Components/AdminPanel/AdminSidebar';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       <Route path='/haveanyquery' element={<HaveAnyQuery/>}/>
       <Route path='/adminlogin' element={<AdminLogin/>}/>
       <Route path='/adminnav' element={<AdminNavbar/>}/>
+      <Route path='/adminsidebar' element={<AdminSidebar/>}/>
       </Routes></BrowserRouter>
     </>
   );

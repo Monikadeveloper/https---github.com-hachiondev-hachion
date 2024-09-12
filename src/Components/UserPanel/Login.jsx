@@ -8,10 +8,10 @@ import LoginSide from './LoginSide';
 import captcha from '../../Assets/captcha.png';
 import google from '../../Assets/google_symbol.svg.png';
 import facebook from '../../Assets/facebook_symbol.svg.png';
-import lock from '../../Assets/Component 1.png';
 import { useFormik } from 'formik';
 import { LoginSchema } from '../Schemas';
 import { useNavigate } from 'react-router-dom';
+import { AiFillEye, AiFillEyeInvisible } from 'react-icons/ai'; // For eye icons
 
 const initialValues = {
   email: "",
@@ -30,13 +30,27 @@ const Login = () => {
       console.log(values);
     }
   });
+
   const handleLogin = () => {
-   
-    navigate('/'); 
+    navigate('/');
   };
-const googleLogin=()=>{
-  console.log('google login clicked');
-}
+
+  const googleLogin = () => {
+    console.log('Google login clicked');
+  };
+
+  const facebookLogin = () => {
+    console.log('Facebook login clicked');
+  };
+
+  const linkedinLogin = () => {
+    console.log('LinkedIn login clicked');
+  };
+
+  const appleLogin = () => {
+    console.log('Apple login clicked');
+  };
+
   const togglePasswordVisibility = () => {
     setPasswordType(prevType => prevType === 'password' ? 'text' : 'password');
   };
@@ -63,9 +77,9 @@ const googleLogin=()=>{
                     onChange={handleChange}
                     onBlur={handleBlur}
                   />
-                 
                 </div>
                 {errors.email && touched.email ? (<p className='form-error'>{errors.email}</p>) : null}
+                
                 <label className='login-label'>Password<span className='star'>*</span></label>
                 <div className="input-group mb-2">
                   <input
@@ -78,7 +92,7 @@ const googleLogin=()=>{
                     onBlur={handleBlur}
                   />
                   <span className="input-group-text" onClick={togglePasswordVisibility}>
-                    <img src={lock} alt='lock' />
+                    {passwordType === 'password' ? <AiFillEyeInvisible /> : <AiFillEye />}
                   </span>
                 </div>
                 {errors.password && touched.password ? (<p className='form-error'>{errors.password}</p>) : null}
@@ -92,7 +106,6 @@ const googleLogin=()=>{
                     className="form-check-input"
                     type="checkbox"
                     id="flexCheckDefault"
-                
                   />
                   <label className="form-check-label" htmlFor="flexCheckDefault">
                     I'm not a robot
@@ -113,10 +126,18 @@ const googleLogin=()=>{
             </div>
 
             <div className='icon-holder'>
-              <img src={google} alt='google' onClick={googleLogin} />
-              <img src={facebook} alt='facebook' />
-              <img src={linkedin} alt='linkedin' style={{ height: '50px', width: '50px' }} />
-              <img src={apple} alt='apple' />
+              {/* <button className="social-login-btn" onClick={googleLogin}> */}
+                <img src={google} alt='google' onClick={googleLogin} />
+              {/* </button> */}
+              {/* <button className="social-login-btn" onClick={facebookLogin}> */}
+                <img src={facebook} alt='facebook' onClick={facebookLogin}/>
+              {/* </button> */}
+              {/* <button className="social-login-btn" onClick={linkedinLogin}> */}
+                <img src={linkedin} alt='linkedin' style={{ height: '5vh', width: '2.5vw' }} onClick={linkedinLogin}/>
+              {/* </button> */}
+              {/* <button className="social-login-btn" onClick={appleLogin}> */}
+                <img src={apple} alt='apple' onClick={appleLogin}/>
+              {/* </button> */}
             </div>
 
             <p className='go-to-register'>Don't have an account? <Link to='/register' className='link-to-register'> Register </Link></p>

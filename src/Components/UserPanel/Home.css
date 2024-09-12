@@ -7,22 +7,23 @@
 }
 
 
-.topbar{
+.topbar {
     height: 60px;
     background-color: rgba(0, 174, 239, 1);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    padding: 0 2vw; /* Adjusted for responsiveness */
 }
-.topbar-left{
+
+.topbar-left {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 700px;
-    padding-left: 2vh;
-  
+    width: 100%; /* Take full width and adjust inside with padding */
+    max-width: 700px; /* Limit the width on larger screens */
+    padding-left: 1vw;
 }
 .query{
     height: 24px;
@@ -140,34 +141,87 @@ justify-content: center;
     color: white;
     font-size: 20px;
     font-weight: 700;
-    padding: 1.5vh;
-    padding-right: 8vh;
+   gap:1rem;
+
 }
-.navbar {
-    height: 100px;
-    background-color: #EEEEEE !important; 
+@media (max-width: 1024px) {
+    .topbar-left {
+        width: 100%;
+        padding-left: 1vw;
+    }
+
+    .whatsapp-number, .training-email, .query-content {
+        font-size: 16px;
+    }
+
+    .login-div {
+        padding-right: 4vh; 
+    }
 }
 
-.search-div {
+@media (max-width: 600px) {
+    .topbar {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .topbar-left {
+        flex-direction: column;
+        align-items: center;
+        padding: 1vh 0;
+    }
+
+    .query-content, .whatsapp-number, .training-email {
+        font-size: 14px; 
+        text-align: center; 
+    }
+
+    .whatsapp, .training-mail {
+        margin: 0; 
+    }
+
+    .login-div {
+        padding: 1vh 0;
+        flex-direction: column;
+    }
+
+    .login-div-content {
+        width: 100%; 
+        margin-bottom: 1vh; 
+    }
+}
+/* General styling */
+.navbar {
+    height: 100px;
+    background-color: #EEEEEE !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+ 
+  .search-div-home {
     height: 60px;
-    width: 509px;
+    width: 100%;
+    max-width: 500px;
     border-radius: 20px;
-    margin-left: 50vh;
     box-shadow: 5px 5px 5px #BABABA;
     display: flex;
     background-color: white;
-}
-
-.search-input {
+    margin: 0 auto;
+    margin-left:20vw;
+  }
+  
+  .search-input-home {
     flex: 1;
     padding-left: 20px;
     border-radius: 10px 0px 0px 10px;
     border: 1px solid rgba(186, 186, 186, 1);
     outline: none;
     background-color: white;
-}
-
-.btn-search {
+  }
+  
+  .btn-search-home {
     width: 100px;
     height: 60px;
     background-color: rgba(0, 174, 239, 1);
@@ -175,36 +229,37 @@ justify-content: center;
     border-radius: 0px 10px 10px 0px;
     border: none;
     cursor: pointer;
-}
-
-.navbar-nav {
+  }
+  
+  /* Navbar items */
+  .navbar-nav {
     display: flex;
     justify-content: space-evenly;
     margin-left: 3vh;
-    flex-grow: 1;
-    
-}
-
-.nav-item-link {
+  }
+  
+  .nav-item-link {
     font-size: 18px;
     font-weight: 400;
     cursor: pointer;
-    color:black;
+    color: black;
     text-decoration: none;
     padding: 10px 15px;
     transition: color 0.3s ease;
-}
-.nav-item-link:hover{
-    color:#00AEEF;
+  }
+  
+  .nav-item-link:hover {
+    color: #00AEEF;
     font-weight: 500;
-}
-
-.nav-item {
-    background: none; 
+  }
+  
+  .nav-item {
+    background: none;
     border: none;
     padding: 0;
-}
-.nav-item.active {
+  }
+  
+  .nav-item.active {
     border: 3px solid #00AEEF;
     background-color: #CCEFFC;
     color: #00AEEF !important;
@@ -214,23 +269,153 @@ justify-content: center;
     font-weight: 500;
   }
   
-  .nav-item.active .nav-item-link {
-    color: #00AEEF !important;
+  /* Responsive styling for mobile screens */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar img {
+      width: 80px;
+      height: auto;
+    }
+  
+    .search-div-home {
+      margin-top: 10px;
+      width: 100%;
+      max-width: 350px;
+    }
+  
+    .navbar-nav {
+      flex-direction: column;
+      margin-left: 0;
+      margin-top: 10px;
+      width: 100%;
+    }
+  
+    .nav-item {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 5px;
+    }
+  
+    .nav-item-link {
+      font-size: 16px;
+      padding: 10px 0;
+    }
+  
+    .nav-item.active {
+      border-radius: 5px;
+    }
   }
   
-  .nav-item.active::after {
-    content: "";
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    right: 20px;
-    bottom: 10px;
-    border: 2px solid #00AEEF;
-    background-color: #87CEEB;
-    z-index: -1;
+  /* Responsive styling for large screens */
+  @media (min-width: 1200px) {
+    .navbar {
+      padding: 0 50px;
+    }
+  
+    .search-div-home {
+      width: 600px;
+    }
+  
+    .nav-item-link {
+      font-size: 20px;
+    }
   }
+  
 
 #autoScrollingBanner .carousel-indicators {
+    position: absolute; /* Ensure the indicators are positioned relative to the banner */
+    top:490px; /* Set 20px margin from the bottom of the banner */
+    left: 35%; /* Center the indicators horizontally */
+    transform: translateX(-35%); /* Centering adjustment */
+  }
+  
+  #autoScrollingBanner .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: black 50% opacity !important; 
+    border: 2px solid #000; 
+    opacity: 1;
+  }
+  
+  #autoScrollingBanner .carousel-indicators .active {
+    background-color: #000 !important; 
+    border-color: #000; 
+  }
+  
+.career-skills{
+    font-weight: 700;
+    font-size: 40px;
+    color:rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+}
+.discount{
+    font-weight:700;
+    font-size:48px;
+    color:#EA4335;
+}
+
+.course-discount{
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+}
+.coupon-btn{
+    width:205px;
+    height: 45px;
+    background-color: #000000;
+    color: white;
+    border-radius: 30px;
+    padding: 10px, 20px, 10px, 20px;
+    font-size: 18px;
+    font-weight: 600;
+}
+.coupon-btn:hover{
+    background-color: #EA4335;
+}
+.banner-head{
+    font-size: 40px;
+    font-weight: 700;
+    color: rgba(255,255,255,1);
+    margin-bottom: 3vh;
+}
+.banner-content{
+   display: flex;
+ align-items: center;
+   flex-direction: column;
+   margin-right: 42vh;
+    font-size: 32px;
+    font-weight: 600;
+    color: rgba(255,255,255,1);
+}
+.live-session{
+    font-size: 40px;
+    font-weight: 600;
+    color: rgba(255,255,255,1);
+    
+}
+.live-session-span{
+    font-size: 32px;
+    font-weight: 600;
+}
+.banner-second{
+    font-size:32px;
+    font-weight: 600;
+}
+.banner-content-second{
+    display: flex;
+    align-items:center;
+      flex-direction: column;
+      margin-right: 53vh;
+      margin-bottom: 4vh;
+      margin-left: -18vh;
+  }
+  #autoScrollingBanner .carousel-indicators {
     position: absolute; /* Ensure the indicators are positioned relative to the banner */
     top:490px; /* Set 20px margin from the bottom of the banner */
     left: 35%; /* Center the indicators horizontally */
