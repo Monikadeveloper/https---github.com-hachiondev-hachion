@@ -336,7 +336,7 @@ cursor: pointer;
     align-items: center;
     }
     .icon-text:hover .icon-text-holder{
-        font-size: 1.35rem;
+        font-size: 1.30rem;
         background-color: #D3D3D3;
     }
     .icon-text:hover .icon-text-img{
