@@ -10,21 +10,21 @@
 }
 .corporate-banner{
     width: 100%; 
-    height: 600px; 
+    height: 60vh; 
     background-image: url('../../Assets/Group 39809.png');
     background-size: cover;
     background-position: center;
 
 }
 .corporate-banner-heading{
-    font-size: 38px;
+    font-size: 2.1rem;
     font-weight: 700;
     padding-top: 8vh;
-    padding-left: 166px;
+    padding-left: 8.3vw;
     color: #fff;
 }
 .corporate-banner-content{
-    font-size: 46px;
+    font-size: 2.8rem;
     font-weight: 700;
     color:#fff;
     padding-top: 8vh;
@@ -32,7 +32,7 @@
 
 }
 .corporate-banner-bottom-content{
-    font-size: 38px;
+    font-size: 2.1rem;
     font-weight: 400;
     font-style: italic;
     text-align: center;
@@ -40,25 +40,28 @@
 }
 .contact-us-corporate{
     margin-top:8vh;
-    height: 74px;
-    width: 274px;
+    height: 8.4vh;
+    width: 13.7vw;
     border-radius: 10px;
     border: 1px solid white;
-    padding: 15px 50px 15px 50px;
+    padding: 1.5vh 5vh 1.5vh 5vh;
     background-color: #00AEEF;
     box-shadow: 5px 5px 5px #000000 opacity 30%;
     color: white;
-    font-size: 32px;
+    font-size: 1.5rem;
     font-weight: 700;
     margin-left: 35vw;
 }
 
 .hachion-content{
-    height: 400px;
+    height: 40vh;
     background-color: white;
-    margin-left: 8vh;
+    align-items: center;
+    justify-content: center;
+    margin-left:15vw;
+    
+    width:68vw;
     border-radius: 20px;
-    margin-right: 8vh;
     box-shadow:5px 5px 5px #d3d3d3;
 
 }
@@ -69,7 +72,7 @@
     align-items: center;
 }
 .association-head{
-    font-size: 30px;
+    font-size: 1.9rem;
     font-weight: 700;
     margin: 2vh;
     letter-spacing: 2%;
@@ -80,25 +83,25 @@
 .customize-training{
    align-items: center;
    justify-content: center;
-    gap: 40px;
+    gap: 4vh;
 }
 .customize-training-div{
-    height: 357px;
-    width: 630px;
+    height: 35.7vh;
+    width: 33.5vw;
     border-radius: 20px;
     background-color: #fff;
     box-shadow:5px 5px 5px #d3d3d3;
  
 }
 .customize-training-div img{
-    height:270px;
-    width:504px;
-    margin-left: 63px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    height:27vh;
+    width:25.2vw;
+    margin-left: 3.15vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
 }
 .customize-training-div-content{
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     color:#00AEEF;
@@ -108,8 +111,8 @@
     flex-direction: row;
 }
 .leading-expert-card {
-    height: 300px;
-    width: 300px;
+    height: 30vh;
+    width: 16.5vw;
     border-radius: 20px;
     background-color: #fff;
     box-shadow: 5px 5px 5px #d3d3d3;
@@ -117,32 +120,32 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-  margin: 10px;
+  margin: 1vh;
 }
 
 .leading-expert-card img {
-    height: 100px;
-    width: 162.36px;
-    margin-bottom: 10px; 
+    height: 10vh;
+    width: auto;
+    margin-bottom: 1vh; 
 }
 
 .leading-expert-card-content {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     color: #00AEEF;
-    margin-bottom: 10px; 
+    margin-bottom: 1vh; 
 }
 
 .view-details-corporate {
-    height: 45px;
-    width: 180px;
+    height: 4.5vh;
+    width: 9vw;
     border-radius: 10px;
     padding: 5px 20px;
     background-color: #00AEEF;
     box-shadow: 5px 5px 5px #d3d3d3;
     color: #fff;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 700;
     border: none;
 }
@@ -158,18 +161,21 @@
 .view-all-div{
     display: flex;
     flex-direction: row-reverse;
-    margin-right: 28vh;
+    margin-right: 16vw;
     margin-top: -9vh;
+}
+.view-all-div:hover{
+    background-color: #0d6efd;
 }
 
 .view-all-corporate {
-    height: 45px;
-    width: 150px;
+    height: 4.5vh;
+    width: 7.5vw;
     border-radius: 10px;
     padding: 5px 20px;
     background-color: #00AEEF;
     box-shadow: 5px 5px 5px #d3d3d3;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     color: #fff;
     border: none;
@@ -180,10 +186,11 @@
     background-color: #0d6efd;
 }
 .corporate-training-features {
-    height: 634px;
+    height: 63.4vh;
     background-color: #fff;
-    margin-left: 9vh;
-    margin-right: 9vh;
+    margin-left: 15vw;
+    width: 70vw;
+    margin-right: 15vw;
     border-radius: 20px;
     display: flex;
     flex-direction: row;
@@ -199,8 +206,8 @@
 }
 
 .customized-content {
-    height: 134px;
-    width: 280px;
+    height: 13.4vh;
+    width: 14vw;
     border-radius: 10px;
     padding: 10px 0px 10px 0px;
     box-shadow: 5px 5px 10px #d3d3d3;
@@ -212,28 +219,28 @@
 
 .customized-content-heading {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.1rem;
     text-align: center;
 }
 
 .customized-content img {
-    height: 60px;
-    width: 60px;
+    height: 6vh;
+    width: 3vw;
 }
 
 .customized-content-para {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1rem;
 }
 
 .training-img {
-    width: 585px;
-    height: 480px;
+    width: 29.25vw;
+    height: 48vh;
     align-self: center;
 }
 
 .advisor {
-    height: 900px;
+    height: 100vh;
     background-image: url('../../Assets/Group\ 39810.png');
     background-size: 100% 100%;
     background-position: center;
@@ -242,20 +249,20 @@
 }
 
 .advisor-form {
-    height: 834px;
-    margin-left: 10vh;
-    margin-right: 10vh;
+    height: 93.4vh;
+    margin-left: 15vw;
+    margin-right: 15vw;
     border-radius: 20px;
     background-color: white;
 }
 
 .advisor-head {
-    height: 100px;
+    height: 10vh;
     border-radius: 20px 20px 0px 0px;
     background: linear-gradient(#006489, #00AEEF, #006489);
     color: white;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     display: flex;
     align-items: center;
@@ -275,15 +282,15 @@
 }
 
 .form-control,.form-select {
-    height: 50px ;
-    width: 520px;
+    height: 5vh ;
+    width: 26vw;
 }
 .form-select{
     margin-left:3.5vh;
 }
 
 #Textarea {
-    height: 120px;
+    height: 12vh;
     width: 100%;
 }
 
@@ -296,13 +303,13 @@
 }
 
 .submit-btn {
-    width: 250px;
-    height: 60px;
+    width: 12.5vw;
+    height: 6vh;
     border-radius: 10px;
     border: 1px solid #fff;
     background-color: #00AEEF;
     box-shadow: 5px 5px 5px #d3d3d3;
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 700;
     color: #fff;
     justify-content: center;
@@ -311,7 +318,7 @@
 }
 .learner-cover{
   
-    height: 450px;
+    height: 65vh;
     width: 100%;
     background-image: url('../../Assets/rectangle123.png');
     object-fit: cover;
@@ -324,25 +331,25 @@
   
    }
    .learner-card{
-       height: 340px;
-       width: 600px;
+       height: 48vh;
+       width: 33vw;
        border-radius: 30px;
        background-color: rgba(255,255,255,1);
      
-       margin-top:27px;
+       margin-top:2.5vh;
       
    }
    .learner-image{
-       height: 140px;
-       width:140px;
+       height: 14vh;
+       width:7vw;
        border-radius: 50%;
        border:5px solid white;
-       margin-left: 51px;
+       margin-left: 2.55vw;
        margin-top: -5vh;
    }
    .learner-image img{
-       height: 140px;
-       width: 140px;
+       height: 14vh;
+       width: 7vw;
        border-radius: 50%;
    }
    .learner-top{
@@ -352,21 +359,23 @@
    }
    .name{
        font-weight:600;
-       font-size: 24px;
+       font-size: 1.5rem;
        padding-bottom: 0vh;
+       margin-top: 1vh;
    }
    .learner-name{
       display: flex;
       flex-direction: row;
    }
    .learner-name img{
-       height: 32px;
-       width: 32px;
+       height: 3.3vh;
+       width: 1.5vw;
        margin-left: 2vh;
+       margin-top:1vh;
    }
    .learner-info{
-       height: 165px;
-       margin-left: 4vh;
+       height: 17.5vh;
+       margin-left: 14vh;
        padding: -2vh;
        margin-top: 2vh;
        display: flex;
@@ -376,23 +385,23 @@
    }
    .job-profile{
        font-weight:400;
-       font-size:24px;
+       font-size:1.5rem;
        font-style: italic;
    }
    .job-location{
        font-weight: 400;
-       font-size: 20px;
+       font-size: 1.2rem;
    }
    .learner-description{
        font-weight: 400;
-       font-size: 20px;
-       margin-left: 5vh;
-       margin-right: 7vh;
+       font-size: 1rem;
+       margin-left: 4vh;
+       margin-right: 4vh;
        margin-top: 0vh;
    }
    .custom-prev-icon
   {
-     font-size: 40px;
+     font-size: 2.25rem;
      background-color:#ffffff;
      color: black; 
      cursor: pointer;
@@ -401,7 +410,7 @@
      margin-left: 12vh;
    }
    .custom-next-icon {
-       font-size: 40px;
+       font-size: 2.25rem;
        background-color:#fff;
        color: black; 
        cursor: pointer;
@@ -411,7 +420,7 @@
      }
    
      .carousel-indicators {
-       top: 380px;
+       top: 38vh;
        display: flex;
        left: 10%;
        transform: translateX(10%);
@@ -421,8 +430,8 @@
    
    .carousel-indicators li {
        background-color: grey ; /* Default color */
-       width: 50px;  /* Indicator width */
-       height: 30px; /* Indicator height */
+       width: 2.5vw;  /* Indicator width */
+       height: 3vh; /* Indicator height */
        border-radius: 10px; /* Rounded edges */
        margin: 5px; /* Spacing between indicators */
        transition: background-color 0.3s ease; /* Smooth transition for color change */
@@ -430,8 +439,8 @@
    
    .carousel-indicators .active {
        background-color: #00AAEF !important;  
-       width: 50px;  
-       height: 30px; 
+       width: 2.5vw;  
+       height: 3vh; 
        border-radius: 10px; 
    }
    
@@ -441,8 +450,8 @@
        transition: background-color 0.3s ease;
    }
    .query{
-    height:698px;
-    width:600px;
+    height:69.8vh;
+    width:30vw;
     border-radius: 20px;
     box-shadow: 5px 5px 5px #d3d3d3;
    }

@@ -186,6 +186,9 @@
     flex-wrap: wrap;
     gap:2vw;
   }
+  .dashboard-text{
+    color:white;
+  }
   .dashboard-div {
     display: flex;
     align-items: center;

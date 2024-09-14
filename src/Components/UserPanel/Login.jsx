@@ -120,9 +120,9 @@ const Login = () => {
             </div>
 
             <div className='login-with'>
-              <hr width='30%' size='2' style={{ marginTop: '3vh' }}></hr>
+              <hr width='25%' size='2' style={{ marginTop: '3vh' }}></hr>
               <p className='login-option'>Or Login with</p>
-              <hr width='30%' size='2' style={{ marginTop: '3vh' }}></hr>
+              <hr width='25%' size='2' style={{ marginTop: '3vh' }}></hr>
             </div>
 
             <div className='icon-holder'>
@@ -133,7 +133,7 @@ const Login = () => {
                 <img src={facebook} alt='facebook'/>
               </button>
               <button className="social-login-btn" onClick={linkedinLogin}>
-                <img src={linkedin} alt='linkedin' style={{ height: '5.2vh', width: '2.8vw' }} />
+                <img src={linkedin} alt='linkedin' />
               </button>
               <button className="social-login-btn" onClick={appleLogin}>
                 <img src={apple} alt='apple' />
