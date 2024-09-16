@@ -1,5 +1,6 @@
 import React from 'react'
 import TrainingCard  from './TrainingCard';
+import './Home.css';
 import cardimage1 from '../../Assets/Data Science.png';
 import cardimage2 from '../../Assets/image 82.png';
 import cardimage3 from '../../Assets/image 95.png';

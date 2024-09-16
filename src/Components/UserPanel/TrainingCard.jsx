@@ -11,10 +11,9 @@ import imageUrl from '../../Assets/course_card2.png';
  <div className='card-header-div'>
  
  <img src={imageUrl} alt="Card" className="card-image" />
- <div className='card-header' style={{ backgroundColor: 'white',
-    color: 'rgba(16, 201, 0, 1)'}}>
+ <div className='card-header'>
   {/* <p className='card-header-content'> */}
-  <FaCircle style={{color:'rgba(16, 201, 0, 1)',marginRight:'1vh',height:'15px',width:'15px'}}/>Live Demo</div>
+  <FaCircle style={{color:'rgba(16, 201, 0, 1)',marginRight:'1vh',height:'1.5vh',width:'0.8vw'}}/>Live Demo</div>
   {/* <div className='card-img-div'>
  </div>  */}
   <img src={props.image} alt='card-img' className='card-icon'/>

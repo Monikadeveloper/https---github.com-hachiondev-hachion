@@ -132,7 +132,7 @@ const Login = () => {
               <button className="social-login-btn" onClick={facebookLogin}>
                 <img src={facebook} alt='facebook'/>
               </button>
-              <button className="social-login-btn" onClick={linkedinLogin}>
+              <button className="social-login-btn-linkedin" onClick={linkedinLogin}>
                 <img src={linkedin} alt='linkedin' />
               </button>
               <button className="social-login-btn" onClick={appleLogin}>

@@ -736,10 +736,33 @@ input[type="radio"] {
   }
   .corporate-para-span {
     color: black;
-    font-size: 36px;
+    font-size: 2rem;
     font-weight: 700;
   }
-  
+  @media screen and (max-width: 480px){
+    .corporate-para{
+      font-size: 1rem;
+    }
+    .corporate-para-span{
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 768px){
+    .corporate-para{
+      font-size: 1.25rem;
+    }
+    .corporate-para-span{
+      font-size: 1.25rem;
+    }
+  }
+  @media screen and (max-width: 1024px){
+    .corporate-para{
+      font-size: 1.5rem;
+    }
+    .corporate-para-span{
+      font-size: 1.5rem;
+    }
+  }
   
   .quote-left {
     position: absolute;

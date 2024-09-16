@@ -21,11 +21,7 @@ const NavbarTop = () => {
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
           <img src={logo} alt='logo' onClick={handleClick} style={{ cursor: 'pointer' }} />
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" 
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
+         
           <div className="search-div-home" role="search">
             <input className="search-input-home" type="search" placeholder="Enter Courses, Category or Keywords" aria-label="Search" />
             <button className="btn-search-home" type="submit"><IoSearch style={{ fontSize: '2rem' }} /></button>

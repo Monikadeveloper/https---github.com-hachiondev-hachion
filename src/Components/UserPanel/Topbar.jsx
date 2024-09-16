@@ -10,11 +10,11 @@ const Topbar = () => {
    <>
 <div className='topbar'>
     <div className='topbar-left'>
-{/* <div className='query'> */}
+
     <p className='query-content'>Have any query ?</p>
-    {/* </div> */}
+   
     <div className='whatsapp'>
-        <img src={whatsapp} alt='whatsapp-icon' style={{height:'30px',width:'30px'}}/>
+        <img src={whatsapp} alt='whatsapp-icon' style={{height:'3vh',width:'1.5vw'}}/>
         <p className='whatsapp-number'> +91 9490323388</p>
         <PiLineVerticalThin style={{color:'white',fontSize:'2rem'}}/>
     </div>
