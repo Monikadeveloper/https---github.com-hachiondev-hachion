@@ -15,7 +15,7 @@
   height:1450px;
     border:1 px solid rgba(0, 174, 239, 1);
     margin: 0px;
-    margin-left: 8vw;
+    margin-left: 12vw;
     border-radius:10px;
     border-top-right-radius: 10px;
   }
@@ -114,7 +114,8 @@ color: black;
     color:rgba(255, 255, 255, 1);
   }
   .course-banner{
-height:390px;
+height:40vh;
+width: 120vw;
 background-image: url('../../Assets/course_banner.png');
 background-repeat: no-repeat;
 background-size: contain;
@@ -258,7 +259,7 @@ padding: 10px;
     }
   }
 .qa-automation{
-  height:60vh;
+
   width:80%;
   border-radius: 20px;
   background-image: url('../../Assets/qa_background.png');
@@ -272,6 +273,8 @@ padding: 10px;
  margin-left:10vw;
  margin-right: 10vw;
  box-shadow: 5px 5px 5px #D3D3D3;
+ margin-top: 5vh;
+ margin-bottom: 5vh;
  
 }
 .qa-automation-left{
@@ -286,7 +289,7 @@ padding: 10px;
 
 }
 .video-btn{
-  height:5vh;
+  
   width:20vw;
   border-radius: 10px;
   padding: 5px 10px 5px 10px;
@@ -297,7 +300,8 @@ padding: 10px;
   font-size: 1.5rem;
   font-weight: 700;
   margin-top: 2vh;
-  margin-left: 6vh;
+  margin-left: 7vw;
+  margin-bottom: 3vh;
   
 }
 .video-btn:hover{
@@ -337,7 +341,7 @@ margin-left: 4vh;
   color: white;
   padding:5px 30px 5px 30px;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 1.8rem;
   margin:2vh;
   box-shadow: 5px 5px 5px #d3d3d3;
 
@@ -347,13 +351,13 @@ margin-left: 4vh;
   border: 2px solid white;
 }
 .download{
-  height:12vh;
+  
   width:18vw;
   border-radius: 10px;
   border: 4px solid #00AEEF;
   padding:5px 20px 5px 20px;
   color:#00AEEF;
-  font-size:2rem;
+  font-size:1.5rem;
   font-weight: 700;
   margin: 2vh;
   box-shadow: 5px 5px 5px #D3D3D3;
@@ -386,8 +390,8 @@ margin-left: 4vh;
   text-align: right;
 }
 .key-highlights{
-  height:27vh;
-  padding:2vh;
+ margin-bottom: 5vh;
+  padding:3vh;
   width:80%;
   margin-left: 10vw;
   margin-right: 10vw;
@@ -426,8 +430,9 @@ html {
 }
 
 .upcoming-header {
-  margin-top: 4vh;
-  height: 8vh;
+  margin-top: 2vh;
+  margin-bottom: 5vh;
+ padding:2vh;
   background: linear-gradient(to right, #006489, #00AEEF, #006489);
   box-shadow: 5px 5px 5px hsl(0, 0%, 83%);
   position: -webkit-sticky;
@@ -466,28 +471,29 @@ html {
 }
 
 .upcoming-batch {
-  height:70vh;
+  
   width: 80%;
-  margin: 1vh;
+  margin: 2vh;
   margin-left: 8vw;
   margin-right:8vw;
   align-items: center;
   border-radius: 10px;
   background-color: #FFFFFF;
   box-shadow: 5px 5px 5px #d3d3d3;
-  padding: 2.5vh;
+  padding: 2vh;
+  margin-bottom: 5vh;
+  
 }
 
 .batch-type{
-  height:7vh;
+  
   width:95%;
   margin-left: 5vh;
-  padding: 2vh;
+  padding: 2.5vh;
   border-radius: 10px 10px 0px 0px;
   background: linear-gradient(to right,#006489,#00AEEF,#006489);
 display: flex;
 justify-content: space-between;
-padding: 15px 30px 15px 30px;
 color:white;
 font-size: 1.25rem;
 font-weight: 400;
@@ -508,14 +514,14 @@ text-align: center;
   position: absolute;
   left: -4px;
   right: -4px;
-  bottom: -20px;
+  bottom: -10px;
   height: 4px;
   background-color: white;
 
 }
 .batch-type-content {
   cursor: pointer;
-  padding: 10px;
+  padding: 1vh;
   position: relative;
 }
 
@@ -691,11 +697,12 @@ input[type="radio"] {
   
   }
   .corporate {
-    height: 15vh; 
+    
     background: linear-gradient(to right, #006489, #00AEEF, #006489);
     position: relative;
     padding: 2vh;
     display:flex;
+    margin-bottom: 5vh;
     justify-content:space-evenly;
   }
   
@@ -792,7 +799,7 @@ input[type="radio"] {
   cursor:pointer;
   }
   .qa-course{
-    height:200vh;
+  
     background-color: white;
     margin: 2vh;
     margin-left: 10vw;
@@ -822,6 +829,7 @@ input[type="radio"] {
   }
   
   .curriculum {
+    margin-bottom: 5vh;
     background-color: #FFFFFF;
     margin: 2vh;
     margin-left: 10vw;
@@ -837,7 +845,7 @@ input[type="radio"] {
   }
   
   .curriculum-content {
-    height: 6vh;
+   
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -915,7 +923,7 @@ input[type="radio"] {
     margin-top: 10px;
   }
   .mode-of-training{
-    height:90vh;
+   margin-bottom: 5vh !important;
     background-color: white;
     margin: 1vh;
     margin-left: 10vw;
@@ -965,7 +973,7 @@ input[type="radio"] {
   justify-content: space-evenly;
  }
  .career-support{
-  height:55vh;
+  margin-bottom: 5vh;
   margin-left:10vw;
   margin-right: 10vw;
   border-radius: 10px;

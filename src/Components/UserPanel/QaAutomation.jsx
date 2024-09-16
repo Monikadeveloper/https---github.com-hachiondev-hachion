@@ -48,6 +48,9 @@ const QaAutomation = () => {
         <div id="corporate">
           <Corporate />
         </div>
+        <div id="qa-course">
+          <Qacourse/>
+        </div>
 
         <div id="curriculum" ref={curriculumRef}>
           <CurriculumMain />
