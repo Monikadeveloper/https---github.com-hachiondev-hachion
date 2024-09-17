@@ -16,6 +16,8 @@ import CorporateTraining from './Components/UserPanel/CorporateTraining';
 import AdminNavbar from './Components/AdminPanel/AdminNavbar';
 import AdminSidebar from './Components/AdminPanel/AdminSidebar';
 import AdminDashboard from './Components/AdminPanel/AdminDashboard';
+import CourseCategory from './Components/AdminPanel/CourseCategory';
+import Blogs from './Components/UserPanel/Blogs';
 
 function App() {
   return (
@@ -37,6 +39,8 @@ function App() {
       <Route path='/adminnav' element={<AdminNavbar/>}/>
       <Route path='/adminsidebar' element={<AdminSidebar/>}/>
       <Route path='/admindashboard' element={<AdminDashboard/>}/>
+      <Route path='/admincourse' element={<CourseCategory/>}/>
+      <Route path='/blogs' element={<Blogs/>}/>
       </Routes></BrowserRouter>
     </>
   );

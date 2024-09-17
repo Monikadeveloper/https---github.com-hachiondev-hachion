@@ -955,9 +955,9 @@ color: white !important;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start; 
-    gap: 1.4vh; 
+    gap: 1.2vh; 
     margin: 5px auto;
-    max-width: 71vw; 
+    max-width: 70vw; 
 }
 .card {
     width: calc(25% - 10px); 
@@ -1001,7 +1001,7 @@ color: white !important;
 
 @media (max-width: 1024px) {
     .card {
-        width: calc(33.33% - 10px); 
+        width: calc(25% - 10px); 
     }
     .view-btn{
         margin-right: 30vh;
@@ -1319,3 +1319,69 @@ width: auto;}
    height: 3.2vh;
    width: 1.6vw;
     }
+    .user-info {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .image-block {
+        height: 3.2vh;
+        width: 1.7vw;
+        border-radius: 50%;
+        border: 2px solid white;
+        overflow: hidden;
+        padding: 0;
+       
+    }
+    
+    .image-block img {
+        height:3vh;
+        width:1.5vw;
+        object-fit: cover;
+        background-size: contain;
+    }
+    
+    .btn-logout {
+        background-color: #00AEEF;
+        color: white;
+        font-size: 1.5rem;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+        display:flex;
+        flex-direction:row;
+        justify-content: space-between;
+        width:10vw;
+        padding-top: 3vh !important;
+    
+    }
+    
+    .btn-group {
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .dropdown-menu {
+        padding-top: 4vh !important;
+    }
+    
+    .dropdown-divider {
+        margin: 0;
+    }
+.logout-btn{
+    width: 7.5vw;
+    border-radius: 10px;
+    padding: 1vh 2vh 1vh 2vh;
+    background-color: #FF0000;
+    color:white;
+    border:none;
+    margin:0.5vh;
+}
+.logout-right{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+gap:1vh;
+}

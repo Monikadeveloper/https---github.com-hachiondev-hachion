@@ -40,13 +40,13 @@ const AdminDashboard = () => {
            <DashboardCard
             icon={PiBookOpenTextFill
             }
-            background="linear-gradient(45deg,#FF5858,#FO9819)"
+            background="linear-gradient(45deg,#FF5858 , #F09819)"
             heading="61"
             content="Total Courses"
           />
            <DashboardCard
             icon={FaFileCircleQuestion}
-            background="linear-gradient(45deg,#7O28E4,#E5B2CA)"
+            background="linear-gradient(45deg,#7028E4, #E5B2CA)"
             heading="8"
             content="Quick Enquiry"
           />

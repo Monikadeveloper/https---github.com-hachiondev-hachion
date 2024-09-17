@@ -118,10 +118,11 @@ height:40vh;
 width: 120vw;
 background-image: url('../../Assets/course_banner.png');
 background-repeat: no-repeat;
-background-size: contain;
+background-size: cover;
 display: flex;
 justify-content: center;
 align-content: center;
+margin-bottom: 2vh;
   }
   .sidebar-top{
     display:flex;
