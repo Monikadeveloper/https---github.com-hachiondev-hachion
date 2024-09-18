@@ -537,6 +537,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+}
+.blog{
+    background-color:#EEEEEE;
+    ;
 }
 .blog-heading{
     font-size: 2.25rem;
@@ -607,7 +612,7 @@
     color:#00AAEF;
   }
   .recent-card {
-    width: 15vw;
+    width: 18vw;
     
     background-color: white;
     box-shadow: 5px 5px 5px #d3d3d3;
@@ -653,9 +658,19 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-top: 2vh;
   }
   .blog-bottom{
     margin: 4vh;
-    width: 75%;
-    margin-left: 12vw;
+    width: 80%;
+    margin-left: 10vw;
+
   }
+.card-holder{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 4vh;
+    margin-left: 10vw;
+}

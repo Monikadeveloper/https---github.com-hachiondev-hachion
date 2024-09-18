@@ -12,6 +12,7 @@ const Blogs = () => {
     <>
     <Topbar/>
     <NavbarTop/>
+    <div className='blog'>
     <div className='blog-banner'>
         <h3 className='blog-banner-content'>Blogs</h3>
     </div>
@@ -25,8 +26,9 @@ const Blogs = () => {
 <h1 className='blog-heading'>Recent Entries</h1>
 <RecentEntries/>
 </div>
-<Footer/>
 
+<Footer/>
+</div>
     </>
   )
 }
