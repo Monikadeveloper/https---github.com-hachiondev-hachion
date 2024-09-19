@@ -4,6 +4,7 @@ import automation from '../../Assets/automationtesting.png';
 import salesforce from '../../Assets/salesforce.png';
 import salesforceadmin from '../../Assets/salesforceadmin.png';
 import salesforceinterview from '../../Assets/salesforceinterview.png';
+import './Blogs.css';
 
 const RecentEntries = () => {
   return (

@@ -1117,6 +1117,7 @@ input[type="radio"] {
 }
 
 
+/* Style for request batch modal */
 .request-batch {
   height: 672px;
   width: 600px;
@@ -1137,73 +1138,52 @@ input[type="radio"] {
   justify-content: center; 
 }
 
-.form-group {
-  margin-bottom: 15px; 
-}
-
-.mobile-number-container {
-  display: flex;
-  align-items: center;
-  gap: 0px; 
-}
-
-.mobile-number-container .form-select {
-  width: 100px; 
-}
-
-#exampleFormControlTextarea1 {
-  width: calc(100% - 60px); 
-  margin-top: 0;
-  margin-left: 30px; 
-}
-
-#inputNumber {
-  flex-grow: 2; 
-}
-
-
-
-.form-control {
-  width: 100%;
-  padding-right: 40px; /* Adds space for the icon */
-  margin: 0 4vh; /* Adds margin of 2vh on the left and right */
-padding:1.5vh;
-}
-
-.icon-right {
-  position: absolute;
-  top: 67%;
-  transform: translateY(-80%);
-  font-size: 15px;
-}
-.date-picker-wrapper, .time-picker-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-/* Assuming you're using a black calendar icon directly */
-.black-calendar {
-  filter: brightness(0); /* This will make the calendar icon black if you're using the original colored image */
-}
-
+/* Align the calendar icon at the end */
 .date-picker-wrapper {
   position: relative;
   display: flex;
   align-items: center;
 }
-.react-datepicker-wrapper,
-.react-time-picker {
-  width: 100%;
+
+.black-calendar {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 
-.btn-submit {
-  margin-left: 4vh; /* Adds a 4vh margin from the left */
-  width: calc(100% - 8vh); /* Adjusts the width considering left margin */
-  background-color:#00AEEF;
+/* Add gradient background to date picker input */
+.date-picker, .time-picker {
+  background: linear-gradient(45deg, #00AEEF, #006489);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Time input adjustments */
+/* .time-picker {
+  background: linear-gradient(45deg, #00AEEF, #006489);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: white;
+  border: none;
+  padding-left: 10px;
+} */
+
+/* Input field styling */
+.form-control {
+  padding-right: 40px;
+  margin: 0 4vh;
+  padding: 1.5vh;
+  color: #fff;
 }
 
 .form-label {
-  margin: 0 4vh; /* Adds margin of 2vh on the left and right */
+  margin: 0 4vh;
   padding: 1.5vh;
 }
 
@@ -1211,19 +1191,21 @@ padding:1.5vh;
   display: flex;
   align-items: center;
   margin-left: 4vh;
-
 }
 
 .mobile-number-container select {
-  height: 44px; /* Adjust height to match the input field */
-margin-bottom: 3vh;
-
-}
-
-.mobile-number-container input {
-  flex-grow: 1; /* Ensures the input field takes the remaining space */
-  height: 44px; /* Matches the height of other input fields */
+  height: 44px;
   margin-bottom: 3vh;
 }
 
+.mobile-number-container input {
+  flex-grow: 1;
+  height: 44px;
+  margin-bottom: 3vh;
+}
 
+.btn-submit {
+  margin-left: 4vh;
+  width: calc(100% - 8vh);
+  background-color: #00AEEF;
+}

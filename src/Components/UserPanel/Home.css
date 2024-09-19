@@ -53,6 +53,10 @@
     margin-right: 1vh;
   
 }
+.whatspp-icon{
+    height: 3vh;
+    width: 1.5vw;
+}
 .training-mail{
     height: 3vh;
     cursor: pointer;
@@ -107,6 +111,11 @@
         width:8vw;
         height:4vh;
         font-size: 0.8rem;
+    }
+    .whatsapp-icon{
+        height: 1.5vh !important;
+        width: 0.75vw !important;
+        margin-right: 1vh;
     }
 }
 @media screen and (max-width: 768px){
@@ -462,84 +471,31 @@
     background-color: #000 !important; 
     border-color: #000; 
   }
-  
-.career-skills{
-    font-weight: 700;
-    font-size: 2.5rem;
-    color:rgba(0, 0, 0, 1);
+  .carousel-btn{
     display: flex;
     justify-content: center;
-}
-.discount{
-    font-weight:700;
-    font-size:3rem;
-    color:#EA4335;
-}
+  }
 
-.course-discount{
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #000000;
-}
 .coupon-btn{
-    width:10.25vw;
-    height: 4.5vh;
     background-color: #000000;
     color: white;
     border-radius: 30px;
-    padding: 10px, 20px, 10px, 20px;
+  padding:1vh;
     font-size: 1.1rem;
     font-weight: 600;
 }
 .coupon-btn:hover{
     background-color: #EA4335;
 }
-.banner-head{
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: rgba(255,255,255,1);
-    margin-bottom: 3vh;
-}
-.banner-content{
-   display: flex;
- align-items: center;
-   flex-direction: column;
-   margin-right: 42vh;
-    font-size: 2rem;
-    font-weight: 600;
-    color: rgba(255,255,255,1);
-}
-.live-session{
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: rgba(255,255,255,1);
-    
-}
-.live-session-span{
-    font-size: 2rem;
-    font-weight: 600;
-}
-.banner-second{
-    font-size:2rem;
-    font-weight: 600;
-}
-.banner-content-second{
-    display: flex;
-    align-items:center;
-      flex-direction: column;
-      margin-right: 53vh;
-      margin-bottom: 4vh;
-      margin-left: -18vh;
-  }
+
 
   .home-background{
     background-color:#EEEEEE;
   }
 .register-now-btn{
-    height:4.5vh;
-    width:10.25vw;
+    
     border-radius: 30px;
-padding:5px;
+padding:1vh;
     background-color: #ECC963;
     color: #000000;
     border: none;
@@ -551,95 +507,56 @@ padding:5px;
     background-color: #EA4335;
 }
 @media (max-width: 1200px) {
-    .career-skills {
-        font-size: 1.5rem;
-    }
-    .discount {
-        font-size: 1.5rem;
-    }
-    .course-discount {
-        font-size: 1.25rem;
-    }
+    
     .coupon-btn {
-        width: 12vw;
+        
         font-size: 1rem;
     }
 }
 
 @media (max-width: 992px) {
-    .career-skills {
-        font-size: 1.3rem;
-    }
-    .discount {
-        font-size:1rem;
-    }
-    .course-discount {
+  
+    .coupon-btn {
+      
         font-size: 0.8rem;
     }
-    .coupon-btn {
-        width: 14vw;
-    }
     .register-now-btn {
-        width: 12vw;
+      
         font-size: 0.8rem;
     }
 }
 
 @media (max-width: 768px) {
-    .career-skills {
-        font-size: 1rem;
-    }
-    .discount {
-        font-size: 0.9rem;
-    }
-    .course-discount {
-        font-size: 0.8rem;
-    }
+  
     .coupon-btn {
-        width: 18vw;
+      font-size: 0.7rem;
     }
     .register-now-btn {
-        width: 19vw;
+       
         font-size: 0.7rem;
     }
 }
 
 @media (max-width: 576px) {
-    .career-skills {
-        font-size: 1rem;
-    }
-    .discount {
-        font-size: .8rem;
-    }
-    .course-discount {
-        font-size: 0.7rem;
-    }
+  
     .coupon-btn {
-        width: 18vw;
+    
         font-size: 0.7rem;
     }
     .register-now-btn {
-        width: 18vw;
-        font-size: 0.9rem;
+       
+        font-size: 0.7rem;
     }
 }
 
 @media (max-width: 400px) {
-    .career-skills {
-        font-size: 0.7rem;
-    }
-    .discount {
-        font-size: 0.5rem;
-    }
-    .course-discount {
-        font-size: 0.5rem;
-    }
+   
     .coupon-btn {
-        width: 15vw;
+       
         font-size: 0.5rem;
     }
     .register-now-btn {
-        width: 15vw;
+       
         font-size: 0.5rem;
     }
 }
@@ -1255,7 +1172,7 @@ width: auto;}
     .footer{
         background-color:black;
         color:white;
-        height:47.2vh;
+        height:50.2vh;
         display: flex;
         margin-top: 10vh;
         padding-bottom:6vh;

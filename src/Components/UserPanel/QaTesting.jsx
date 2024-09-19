@@ -6,6 +6,7 @@ import {MdKeyboardArrowRight} from 'react-icons/md';
 import BlogCardHolder from './BlogCardHolder';
 import RecentEntries from './RecentEntries';
 import Footer from './Footer';
+import StickyBar from './StickyBar';
 import RecentEntriesCard from './RecentEntriesCard';
 import automation from '../../Assets/automationtesting.png';
 

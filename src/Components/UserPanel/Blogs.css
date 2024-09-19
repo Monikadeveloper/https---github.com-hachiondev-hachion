@@ -24,6 +24,7 @@
     gap: 4vh;
     padding: 4vh;
     padding-left: 10vw;
+    margin: 0vh;
 }
 .salesforce-blog-right{
     width: 65%;
@@ -61,4 +62,48 @@
 .salesforce-middle img{
     height: auto;
     width: 20vw;
+}
+.topics{
+    padding-left: 4vh;
+}
+.topics h2{
+    color: #006489;
+}
+.topic-content{
+    font-size: 1.15rem;
+    font-weight: 400;
+    padding: 4vh;
+}
+.topic-content-span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+.salesforce-blog-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.salesforce-blog-bottom h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #006489;
+}
+.recent-entries{
+    background-color: #EEEEEE;
+}
+.salesforce-entries h1{
+    background: linear-gradient(180deg, #00AEEF 0%, #006489 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+.salesforce-entries{
+   padding-right: 12vw;
+    padding-left: 12vw;
+    padding-bottom: 5vh;
+    background-color: #EEEEEE;
 }

@@ -22,7 +22,7 @@ const Topbar = () => {
         <div className='topbar-left'>
           <p className='query-content'>Have any query ?</p>
           <div className='whatsapp'>
-            <img src={whatsapp} alt='whatsapp-icon' style={{ height: '3vh', width: '1.5vw' }} />
+            <img src={whatsapp} alt='whatsapp-icon' className='whatsapp-icon' />
             <p className='whatsapp-number'> +91 9490323388</p>
             <PiLineVerticalThin style={{ color: 'white', fontSize: '2rem' }} />
           </div>
